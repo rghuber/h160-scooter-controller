@@ -1,0 +1,203 @@
+[0;33m--- idf_monitor on /dev/cu.usbserial-3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40375314: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x403759f6: panic_abort at /Users/rghuber/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037b181: esp_system_abort at /Users/rghuber/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40381995: __assert_func at /Users/rghuber/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b46c: xQueueGenericCreate at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:479 (discriminator 1)
+[0m
+[0;33m0x4200bb2f: spi_bus_add_device at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:426
+[0m
+[0;33m0x42008089: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:61
+[0m
+[0;33m0x42008121: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:93 (discriminator 15)
+[0m
+[0;33m0x4201c24f: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037d835: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375908: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x40375314: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x403759f6: panic_abort at /Users/rghuber/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037b181: esp_system_abort at /Users/rghuber/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40381995: __assert_func at /Users/rghuber/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b46c: xQueueGenericCreate at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:479 (discriminator 1)
+[0m
+[0;33m0x4200bb2f: spi_bus_add_device at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:426
+[0m
+[0;33m0x42008089: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:61
+[0m
+[0;33m0x42008121: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:93 (discriminator 15)
+[0m
+[0;33m0x4201c24f: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037d835: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375908: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x40375314: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x403759f6: panic_abort at /Users/rghuber/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037b181: esp_system_abort at /Users/rghuber/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40381995: __assert_func at /Users/rghuber/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b46c: xQueueGenericCreate at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:479 (discriminator 1)
+[0m
+[0;33m0x4200bb2f: spi_bus_add_device at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:426
+[0m
+[0;33m0x42008089: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:61
+[0m
+[0;33m0x42008121: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:93 (discriminator 15)
+[0m
+[0;33m0x4201c24f: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037d835: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375908: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x40375314: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x403759f6: panic_abort at /Users/rghuber/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037b181: esp_system_abort at /Users/rghuber/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40381995: __assert_func at /Users/rghuber/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b46c: xQueueGenericCreate at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:479 (discriminator 1)
+[0m
+[0;33m0x4200bb2f: spi_bus_add_device at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:426
+[0m
+[0;33m0x42008089: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:61
+[0m
+[0;33m0x42008121: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:93 (discriminator 15)
+[0m
+[0;33m0x4201c24f: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037d835: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375908: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x40375314: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x403759f6: panic_abort at /Users/rghuber/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037b181: esp_system_abort at /Users/rghuber/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40381995: __assert_func at /Users/rghuber/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b46c: xQueueGenericCreate at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:479 (discriminator 1)
+[0m
+[0;33m0x4200bb2f: spi_bus_add_device at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:426
+[0m
+[0;33m0x42008089: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:61
+[0m
+[0;33m0x42008121: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:93 (discriminator 15)
+[0m
+[0;33m0x4201c24f: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037d835: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375908: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x40375314: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x403759f6: panic_abort at /Users/rghuber/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037b181: esp_system_abort at /Users/rghuber/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40381995: __assert_func at /Users/rghuber/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b46c: xQueueGenericCreate at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:479 (discriminator 1)
+[0m
+[0;33m0x4200bb2f: spi_bus_add_device at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:426
+[0m
+[0;33m0x42008089: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:61
+[0m
+[0;33m0x42008121: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:93 (discriminator 15)
+[0m
+[0;33m0x4201c24f: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037d835: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375908: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x40375314: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x403759f6: panic_abort at /Users/rghuber/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037b181: esp_system_abort at /Users/rghuber/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40381995: __assert_func at /Users/rghuber/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b46c: xQueueGenericCreate at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:479 (discriminator 1)
+[0m
+[0;33m0x4200bb2f: spi_bus_add_device at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:426
+[0m
+[0;33m0x42008089: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:61
+[0m
+[0;33m0x42008121: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:93 (discriminator 15)
+[0m
+[0;33m0x4201c24f: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037d835: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375908: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x40375314: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x403759f6: panic_abort at /Users/rghuber/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037b181: esp_system_abort at /Users/rghuber/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40381995: __assert_func at /Users/rghuber/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b46c: xQueueGenericCreate at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:479 (discriminator 1)
+[0m
+[0;33m0x4200bb2f: spi_bus_add_device at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:426
+[0m
+[0;33m0x42008089: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:61
+[0m
+[0;33m0x42008121: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:93 (discriminator 15)
+[0m
+[0;33m0x4201c24f: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037d835: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375908: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x40375314: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x403759f6: panic_abort at /Users/rghuber/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037b181: esp_system_abort at /Users/rghuber/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40381995: __assert_func at /Users/rghuber/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b46c: xQueueGenericCreate at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:479 (discriminator 1)
+[0m
+[0;33m0x4200bb2f: spi_bus_add_device at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:426
+[0m
+[0;33m0x42008089: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:61
+[0m
+[0;33m0x42008121: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:93 (discriminator 15)
+[0m
+[0;33m0x4201c24f: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037d835: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375908: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x40375314: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0m

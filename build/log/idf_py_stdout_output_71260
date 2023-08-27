@@ -1,0 +1,99 @@
+ESP-ROM:esp32s�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x1718
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc08
+load:0x403cc700,len:0x2f08
+entry 0x403c990c
+[0;32mI (27) boot: ESP-IDF v5.2-dev-1449-gd2471b11e7 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 11 2023 17:12:33[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0cd20h ( 52512) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0001cd48 vaddr=3fc94800 size=029bch ( 10684) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0001f70c vaddr=40374000 size=0090ch (  2316) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1d1e0h (119264) map[0m
+[0;32mI (148) esp_image: segment 4: paddr=0003d208 vaddr=4037490c size=0fdf4h ( 65012) load[0m
+[0;32mI (169) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (169) boot: Disabling RNG early entropy source...[0m
+[0;32mI (181) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu up.[0m
+[0;32mI (181) cpu_start: Starting app cpu, entry point is 0x403753a4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (199) cpu_start: Pro cpu start user code[0m
+[0;32mI (199) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (199) cpu_start: Application information:[0m
+[0;32mI (202) cpu_start: Project name:     h160-scooter-controller[0m
+[0;32mI (209) cpu_start: App version:      1[0m
+[0;32mI (213) cpu_start: Compile time:     Jul 11 2023 17:12:27[0m
+[0;32mI (219) cpu_start: ELF file SHA256:  54457ce4c...[0m
+[0;32mI (225) cpu_start: ESP-IDF:          v5.2-dev-1449-gd2471b11e7[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (245) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FC97A60 len 00051CB0 (327 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (265) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (279) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (300) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (307) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (314) app_start: Starting scheduler on CPU0[0m
+[0;32mI (319) app_start: Starting scheduler on CPU1[0m
+[0;32mI (319) main_task: Started on CPU0[0m
+[0;32mI (329) main_task: Calling app_main()[0m
+[0;32mI (329) I2C: initializing i2c[0m
+[0;32mI (339) SPI: initializing SPI...[0m
+[0;32mI (339) SPI: initializing SPI IMU...[0m
+i2c scan: 
+Found device at: 0xd0
+
+RTC REGISTER CONTENTS:
+0x00 43010001 01010000 00000000 00001c88
+0x10 001840
+IMU REGISTER CONTENTS:
+ESP_OK
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+i2c scan: 
+Found device at: 0xd0
+
+RTC REGISTER CONTENTS:
+0x00 44010001 01010000 00000000 00001c88
+0x10 001840
+IMU REGISTER CONTENTS:
+ESP_OK
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+i2c scan: 
+Found device at: 0xd0
+
+RTC REGISTER CONTENTS:
+0x00 45010001 01010000 00000000 00001c88
+0x10 001840
+IMU REGISTER CONTENTS:
+ESP_OK
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+i2c scan: 
+Found device at: 0xd0
+
+RTC REGISTER CONTENTS:
+0x00 46010001 01010000 00000000 00001c88
+0x10 001840
+IMU REGISTER CONTENTS:
+ESP_OK
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000

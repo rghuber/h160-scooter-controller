@@ -1,0 +1,44 @@
+[0;33m--- idf_monitor on /dev/cu.usbserial-3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403753ec: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x420174f2: task_wdt_timeout_handling at /Users/rghuber/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x4201769e: task_wdt_isr at /Users/rghuber/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x40377381: _xt_lowint1 at /Users/rghuber/esp/esp-idf/components/xtensa/xtensa_vectors.S:1236
+[0m
+[0;33m0x420091ba: xTaskCreate at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:595 (discriminator 15)
+ (inlined by) app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:657 (discriminator 15)
+[0m
+[0;33m0x4202d6df: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037e551: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x420174f2: task_wdt_timeout_handling at /Users/rghuber/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x4201769e: task_wdt_isr at /Users/rghuber/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x40377381: _xt_lowint1 at /Users/rghuber/esp/esp-idf/components/xtensa/xtensa_vectors.S:1236
+[0m
+[0;33m0x420091ba: xTaskCreate at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:595 (discriminator 15)
+ (inlined by) app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:657 (discriminator 15)
+[0m
+[0;33m0x4202d6df: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037e551: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x420174f2: task_wdt_timeout_handling at /Users/rghuber/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:461 (discriminator 3)
+[0m
+[0;33m0x4201769e: task_wdt_isr at /Users/rghuber/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:585
+[0m
+[0;33m0x40377381: _xt_lowint1 at /Users/rghuber/esp/esp-idf/components/xtensa/xtensa_vectors.S:1236
+[0m
+[0;33m0x420091ba: xTaskCreate at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:595 (discriminator 15)
+ (inlined by) app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:657 (discriminator 15)
+[0m
+[0;33m0x4202d6df: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037e551: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0m

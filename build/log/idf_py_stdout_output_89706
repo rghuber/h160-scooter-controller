@@ -1,0 +1,33 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/bootloader/esp-idf/esptool_py && /Users/rghuber/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/rghuber/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/bootloader/bootloader.bin
+Bootloader binary size 0x5290 bytes. 0x2d70 bytes (35%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-scooter-controller.c.obj
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c: In function 'gpio_init':
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:37:19: warning: unused variable 'conf' [-Wunused-variable]
+   37 |     gpio_config_t conf;
+      |                   ^~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c: In function 'spi_imu_init':
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:126:37: warning: passing argument 1 of 'spi_device_polling_transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+  126 |     ret=spi_device_polling_transmit(&handle,&trans);
+      |                                     ^~~~~~~
+      |                                     |
+      |                                     struct spi_device_t ***
+In file included from /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:5:
+/Users/rghuber/esp/esp-idf/components/driver/spi/include/driver/spi_master.h:318:59: note: expected 'spi_device_handle_t' {aka 'struct spi_device_t *'} but argument is of type 'struct spi_device_t ***'
+  318 | esp_err_t spi_device_polling_transmit(spi_device_handle_t handle, spi_transaction_t *trans_desc);
+      |                                       ~~~~~~~~~~~~~~~~~~~~^~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c: At top level:
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:35:18: warning: 'gpio_init' defined but not used [-Wunused-function]
+   35 | static esp_err_t gpio_init()
+      |                  ^~~~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable h160-scooter-controller.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.6.2
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/h160-scooter-controller.bin
+[7/7] cd /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/esp-idf/esptool_py && /Users/rghuber/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/rghuber/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/partition_table/partition-table.bin /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/h160-scooter-controller.bin
+h160-scooter-controller.bin binary size 0x3d0d0 bytes. Smallest app partition is 0x100000 bytes. 0xc2f30 bytes (76%) free.

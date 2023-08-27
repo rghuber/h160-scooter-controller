@@ -1,0 +1,73 @@
+[0/1] Re-running CMake...
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /Users/rghuber/Downloads/Firmware/h160-scooter-controller/sdkconfig
+-- Compiler supported targets: xtensa-esp32s3-elf
+-- App "h160-scooter-controller" version: 1
+-- Adding linker script /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/rghuber/esp/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /Users/rghuber/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /Users/rghuber/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /Users/rghuber/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /Users/rghuber/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /Users/rghuber/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /Users/rghuber/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /Users/rghuber/esp/esp-idf/components/app_trace /Users/rghuber/esp/esp-idf/components/app_update /Users/rghuber/esp/esp-idf/components/bootloader /Users/rghuber/esp/esp-idf/components/bootloader_support /Users/rghuber/esp/esp-idf/components/bt /Users/rghuber/esp/esp-idf/components/cmock /Users/rghuber/esp/esp-idf/components/console /Users/rghuber/esp/esp-idf/components/cxx /Users/rghuber/esp/esp-idf/components/driver /Users/rghuber/esp/esp-idf/components/efuse /Users/rghuber/esp/esp-idf/components/esp-tls /Users/rghuber/esp/esp-idf/components/esp_adc /Users/rghuber/esp/esp-idf/components/esp_app_format /Users/rghuber/esp/esp-idf/components/esp_bootloader_format /Users/rghuber/esp/esp-idf/components/esp_coex /Users/rghuber/esp/esp-idf/components/esp_common /Users/rghuber/esp/esp-idf/components/esp_eth /Users/rghuber/esp/esp-idf/components/esp_event /Users/rghuber/esp/esp-idf/components/esp_gdbstub /Users/rghuber/esp/esp-idf/components/esp_hid /Users/rghuber/esp/esp-idf/components/esp_http_client /Users/rghuber/esp/esp-idf/components/esp_http_server /Users/rghuber/esp/esp-idf/components/esp_https_ota /Users/rghuber/esp/esp-idf/components/esp_https_server /Users/rghuber/esp/esp-idf/components/esp_hw_support /Users/rghuber/esp/esp-idf/components/esp_lcd /Users/rghuber/esp/esp-idf/components/esp_local_ctrl /Users/rghuber/esp/esp-idf/components/esp_mm /Users/rghuber/esp/esp-idf/components/esp_netif /Users/rghuber/esp/esp-idf/components/esp_netif_stack /Users/rghuber/esp/esp-idf/components/esp_partition /Users/rghuber/esp/esp-idf/components/esp_phy /Users/rghuber/esp/esp-idf/components/esp_pm /Users/rghuber/esp/esp-idf/components/esp_psram /Users/rghuber/esp/esp-idf/components/esp_ringbuf /Users/rghuber/esp/esp-idf/components/esp_rom /Users/rghuber/esp/esp-idf/components/esp_system /Users/rghuber/esp/esp-idf/components/esp_timer /Users/rghuber/esp/esp-idf/components/esp_wifi /Users/rghuber/esp/esp-idf/components/espcoredump /Users/rghuber/esp/esp-idf/components/esptool_py /Users/rghuber/esp/esp-idf/components/fatfs /Users/rghuber/esp/esp-idf/components/freertos /Users/rghuber/esp/esp-idf/components/hal /Users/rghuber/esp/esp-idf/components/heap /Users/rghuber/esp/esp-idf/components/http_parser /Users/rghuber/esp/esp-idf/components/idf_test /Users/rghuber/esp/esp-idf/components/ieee802154 /Users/rghuber/esp/esp-idf/components/json /Users/rghuber/esp/esp-idf/components/log /Users/rghuber/esp/esp-idf/components/lwip /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main /Users/rghuber/esp/esp-idf/components/mbedtls /Users/rghuber/esp/esp-idf/components/mqtt /Users/rghuber/esp/esp-idf/components/newlib /Users/rghuber/esp/esp-idf/components/nvs_flash /Users/rghuber/esp/esp-idf/components/nvs_sec_provider /Users/rghuber/esp/esp-idf/components/openthread /Users/rghuber/esp/esp-idf/components/partition_table /Users/rghuber/esp/esp-idf/components/perfmon /Users/rghuber/esp/esp-idf/components/protobuf-c /Users/rghuber/esp/esp-idf/components/protocomm /Users/rghuber/esp/esp-idf/components/pthread /Users/rghuber/esp/esp-idf/components/sdmmc /Users/rghuber/esp/esp-idf/components/soc /Users/rghuber/esp/esp-idf/components/spi_flash /Users/rghuber/esp/esp-idf/components/spiffs /Users/rghuber/esp/esp-idf/components/tcp_transport /Users/rghuber/esp/esp-idf/components/touch_element /Users/rghuber/esp/esp-idf/components/ulp /Users/rghuber/esp/esp-idf/components/unity /Users/rghuber/esp/esp-idf/components/usb /Users/rghuber/esp/esp-idf/components/vfs /Users/rghuber/esp/esp-idf/components/wear_levelling /Users/rghuber/esp/esp-idf/components/wifi_provisioning /Users/rghuber/esp/esp-idf/components/wpa_supplicant /Users/rghuber/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/bootloader/esp-idf/esptool_py && /Users/rghuber/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/rghuber/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/bootloader/bootloader.bin
+Bootloader binary size 0x5290 bytes. 0x2d70 bytes (35%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-rtc.c.obj
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-rtc.c:28:18: warning: 'DEVICE_RTC_read_rtctime' defined but not used [-Wunused-function]
+   28 | static esp_err_t DEVICE_RTC_read_rtctime(rtc_time_t *rtc_date_time){
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-rtc.c:4:18: warning: 'DEVICE_RTC_read_registers' defined but not used [-Wunused-function]
+    4 | static esp_err_t DEVICE_RTC_read_registers(){
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+[3/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-scooter-controller.c.obj
+In file included from /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:15:
+/Users/rghuber/esp/esp-idf/components/driver/deprecated/driver/mcpwm.h:15:2: warning: #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)" [-Wcpp]
+   15 | #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)"
+      |  ^~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c: In function 'TASK_DataLogger':
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:221:11: warning: unused variable 'linacc' [-Wunused-variable]
+  221 |     float linacc[3];
+      |           ^~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:220:11: warning: unused variable 'angrate' [-Wunused-variable]
+  220 |     float angrate[3];
+      |           ^~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:214:12: warning: variable 'rtc_date_time_f' set but not used [-Wunused-but-set-variable]
+  214 |     FILE * rtc_date_time_f;
+      |            ^~~~~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:167:31: warning: unused variable 'out_free_bytes' [-Wunused-variable]
+  167 |     uint64_t out_total_bytes, out_free_bytes;
+      |                               ^~~~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:167:14: warning: unused variable 'out_total_bytes' [-Wunused-variable]
+  167 |     uint64_t out_total_bytes, out_free_bytes;
+      |              ^~~~~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c: In function 'TASK_TriggerRead':
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:242:40: warning: variable 'timeReleased' set but not used [-Wunused-but-set-variable]
+  242 |     TickType_t timePressed = 10000000 ,timeReleased = 0;
+      |                                        ^~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c: At top level:
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:112:18: warning: 'DEVICE_RTC_read_rtctime' defined but not used [-Wunused-function]
+  112 | static esp_err_t DEVICE_RTC_read_rtctime(rtc_time_t *rtc_date_time){
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:88:18: warning: 'DEVICE_RTC_read_registers' defined but not used [-Wunused-function]
+   88 | static esp_err_t DEVICE_RTC_read_registers(){
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+[4/8] Linking C static library esp-idf/main/libmain.a
+[5/8] Generating ld/sections.ld
+[6/8] Linking CXX executable h160-scooter-controller.elf
+[7/8] Generating binary image from built executable
+esptool.py v4.6.2
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/h160-scooter-controller.bin
+[8/8] cd /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/esp-idf/esptool_py && /Users/rghuber/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/rghuber/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/partition_table/partition-table.bin /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/h160-scooter-controller.bin
+h160-scooter-controller.bin binary size 0x50dc0 bytes. Smallest app partition is 0x100000 bytes. 0xaf240 bytes (68%) free.

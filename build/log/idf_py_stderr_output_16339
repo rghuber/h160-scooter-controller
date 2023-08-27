@@ -1,0 +1,73 @@
+[0;33m--- idf_monitor on /dev/cu.usbserial-3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403753ec: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400570e8: memset in ROM
+[0m
+[0;33m0x400570f3: memset in ROM
+[0m
+[0;33m0x4200db89: sdmmc_send_cmd_send_status at /Users/rghuber/esp/esp-idf/components/sdmmc/sdmmc_cmd.c:375
+[0m
+[0;33m0x4200e1f5: sdmmc_get_status at /Users/rghuber/esp/esp-idf/components/sdmmc/sdmmc_cmd.c:765
+[0m
+[0;33m0x42008ad2: TASK_DataLogger at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:549 (discriminator 15)
+[0m
+[0;33m0x4037e551: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42007a1f: uart_ll_get_txfifo_len at /Users/rghuber/esp/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:317 (discriminator 1)
+ (inlined by) uart_tx_char at /Users/rghuber/esp/esp-idf/components/vfs/vfs_uart.c:163 (discriminator 1)
+[0m
+[0;33m0x403753ec: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400570e8: memset in ROM
+[0m
+[0;33m0x400570f3: memset in ROM
+[0m
+[0;33m0x4200db89: sdmmc_send_cmd_send_status at /Users/rghuber/esp/esp-idf/components/sdmmc/sdmmc_cmd.c:375
+[0m
+[0;33m0x4200e1f5: sdmmc_get_status at /Users/rghuber/esp/esp-idf/components/sdmmc/sdmmc_cmd.c:765
+[0m
+[0;33m0x42008ad2: TASK_DataLogger at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:549 (discriminator 15)
+[0m
+[0;33m0x4037e551: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42007a1f: uart_ll_get_txfifo_len at /Users/rghuber/esp/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:317 (discriminator 1)
+ (inlined by) uart_tx_char at /Users/rghuber/esp/esp-idf/components/vfs/vfs_uart.c:163 (discriminator 1)
+[0m
+[0;33m0x403753ec: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400570e8: memset in ROM
+[0m
+[0;33m0x400570f3: memset in ROM
+[0m
+[0;33m0x4200db89: sdmmc_send_cmd_send_status at /Users/rghuber/esp/esp-idf/components/sdmmc/sdmmc_cmd.c:375
+[0m
+[0;33m0x4200e1f5: sdmmc_get_status at /Users/rghuber/esp/esp-idf/components/sdmmc/sdmmc_cmd.c:765
+[0m
+[0;33m0x42008ad2: TASK_DataLogger at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:549 (discriminator 15)
+[0m
+[0;33m0x4037e551: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42007a1f: uart_ll_get_txfifo_len at /Users/rghuber/esp/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:317 (discriminator 1)
+ (inlined by) uart_tx_char at /Users/rghuber/esp/esp-idf/components/vfs/vfs_uart.c:163 (discriminator 1)
+[0m
+[0;33m0x403753ec: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400570e8: memset in ROM
+[0m
+[0;33m0x400570f3: memset in ROM
+[0m
+[0;33m0x4200db89: sdmmc_send_cmd_send_status at /Users/rghuber/esp/esp-idf/components/sdmmc/sdmmc_cmd.c:375
+[0m
+[0;33m0x4200e1f5: sdmmc_get_status at /Users/rghuber/esp/esp-idf/components/sdmmc/sdmmc_cmd.c:765
+[0m
+[0;33m0x42008ad2: TASK_DataLogger at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:549 (discriminator 15)
+[0m
+[0;33m0x4037e551: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x42007a1f: uart_ll_get_txfifo_len at /Users/rghuber/esp/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:317 (discriminator 1)
+ (inlined by) uart_tx_char at /Users/rghuber/esp/esp-idf/components/vfs/vfs_uart.c:163 (discriminator 1)
+[0m
+[0;33m0x403753ec: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0m

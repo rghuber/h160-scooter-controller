@@ -1,0 +1,715 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x1718
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc08
+load:0x403cc700,len:0x2f08
+entry 0x403c990c
+[0;32mI (27) boot: ESP-IDF v5.2-dev-1449-gd2471b11e7 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 11 2023 17:12:33[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0ff4ch ( 65356) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=0001ff74 vaddr=3fc94b00 size=000a4h (   164) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=2e20ch (188940) map[0m
+[0;32mI (152) esp_image: segment 3: paddr=0004e234 vaddr=3fc94ba4 size=02a18h ( 10776) load[0m
+[0;32mI (155) esp_image: segment 4: paddr=00050c54 vaddr=40374000 size=109f4h ( 68084) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (192) cpu_start: Multicore app[0m
+[0;32mI (192) cpu_start: Pro cpu up.[0m
+[0;32mI (192) cpu_start: Starting app cpu, entry point is 0x403753ec[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (210) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (210) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:     h160-scooter-controller[0m
+[0;32mI (220) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jul 11 2023 17:12:27[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  b03cc692d...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2-dev-1449-gd2471b11e7[0m
+[0;32mI (242) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (247) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (252) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (256) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (264) heap_init: At 3FC97FA0 len 00051770 (325 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (276) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (283) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (293) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (311) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (320) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (327) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (334) app_start: Starting scheduler on CPU0[0m
+[0;32mI (339) app_start: Starting scheduler on CPU1[0m
+[0;32mI (339) main_task: Started on CPU0[0m
+[0;32mI (349) main_task: Calling app_main()[0m
+[0;32mI (349) GPIO: initializing GPIO pins...[0m
+[0;32mI (359) I2C: initializing i2c[0m
+[0;32mI (359) SPI: initializing SPI...[0m
+[0;32mI (369) MCPWM: initializing MCPWM...[0m
+[0;32mI (369) SPI: initializing SPI SDCARD...[0m
+[0;32mI (379) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (379) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (429) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: EC1S5
+Type: SDHC/SDXC
+Speed: 8.00 MHz (limit: 8.00 MHz)
+Size: 61120MB
+CSD: ver=2, sector_size=512, capacity=125173760 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (449) SDCARD: Opening file[0m
+[0;32mI (479) SDCARD: File written[0m
+[0;32mI (519) SDCARD: Renaming file[0m
+[0;32mI (529) SDCARD: Reading file[0m
+[0;32mI (529) SDCARD: Read from file: 'Hello EC1S5!'[0m
+[0;32mI (529) SPI: initializing SPI IMU...[0m
+GyroX:     0.26 dps GyroY:    -1.08 dps GyroZ:    -0.40 dps
+ AccX:  -0.0363 g    AccY:   0.0712 g    AccZ:   1.0068 g
+[0;32mI (539) main_task: Returned from app_main()[0m
+[0;32mI (569) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.08 dps GyroZ:    -0.43 dps
+ AccX:  -0.0372 g    AccY:   0.0724 g    AccZ:   1.0052 g
+[0;32mI (729) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.08 dps GyroZ:    -0.45 dps
+ AccX:  -0.0369 g    AccY:   0.0719 g    AccZ:   1.0055 g
+[0;32mI (879) SDCARD: acc_gyr written[0m
+GyroX:     0.31 dps GyroY:    -1.07 dps GyroZ:    -0.35 dps
+ AccX:  -0.0369 g    AccY:   0.0715 g    AccZ:   1.0049 g
+[0;32mI (1029) SDCARD: acc_gyr written[0m
+GyroX:     0.31 dps GyroY:    -1.06 dps GyroZ:    -0.35 dps
+ AccX:  -0.0373 g    AccY:   0.0721 g    AccZ:   1.0056 g
+[0;32mI (1189) SDCARD: acc_gyr written[0m
+GyroX:     0.29 dps GyroY:    -1.08 dps GyroZ:    -0.38 dps
+ AccX:  -0.0364 g    AccY:   0.0719 g    AccZ:   1.0055 g
+[0;32mI (1339) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.08 dps GyroZ:    -0.37 dps
+ AccX:  -0.0377 g    AccY:   0.0727 g    AccZ:   1.0040 g
+[0;32mI (1489) SDCARD: acc_gyr written[0m
+GyroX:     0.23 dps GyroY:    -1.10 dps GyroZ:    -0.42 dps
+ AccX:  -0.0369 g    AccY:   0.0718 g    AccZ:   1.0049 g
+[0;32mI (1639) SDCARD: acc_gyr written[0m
+GyroX:     0.25 dps GyroY:    -1.06 dps GyroZ:    -0.39 dps
+ AccX:  -0.0362 g    AccY:   0.0718 g    AccZ:   1.0048 g
+[0;32mI (1789) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.07 dps GyroZ:    -0.40 dps
+ AccX:  -0.0365 g    AccY:   0.0715 g    AccZ:   1.0051 g
+[0;32mI (1939) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.08 dps GyroZ:    -0.35 dps
+ AccX:  -0.0366 g    AccY:   0.0724 g    AccZ:   1.0042 g
+[0;32mI (2089) SDCARD: acc_gyr written[0m
+GyroX:     0.30 dps GyroY:    -1.07 dps GyroZ:    -0.37 dps
+ AccX:  -0.0373 g    AccY:   0.0721 g    AccZ:   1.0045 g
+[0;32mI (2239) SDCARD: acc_gyr written[0m
+GyroX:     0.25 dps GyroY:    -1.01 dps GyroZ:    -0.43 dps
+ AccX:  -0.0364 g    AccY:   0.0721 g    AccZ:   1.0048 g
+[0;32mI (2389) SDCARD: acc_gyr written[0m
+GyroX:     0.23 dps GyroY:    -1.06 dps GyroZ:    -0.43 dps
+ AccX:  -0.0370 g    AccY:   0.0712 g    AccZ:   1.0038 g
+[0;32mI (2539) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.08 dps GyroZ:    -0.42 dps
+ AccX:  -0.0369 g    AccY:   0.0720 g    AccZ:   1.0046 g
+[0;32mI (2689) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.11 dps GyroZ:    -0.37 dps
+ AccX:  -0.0365 g    AccY:   0.0710 g    AccZ:   1.0054 g
+[0;32mI (2839) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.07 dps GyroZ:    -0.40 dps
+ AccX:  -0.0368 g    AccY:   0.0722 g    AccZ:   1.0046 g
+[0;32mI (2989) SDCARD: acc_gyr written[0m
+GyroX:     0.24 dps GyroY:    -1.08 dps GyroZ:    -0.40 dps
+ AccX:  -0.0370 g    AccY:   0.0715 g    AccZ:   1.0051 g
+[0;32mI (3139) SDCARD: acc_gyr written[0m
+GyroX:     0.22 dps GyroY:    -1.11 dps GyroZ:    -0.40 dps
+ AccX:  -0.0374 g    AccY:   0.0720 g    AccZ:   1.0050 g
+[0;32mI (3289) SDCARD: acc_gyr written[0m
+GyroX:     0.26 dps GyroY:    -1.08 dps GyroZ:    -0.40 dps
+ AccX:  -0.0377 g    AccY:   0.0717 g    AccZ:   1.0045 g
+[0;32mI (3439) SDCARD: acc_gyr written[0m
+GyroX:    -8.65 dps GyroY:   -12.95 dps GyroZ:     2.09 dps
+ AccX:  -0.0078 g    AccY:   0.0483 g    AccZ:   1.1261 g
+[0;32mI (3589) SDCARD: acc_gyr written[0m
+GyroX:     0.58 dps GyroY:    -0.81 dps GyroZ:    -0.40 dps
+ AccX:  -0.0284 g    AccY:   0.0626 g    AccZ:   1.0341 g
+[0;32mI (3739) SDCARD: acc_gyr written[0m
+GyroX:    -5.98 dps GyroY:    -8.73 dps GyroZ:    -0.04 dps
+ AccX:  -0.0391 g    AccY:   0.0650 g    AccZ:   0.7808 g
+[0;32mI (3889) SDCARD: acc_gyr written[0m
+GyroX:     0.91 dps GyroY:    -2.17 dps GyroZ:     9.78 dps
+ AccX:   0.0052 g    AccY:  -0.1541 g    AccZ:   1.1170 g
+[0;32mI (4039) SDCARD: acc_gyr written[0m
+GyroX:     0.50 dps GyroY:    -0.29 dps GyroZ:    75.96 dps
+ AccX:   0.0936 g    AccY:   0.1390 g    AccZ:   0.9522 g
+[0;32mI (4189) SDCARD: acc_gyr written[0m
+GyroX:     0.24 dps GyroY:    -1.16 dps GyroZ:    -1.69 dps
+ AccX:   0.0266 g    AccY:   0.0162 g    AccZ:   1.0082 g
+[0;32mI (4339) SDCARD: acc_gyr written[0m
+GyroX:     0.24 dps GyroY:    -1.05 dps GyroZ:    -0.35 dps
+ AccX:   0.0324 g    AccY:   0.0222 g    AccZ:   1.0082 g
+[0;32mI (4489) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.08 dps GyroZ:    -0.37 dps
+ AccX:   0.0319 g    AccY:   0.0228 g    AccZ:   1.0087 g
+[0;32mI (4639) SDCARD: acc_gyr written[0m
+GyroX:     0.24 dps GyroY:    -1.08 dps GyroZ:    -0.34 dps
+ AccX:   0.0315 g    AccY:   0.0229 g    AccZ:   1.0079 g
+[0;32mI (4789) SDCARD: acc_gyr written[0m
+GyroX:     0.24 dps GyroY:    -1.12 dps GyroZ:    -0.41 dps
+ AccX:   0.0329 g    AccY:   0.0234 g    AccZ:   1.0082 g
+[0;32mI (4939) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.10 dps GyroZ:    -0.40 dps
+ AccX:   0.0327 g    AccY:   0.0220 g    AccZ:   1.0087 g
+[0;32mI (5089) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.08 dps GyroZ:    -0.41 dps
+ AccX:   0.0325 g    AccY:   0.0228 g    AccZ:   1.0087 g
+[0;32mI (5239) SDCARD: acc_gyr written[0m
+GyroX:    -0.95 dps GyroY:    -1.11 dps GyroZ:   -15.55 dps
+ AccX:   0.0592 g    AccY:  -0.0217 g    AccZ:   1.0319 g
+[0;32mI (5389) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.07 dps GyroZ:    -0.41 dps
+ AccX:   0.0315 g    AccY:   0.0226 g    AccZ:   1.0076 g
+[0;32mI (5539) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.08 dps GyroZ:    -0.34 dps
+ AccX:   0.0323 g    AccY:   0.0226 g    AccZ:   1.0085 g
+[0;32mI (5689) SDCARD: acc_gyr written[0m
+GyroX:     0.30 dps GyroY:    -1.13 dps GyroZ:    -0.40 dps
+ AccX:   0.0323 g    AccY:   0.0233 g    AccZ:   1.0087 g
+[0;32mI (5839) SDCARD: acc_gyr written[0m
+GyroX:     0.15 dps GyroY:    -0.99 dps GyroZ:    -0.39 dps
+ AccX:   0.0328 g    AccY:   0.0227 g    AccZ:   1.0095 g
+[0;32mI (5989) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.08 dps GyroZ:    -0.43 dps
+ AccX:   0.0325 g    AccY:   0.0231 g    AccZ:   1.0079 g
+[0;32mI (6139) SDCARD: acc_gyr written[0m
+GyroX:     0.32 dps GyroY:    -1.08 dps GyroZ:    -0.33 dps
+ AccX:   0.0325 g    AccY:   0.0224 g    AccZ:   1.0085 g
+[0;32mI (6289) SDCARD: acc_gyr written[0m
+GyroX:    -0.50 dps GyroY:    -1.15 dps GyroZ:   -16.62 dps
+ AccX:   0.0359 g    AccY:   0.0280 g    AccZ:   0.9565 g
+[0;32mI (6439) SDCARD: acc_gyr written[0m
+GyroX:    -0.21 dps GyroY:    -0.39 dps GyroZ:     0.08 dps
+ AccX:   0.0209 g    AccY:   0.0011 g    AccZ:   1.0211 g
+[0;32mI (6589) SDCARD: acc_gyr written[0m
+GyroX:   -32.55 dps GyroY:   101.86 dps GyroZ:    17.92 dps
+ AccX:  -0.0715 g    AccY:   0.0421 g    AccZ:   1.1901 g
+[0;32mI (6739) SDCARD: acc_gyr written[0m
+GyroX:   -13.66 dps GyroY:   183.50 dps GyroZ:    32.00 dps
+ AccX:  -0.3556 g    AccY:   0.0283 g    AccZ:   1.0956 g
+[0;32mI (6909) SDCARD: acc_gyr written[0m
+GyroX:   -19.69 dps GyroY:   167.94 dps GyroZ:   -69.05 dps
+ AccX:  -0.8994 g    AccY:  -0.1282 g    AccZ:   0.4150 g
+[0;32mI (7059) SDCARD: acc_gyr written[0m
+GyroX:    -2.98 dps GyroY:   150.24 dps GyroZ:    11.25 dps
+ AccX:  -0.6758 g    AccY:  -0.3941 g    AccZ:  -0.5681 g
+[0;32mI (7209) SDCARD: acc_gyr written[0m
+GyroX:   -31.27 dps GyroY:   124.24 dps GyroZ:   -54.50 dps
+ AccX:  -0.6878 g    AccY:  -0.2932 g    AccZ:  -0.7192 g
+[0;32mI (7359) SDCARD: acc_gyr written[0m
+GyroX:   -59.73 dps GyroY:    75.85 dps GyroZ:     9.08 dps
+ AccX:  -0.6816 g    AccY:  -0.2745 g    AccZ:  -0.6815 g
+[0;32mI (7509) SDCARD: acc_gyr written[0m
+GyroX:    51.06 dps GyroY:    52.93 dps GyroZ:   104.39 dps
+ AccX:  -0.2364 g    AccY:  -0.0854 g    AccZ:  -0.6633 g
+[0;32mI (7659) SDCARD: acc_gyr written[0m
+GyroX:   -55.67 dps GyroY:    25.23 dps GyroZ:     0.13 dps
+ AccX:   0.1129 g    AccY:  -0.2151 g    AccZ:  -1.3786 g
+[0;32mI (7809) SDCARD: acc_gyr written[0m
+GyroX:   -94.82 dps GyroY:    39.12 dps GyroZ:   -34.32 dps
+ AccX:  -0.1763 g    AccY:  -0.1287 g    AccZ:  -1.1292 g
+[0;32mI (7959) SDCARD: acc_gyr written[0m
+GyroX:   -32.65 dps GyroY:    10.69 dps GyroZ:    26.53 dps
+ AccX:   0.0154 g    AccY:   0.3601 g    AccZ:  -0.9238 g
+[0;32mI (8109) SDCARD: acc_gyr written[0m
+GyroX:    -6.86 dps GyroY:     2.78 dps GyroZ:    -6.17 dps
+ AccX:   0.0330 g    AccY:   0.3211 g    AccZ:  -0.8760 g
+[0;32mI (8259) SDCARD: acc_gyr written[0m
+GyroX:     1.05 dps GyroY:     4.43 dps GyroZ:     3.90 dps
+ AccX:   0.0394 g    AccY:   0.2599 g    AccZ:  -0.9745 g
+[0;32mI (8409) SDCARD: acc_gyr written[0m
+GyroX:     4.81 dps GyroY:    -3.81 dps GyroZ:    -1.95 dps
+ AccX:   0.0506 g    AccY:   0.2816 g    AccZ:  -0.9772 g
+[0;32mI (8559) SDCARD: acc_gyr written[0m
+GyroX:    -0.27 dps GyroY:    -3.20 dps GyroZ:     6.11 dps
+ AccX:   0.0426 g    AccY:   0.2438 g    AccZ:  -0.9709 g
+[0;32mI (8709) SDCARD: acc_gyr written[0m
+GyroX:     0.63 dps GyroY:    -3.59 dps GyroZ:    -6.86 dps
+ AccX:   0.0367 g    AccY:   0.2773 g    AccZ:  -0.9575 g
+[0;32mI (8859) SDCARD: acc_gyr written[0m
+GyroX:    -0.51 dps GyroY:    -3.28 dps GyroZ:     2.55 dps
+ AccX:   0.0676 g    AccY:   0.3018 g    AccZ:  -0.9500 g
+[0;32mI (9009) SDCARD: acc_gyr written[0m
+GyroX:     1.35 dps GyroY:    -0.94 dps GyroZ:    -0.84 dps
+ AccX:   0.0207 g    AccY:   0.2808 g    AccZ:  -0.9459 g
+[0;32mI (9159) SDCARD: acc_gyr written[0m
+GyroX:    -3.11 dps GyroY:    -0.02 dps GyroZ:    -1.86 dps
+ AccX:   0.0495 g    AccY:   0.2700 g    AccZ:  -0.9633 g
+[0;32mI (9309) SDCARD: acc_gyr written[0m
+GyroX:    -2.77 dps GyroY:    -3.72 dps GyroZ:     0.78 dps
+ AccX:   0.0495 g    AccY:   0.2894 g    AccZ:  -0.9380 g
+[0;32mI (9459) SDCARD: acc_gyr written[0m
+GyroX:     2.33 dps GyroY:    -9.03 dps GyroZ:     0.66 dps
+ AccX:   0.0615 g    AccY:   0.2905 g    AccZ:  -0.9733 g
+[0;32mI (9609) SDCARD: acc_gyr written[0m
+GyroX:    27.33 dps GyroY:   -71.14 dps GyroZ:   -26.31 dps
+ AccX:  -0.1047 g    AccY:   0.2905 g    AccZ:  -0.9836 g
+[0;32mI (9769) SDCARD: acc_gyr written[0m
+GyroX:    50.49 dps GyroY:  -108.32 dps GyroZ:   -13.96 dps
+ AccX:  -0.2577 g    AccY:   0.2239 g    AccZ:  -0.8946 g
+[0;32mI (9919) SDCARD: acc_gyr written[0m
+GyroX:    33.74 dps GyroY:   -82.84 dps GyroZ:   -71.47 dps
+ AccX:  -0.7072 g    AccY:  -0.1458 g    AccZ:  -0.6843 g
+[0;32mI (10079) SDCARD: acc_gyr written[0m
+GyroX:     5.69 dps GyroY:   -43.57 dps GyroZ:    18.70 dps
+ AccX:  -0.7947 g    AccY:  -0.2518 g    AccZ:  -0.6380 g
+[0;32mI (10229) SDCARD: acc_gyr written[0m
+GyroX:     4.10 dps GyroY:   -21.00 dps GyroZ:   -26.65 dps
+ AccX:  -0.7571 g    AccY:  -0.1976 g    AccZ:  -0.5205 g
+[0;32mI (10379) SDCARD: acc_gyr written[0m
+GyroX:     3.36 dps GyroY:   -42.92 dps GyroZ:    17.30 dps
+ AccX:  -0.8728 g    AccY:  -0.2351 g    AccZ:  -0.4232 g
+[0;32mI (10529) SDCARD: acc_gyr written[0m
+GyroX:    15.50 dps GyroY:   -46.18 dps GyroZ:     4.71 dps
+ AccX:  -0.8873 g    AccY:  -0.1840 g    AccZ:  -0.3782 g
+[0;32mI (10679) SDCARD: acc_gyr written[0m
+GyroX:     9.48 dps GyroY:   -42.63 dps GyroZ:    11.28 dps
+ AccX:  -0.9572 g    AccY:  -0.1927 g    AccZ:  -0.2009 g
+[0;32mI (10829) SDCARD: acc_gyr written[0m
+GyroX:    -2.52 dps GyroY:    -5.46 dps GyroZ:     0.95 dps
+ AccX:  -0.9760 g    AccY:  -0.2032 g    AccZ:  -0.0803 g
+[0;32mI (10979) SDCARD: acc_gyr written[0m
+GyroX:    -2.60 dps GyroY:    -3.80 dps GyroZ:    -7.47 dps
+ AccX:  -0.9651 g    AccY:  -0.1801 g    AccZ:  -0.1012 g
+[0;32mI (11129) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.92 dps GyroZ:     0.27 dps
+ AccX:  -0.9972 g    AccY:  -0.1818 g    AccZ:  -0.1005 g
+[0;32mI (11279) SDCARD: acc_gyr written[0m
+GyroX:    -0.75 dps GyroY:    -3.00 dps GyroZ:     0.23 dps
+ AccX:  -0.9826 g    AccY:  -0.1765 g    AccZ:  -0.1154 g
+[0;32mI (11429) SDCARD: acc_gyr written[0m
+GyroX:    -2.32 dps GyroY:    -1.31 dps GyroZ:    -0.84 dps
+ AccX:  -0.9841 g    AccY:  -0.1746 g    AccZ:  -0.1022 g
+[0;32mI (11579) SDCARD: acc_gyr written[0m
+GyroX:    -1.72 dps GyroY:    -0.60 dps GyroZ:     2.59 dps
+ AccX:  -0.9634 g    AccY:  -0.1638 g    AccZ:  -0.1093 g
+[0;32mI (11729) SDCARD: acc_gyr written[0m
+GyroX:    -3.26 dps GyroY:     3.22 dps GyroZ:     6.19 dps
+ AccX:  -0.9721 g    AccY:  -0.1913 g    AccZ:  -0.1074 g
+[0;32mI (11879) SDCARD: acc_gyr written[0m
+GyroX:     1.40 dps GyroY:    -1.05 dps GyroZ:    30.55 dps
+ AccX:  -0.9841 g    AccY:  -0.1590 g    AccZ:  -0.1471 g
+[0;32mI (12029) SDCARD: acc_gyr written[0m
+GyroX:    13.95 dps GyroY:   -53.51 dps GyroZ:   189.93 dps
+ AccX:  -1.1111 g    AccY:  -0.0756 g    AccZ:   0.0744 g
+[0;32mI (12179) SDCARD: acc_gyr written[0m
+GyroX:    45.35 dps GyroY:   -25.73 dps GyroZ:   167.17 dps
+ AccX:  -0.8040 g    AccY:   0.3220 g    AccZ:  -0.1826 g
+[0;32mI (12329) SDCARD: acc_gyr written[0m
+GyroX:   -13.86 dps GyroY:   -38.01 dps GyroZ:   152.69 dps
+ AccX:  -0.3444 g    AccY:   0.8961 g    AccZ:   0.0583 g
+[0;32mI (12479) SDCARD: acc_gyr written[0m
+GyroX:    11.40 dps GyroY:   -23.95 dps GyroZ:   120.80 dps
+ AccX:   0.0435 g    AccY:   1.0217 g    AccZ:   0.0101 g
+[0;32mI (12629) SDCARD: acc_gyr written[0m
+GyroX:    -1.99 dps GyroY:    -2.22 dps GyroZ:    13.60 dps
+ AccX:   0.3062 g    AccY:   1.1236 g    AccZ:   0.0853 g
+[0;32mI (12779) SDCARD: acc_gyr written[0m
+GyroX:     0.67 dps GyroY:    -0.93 dps GyroZ:    22.18 dps
+ AccX:   0.1545 g    AccY:   0.9960 g    AccZ:   0.1019 g
+[0;32mI (12929) SDCARD: acc_gyr written[0m
+GyroX:    -0.85 dps GyroY:    -3.81 dps GyroZ:    -2.78 dps
+ AccX:   0.1559 g    AccY:   0.9879 g    AccZ:   0.0759 g
+[0;32mI (13079) SDCARD: acc_gyr written[0m
+GyroX:    -2.84 dps GyroY:    -2.06 dps GyroZ:    -7.13 dps
+ AccX:   0.1467 g    AccY:   0.9750 g    AccZ:   0.0675 g
+[0;32mI (13229) SDCARD: acc_gyr written[0m
+GyroX:    -0.50 dps GyroY:    -3.12 dps GyroZ:     0.82 dps
+ AccX:   0.1874 g    AccY:   0.9658 g    AccZ:   0.0276 g
+[0;32mI (13379) SDCARD: acc_gyr written[0m
+GyroX:     1.27 dps GyroY:    -2.21 dps GyroZ:     1.37 dps
+ AccX:   0.1585 g    AccY:   0.9858 g    AccZ:   0.0407 g
+[0;32mI (13529) SDCARD: acc_gyr written[0m
+GyroX:    -2.11 dps GyroY:    -2.82 dps GyroZ:    -4.89 dps
+ AccX:   0.1790 g    AccY:   0.9640 g    AccZ:   0.0306 g
+[0;32mI (13679) SDCARD: acc_gyr written[0m
+GyroX:    -2.11 dps GyroY:    -0.89 dps GyroZ:    -4.46 dps
+ AccX:   0.1767 g    AccY:   0.9827 g    AccZ:   0.0594 g
+[0;32mI (13829) SDCARD: acc_gyr written[0m
+GyroX:    -0.31 dps GyroY:    -1.33 dps GyroZ:    -0.42 dps
+ AccX:   0.1619 g    AccY:   0.9785 g    AccZ:   0.0698 g
+[0;32mI (13979) SDCARD: acc_gyr written[0m
+GyroX:     2.76 dps GyroY:    -0.11 dps GyroZ:    -1.21 dps
+ AccX:   0.1857 g    AccY:   0.9838 g    AccZ:   0.0795 g
+[0;32mI (14129) SDCARD: acc_gyr written[0m
+GyroX:     1.96 dps GyroY:    -2.29 dps GyroZ:     3.01 dps
+ AccX:   0.2031 g    AccY:   0.9950 g    AccZ:   0.0682 g
+[0;32mI (14279) SDCARD: acc_gyr written[0m
+GyroX:    -1.51 dps GyroY:    -1.62 dps GyroZ:     0.11 dps
+ AccX:   0.2111 g    AccY:   0.9983 g    AccZ:   0.0687 g
+[0;32mI (14429) SDCARD: acc_gyr written[0m
+GyroX:   -10.25 dps GyroY:    -3.66 dps GyroZ:    -6.49 dps
+ AccX:   0.1707 g    AccY:   0.9942 g    AccZ:   0.0776 g
+[0;32mI (14579) SDCARD: acc_gyr written[0m
+GyroX:   -69.02 dps GyroY:   -19.76 dps GyroZ:   -28.67 dps
+ AccX:   0.2249 g    AccY:   0.9153 g    AccZ:   0.1193 g
+[0;32mI (14729) SDCARD: acc_gyr written[0m
+GyroX:   -10.53 dps GyroY:    -8.22 dps GyroZ:    10.36 dps
+ AccX:  -0.0787 g    AccY:   0.9107 g    AccZ:   0.3757 g
+[0;32mI (14879) SDCARD: acc_gyr written[0m
+GyroX:   -92.14 dps GyroY:    -4.48 dps GyroZ:    -6.61 dps
+ AccX:   0.0989 g    AccY:   0.6503 g    AccZ:   0.2017 g
+[0;32mI (15029) SDCARD: acc_gyr written[0m
+GyroX:  -155.98 dps GyroY:   -24.09 dps GyroZ:   -21.62 dps
+ AccX:   0.0721 g    AccY:   0.8585 g    AccZ:   1.0708 g
+[0;32mI (15179) SDCARD: acc_gyr written[0m
+GyroX:  -102.63 dps GyroY:    -5.45 dps GyroZ:   -22.25 dps
+ AccX:   0.1664 g    AccY:   0.4865 g    AccZ:   1.0446 g
+[0;32mI (15329) SDCARD: acc_gyr written[0m
+GyroX:   -67.92 dps GyroY:    -6.60 dps GyroZ:    -5.46 dps
+ AccX:   0.2241 g    AccY:   0.1460 g    AccZ:   0.9624 g
+[0;32mI (15479) SDCARD: acc_gyr written[0m
+GyroX:   -30.32 dps GyroY:   -25.67 dps GyroZ:     5.23 dps
+ AccX:   0.1451 g    AccY:   0.0453 g    AccZ:   1.0453 g
+[0;32mI (15629) SDCARD: acc_gyr written[0m
+GyroX:   -12.79 dps GyroY:   -11.47 dps GyroZ:     4.26 dps
+ AccX:   0.2393 g    AccY:  -0.0551 g    AccZ:   1.0464 g
+[0;32mI (15779) SDCARD: acc_gyr written[0m
+GyroX:    -7.61 dps GyroY:    -6.77 dps GyroZ:    -6.15 dps
+ AccX:   0.2166 g    AccY:  -0.0829 g    AccZ:   0.9892 g
+[0;32mI (15929) SDCARD: acc_gyr written[0m
+GyroX:    -7.85 dps GyroY:    -3.92 dps GyroZ:     3.66 dps
+ AccX:   0.2844 g    AccY:  -0.0479 g    AccZ:   0.9656 g
+[0;32mI (16079) SDCARD: acc_gyr written[0m
+GyroX:    -2.24 dps GyroY:    -0.26 dps GyroZ:    -2.03 dps
+ AccX:   0.2728 g    AccY:  -0.0774 g    AccZ:   1.0356 g
+[0;32mI (16229) SDCARD: acc_gyr written[0m
+GyroX:    28.45 dps GyroY:    12.08 dps GyroZ:   -40.76 dps
+ AccX:   0.2550 g    AccY:  -0.0230 g    AccZ:   1.0772 g
+[0;32mI (16379) SDCARD: acc_gyr written[0m
+GyroX:    23.80 dps GyroY:   -31.89 dps GyroZ:    12.95 dps
+ AccX:   0.2836 g    AccY:   0.2210 g    AccZ:   0.5941 g
+[0;32mI (16529) SDCARD: acc_gyr written[0m
+GyroX:   -53.38 dps GyroY:     7.27 dps GyroZ:    10.17 dps
+ AccX:   0.1948 g    AccY:   0.1879 g    AccZ:   1.1700 g
+[0;32mI (16679) SDCARD: acc_gyr written[0m
+GyroX:    55.09 dps GyroY:   124.34 dps GyroZ:   -42.92 dps
+ AccX:  -0.0540 g    AccY:   0.0422 g    AccZ:   1.1707 g
+[0;32mI (16829) SDCARD: acc_gyr written[0m
+GyroX:     9.56 dps GyroY:   131.29 dps GyroZ:   -51.75 dps
+ AccX:  -0.3297 g    AccY:   0.1376 g    AccZ:   0.7942 g
+[0;32mI (16979) SDCARD: acc_gyr written[0m
+GyroX:   -31.52 dps GyroY:   119.07 dps GyroZ:   -70.64 dps
+ AccX:  -0.7397 g    AccY:   0.0585 g    AccZ:   0.6420 g
+[0;32mI (17129) SDCARD: acc_gyr written[0m
+GyroX:   -59.46 dps GyroY:   171.22 dps GyroZ:   -76.53 dps
+ AccX:  -0.9933 g    AccY:  -0.3357 g    AccZ:   0.1015 g
+[0;32mI (17279) SDCARD: acc_gyr written[0m
+GyroX:   -83.68 dps GyroY:   160.34 dps GyroZ:   -17.68 dps
+ AccX:  -0.9250 g    AccY:  -0.3988 g    AccZ:  -0.2927 g
+[0;32mI (17429) SDCARD: acc_gyr written[0m
+GyroX:     8.22 dps GyroY:    88.64 dps GyroZ:    26.08 dps
+ AccX:  -0.5866 g    AccY:  -0.0732 g    AccZ:  -0.3950 g
+[0;32mI (17579) SDCARD: acc_gyr written[0m
+GyroX:    55.65 dps GyroY:     0.40 dps GyroZ:    33.45 dps
+ AccX:  -0.6590 g    AccY:  -0.2463 g    AccZ:  -0.8198 g
+[0;32mI (17729) SDCARD: acc_gyr written[0m
+GyroX:   131.79 dps GyroY:  -147.89 dps GyroZ:    74.59 dps
+ AccX:  -0.9125 g    AccY:  -0.5034 g    AccZ:  -0.6009 g
+[0;32mI (17879) SDCARD: acc_gyr written[0m
+GyroX:    61.90 dps GyroY:  -181.70 dps GyroZ:    68.88 dps
+ AccX:  -0.9473 g    AccY:  -0.1486 g    AccZ:  -0.0153 g
+[0;32mI (18029) SDCARD: acc_gyr written[0m
+GyroX:    47.04 dps GyroY:  -197.59 dps GyroZ:   102.65 dps
+ AccX:  -0.8345 g    AccY:  -0.0413 g    AccZ:   0.4863 g
+[0;32mI (18179) SDCARD: acc_gyr written[0m
+GyroX:    14.15 dps GyroY:  -151.25 dps GyroZ:    78.91 dps
+ AccX:  -0.2132 g    AccY:   0.3891 g    AccZ:   0.7761 g
+[0;32mI (18329) SDCARD: acc_gyr written[0m
+GyroX:   -43.52 dps GyroY:   -84.67 dps GyroZ:    22.34 dps
+ AccX:   0.0085 g    AccY:   0.2900 g    AccZ:   0.9281 g
+[0;32mI (18479) SDCARD: acc_gyr written[0m
+GyroX:   -49.21 dps GyroY:   -60.13 dps GyroZ:    39.13 dps
+ AccX:   0.2771 g    AccY:   0.2520 g    AccZ:   0.9903 g
+[0;32mI (18629) SDCARD: acc_gyr written[0m
+GyroX:   -30.53 dps GyroY:    15.05 dps GyroZ:    22.54 dps
+ AccX:   0.4867 g    AccY:   0.1294 g    AccZ:   0.9990 g
+[0;32mI (18779) SDCARD: acc_gyr written[0m
+GyroX:   -19.98 dps GyroY:    35.99 dps GyroZ:   -25.42 dps
+ AccX:   0.1825 g    AccY:  -0.1474 g    AccZ:   0.9424 g
+[0;32mI (18929) SDCARD: acc_gyr written[0m
+GyroX:   -12.70 dps GyroY:    -2.12 dps GyroZ:     5.97 dps
+ AccX:   0.1950 g    AccY:  -0.1015 g    AccZ:   1.0808 g
+[0;32mI (19079) SDCARD: acc_gyr written[0m
+GyroX:     6.77 dps GyroY:     5.64 dps GyroZ:    -7.55 dps
+ AccX:   0.1970 g    AccY:  -0.0963 g    AccZ:   0.9705 g
+[0;32mI (19229) SDCARD: acc_gyr written[0m
+GyroX:    17.05 dps GyroY:    50.19 dps GyroZ:   -32.27 dps
+ AccX:   0.0333 g    AccY:   0.0326 g    AccZ:   0.9675 g
+[0;32mI (19379) SDCARD: acc_gyr written[0m
+GyroX:     1.00 dps GyroY:    -2.20 dps GyroZ:   -11.12 dps
+ AccX:   0.0408 g    AccY:   0.0452 g    AccZ:   1.1332 g
+[0;32mI (19529) SDCARD: acc_gyr written[0m
+GyroX:     0.80 dps GyroY:    -1.76 dps GyroZ:   -20.97 dps
+ AccX:   0.0635 g    AccY:   0.0164 g    AccZ:   0.9899 g
+[0;32mI (19679) SDCARD: acc_gyr written[0m
+GyroX:    -0.31 dps GyroY:    -0.83 dps GyroZ:   -24.19 dps
+ AccX:   0.0228 g    AccY:   0.0095 g    AccZ:   1.0034 g
+[0;32mI (19829) SDCARD: acc_gyr written[0m
+GyroX:    -0.06 dps GyroY:    -0.98 dps GyroZ:    -9.09 dps
+ AccX:   0.0045 g    AccY:   0.0134 g    AccZ:   1.0120 g
+[0;32mI (19979) SDCARD: acc_gyr written[0m
+GyroX:     1.08 dps GyroY:    -2.00 dps GyroZ:     1.75 dps
+ AccX:   0.0531 g    AccY:  -0.0164 g    AccZ:   1.0137 g
+[0;32mI (20129) SDCARD: acc_gyr written[0m
+GyroX:     0.21 dps GyroY:    -1.08 dps GyroZ:    -0.43 dps
+ AccX:   0.0343 g    AccY:   0.0209 g    AccZ:   1.0086 g
+[0;32mI (20279) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.11 dps GyroZ:    -0.48 dps
+ AccX:   0.0330 g    AccY:   0.0206 g    AccZ:   1.0091 g
+[0;32mI (20429) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.10 dps GyroZ:    -0.43 dps
+ AccX:   0.0335 g    AccY:   0.0204 g    AccZ:   1.0084 g
+[0;32mI (20579) SDCARD: acc_gyr written[0m
+GyroX:     0.24 dps GyroY:    -1.04 dps GyroZ:    -0.50 dps
+ AccX:   0.0339 g    AccY:   0.0204 g    AccZ:   1.0089 g
+[0;32mI (20729) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.06 dps GyroZ:    -0.46 dps
+ AccX:   0.0316 g    AccY:   0.0192 g    AccZ:   1.0090 g
+[0;32mI (20879) SDCARD: acc_gyr written[0m
+GyroX:     0.30 dps GyroY:    -1.09 dps GyroZ:    -0.42 dps
+ AccX:   0.0344 g    AccY:   0.0214 g    AccZ:   1.0090 g
+[0;32mI (21029) SDCARD: acc_gyr written[0m
+GyroX:     0.23 dps GyroY:    -1.10 dps GyroZ:    -0.40 dps
+ AccX:   0.0336 g    AccY:   0.0215 g    AccZ:   1.0089 g
+[0;32mI (21179) SDCARD: acc_gyr written[0m
+GyroX:     0.29 dps GyroY:    -1.10 dps GyroZ:    -0.44 dps
+ AccX:   0.0333 g    AccY:   0.0218 g    AccZ:   1.0085 g
+[0;32mI (21329) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.12 dps GyroZ:    -0.49 dps
+ AccX:   0.0348 g    AccY:   0.0220 g    AccZ:   1.0088 g
+[0;32mI (21479) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.11 dps GyroZ:    -0.45 dps
+ AccX:   0.0328 g    AccY:   0.0201 g    AccZ:   1.0091 g
+[0;32mI (21629) SDCARD: acc_gyr written[0m
+GyroX:     0.30 dps GyroY:    -1.11 dps GyroZ:    -0.37 dps
+ AccX:   0.0331 g    AccY:   0.0203 g    AccZ:   1.0087 g
+[0;32mI (21779) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.13 dps GyroZ:    -0.42 dps
+ AccX:   0.0334 g    AccY:   0.0207 g    AccZ:   1.0088 g
+[0;32mI (21929) SDCARD: acc_gyr written[0m
+GyroX:     0.30 dps GyroY:    -1.09 dps GyroZ:    -0.42 dps
+ AccX:   0.0345 g    AccY:   0.0204 g    AccZ:   1.0080 g
+[0;32mI (22079) SDCARD: acc_gyr written[0m
+GyroX:     0.31 dps GyroY:    -1.11 dps GyroZ:    -0.43 dps
+ AccX:   0.0330 g    AccY:   0.0211 g    AccZ:   1.0085 g
+[0;32mI (22229) SDCARD: acc_gyr written[0m
+GyroX:     0.32 dps GyroY:    -1.09 dps GyroZ:    -0.38 dps
+ AccX:   0.0343 g    AccY:   0.0208 g    AccZ:   1.0085 g
+[0;32mI (22379) SDCARD: acc_gyr written[0m
+GyroX:     0.30 dps GyroY:    -1.10 dps GyroZ:    -0.40 dps
+ AccX:   0.0338 g    AccY:   0.0207 g    AccZ:   1.0091 g
+[0;32mI (22529) SDCARD: acc_gyr written[0m
+GyroX:     0.31 dps GyroY:    -1.11 dps GyroZ:    -0.37 dps
+ AccX:   0.0339 g    AccY:   0.0209 g    AccZ:   1.0093 g
+[0;32mI (22679) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.07 dps GyroZ:    -0.43 dps
+ AccX:   0.0331 g    AccY:   0.0203 g    AccZ:   1.0087 g
+[0;32mI (22829) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.11 dps GyroZ:    -0.45 dps
+ AccX:   0.0338 g    AccY:   0.0197 g    AccZ:   1.0089 g
+[0;32mI (22979) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.11 dps GyroZ:    -0.34 dps
+ AccX:   0.0325 g    AccY:   0.0207 g    AccZ:   1.0088 g
+[0;32mI (23129) SDCARD: acc_gyr written[0m
+GyroX:     0.26 dps GyroY:    -1.11 dps GyroZ:    -0.44 dps
+ AccX:   0.0334 g    AccY:   0.0204 g    AccZ:   1.0095 g
+[0;32mI (23279) SDCARD: acc_gyr written[0m
+GyroX:     0.25 dps GyroY:    -1.08 dps GyroZ:    -0.43 dps
+ AccX:   0.0342 g    AccY:   0.0206 g    AccZ:   1.0092 g
+[0;32mI (23429) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.09 dps GyroZ:    -0.43 dps
+ AccX:   0.0338 g    AccY:   0.0209 g    AccZ:   1.0081 g
+[0;32mI (23579) SDCARD: acc_gyr written[0m
+GyroX:     0.24 dps GyroY:    -1.10 dps GyroZ:    -0.44 dps
+ AccX:   0.0342 g    AccY:   0.0208 g    AccZ:   1.0091 g
+[0;32mI (23729) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.05 dps GyroZ:    -0.42 dps
+ AccX:   0.0328 g    AccY:   0.0209 g    AccZ:   1.0086 g
+[0;32mI (23879) SDCARD: acc_gyr written[0m
+GyroX:     0.25 dps GyroY:    -1.11 dps GyroZ:    -0.47 dps
+ AccX:   0.0338 g    AccY:   0.0211 g    AccZ:   1.0089 g
+[0;32mI (24029) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.11 dps GyroZ:    -0.38 dps
+ AccX:   0.0334 g    AccY:   0.0206 g    AccZ:   1.0089 g
+[0;32mI (24179) SDCARD: acc_gyr written[0m
+GyroX:     0.22 dps GyroY:    -1.14 dps GyroZ:    -0.45 dps
+ AccX:   0.0334 g    AccY:   0.0208 g    AccZ:   1.0093 g
+[0;32mI (24329) SDCARD: acc_gyr written[0m
+GyroX:     0.24 dps GyroY:    -1.10 dps GyroZ:    -0.41 dps
+ AccX:   0.0334 g    AccY:   0.0208 g    AccZ:   1.0091 g
+[0;32mI (24479) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.09 dps GyroZ:    -0.43 dps
+ AccX:   0.0332 g    AccY:   0.0206 g    AccZ:   1.0093 g
+[0;32mI (24629) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.14 dps GyroZ:    -0.46 dps
+ AccX:   0.0337 g    AccY:   0.0217 g    AccZ:   1.0084 g
+[0;32mI (24779) SDCARD: acc_gyr written[0m
+GyroX:     0.24 dps GyroY:    -1.11 dps GyroZ:    -0.44 dps
+ AccX:   0.0337 g    AccY:   0.0212 g    AccZ:   1.0097 g
+[0;32mI (24929) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.12 dps GyroZ:    -0.40 dps
+ AccX:   0.0336 g    AccY:   0.0210 g    AccZ:   1.0088 g
+[0;32mI (25079) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.11 dps GyroZ:    -0.43 dps
+ AccX:   0.0339 g    AccY:   0.0208 g    AccZ:   1.0086 g
+[0;32mI (25229) SDCARD: acc_gyr written[0m
+GyroX:     0.25 dps GyroY:    -1.11 dps GyroZ:    -0.45 dps
+ AccX:   0.0334 g    AccY:   0.0206 g    AccZ:   1.0102 g
+[0;32mI (25379) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.14 dps GyroZ:    -0.40 dps
+ AccX:   0.0334 g    AccY:   0.0197 g    AccZ:   1.0088 g
+[0;32mI (25529) SDCARD: acc_gyr written[0m
+GyroX:     0.25 dps GyroY:    -1.08 dps GyroZ:    -0.47 dps
+ AccX:   0.0335 g    AccY:   0.0203 g    AccZ:   1.0073 g
+[0;32mI (25679) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.11 dps GyroZ:    -0.45 dps
+ AccX:   0.0334 g    AccY:   0.0210 g    AccZ:   1.0092 g
+[0;32mI (25829) SDCARD: acc_gyr written[0m
+GyroX:     0.26 dps GyroY:    -1.09 dps GyroZ:    -0.44 dps
+ AccX:   0.0335 g    AccY:   0.0201 g    AccZ:   1.0079 g
+[0;32mI (25979) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.11 dps GyroZ:    -0.40 dps
+ AccX:   0.0334 g    AccY:   0.0206 g    AccZ:   1.0079 g
+[0;32mI (26129) SDCARD: acc_gyr written[0m
+GyroX:     0.29 dps GyroY:    -1.13 dps GyroZ:    -0.38 dps
+ AccX:   0.0334 g    AccY:   0.0202 g    AccZ:   1.0084 g
+[0;32mI (26279) SDCARD: acc_gyr written[0m
+GyroX:     0.26 dps GyroY:    -1.09 dps GyroZ:    -0.40 dps
+ AccX:   0.0333 g    AccY:   0.0209 g    AccZ:   1.0085 g
+[0;32mI (26429) SDCARD: acc_gyr written[0m
+GyroX:     0.31 dps GyroY:    -1.10 dps GyroZ:    -0.35 dps
+ AccX:   0.0342 g    AccY:   0.0209 g    AccZ:   1.0091 g
+[0;32mI (26579) SDCARD: acc_gyr written[0m
+GyroX:     0.30 dps GyroY:    -1.09 dps GyroZ:    -0.37 dps
+ AccX:   0.0329 g    AccY:   0.0200 g    AccZ:   1.0093 g
+[0;32mI (26729) SDCARD: acc_gyr written[0m
+GyroX:     0.25 dps GyroY:    -1.11 dps GyroZ:    -0.46 dps
+ AccX:   0.0328 g    AccY:   0.0205 g    AccZ:   1.0092 g
+[0;32mI (26879) SDCARD: acc_gyr written[0m
+GyroX:     0.31 dps GyroY:    -1.11 dps GyroZ:    -0.37 dps
+ AccX:   0.0332 g    AccY:   0.0215 g    AccZ:   1.0079 g
+[0;32mI (27029) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.14 dps GyroZ:    -0.45 dps
+ AccX:   0.0337 g    AccY:   0.0204 g    AccZ:   1.0071 g
+[0;32mI (27179) SDCARD: acc_gyr written[0m
+GyroX:     0.29 dps GyroY:    -1.08 dps GyroZ:    -0.39 dps
+ AccX:   0.0323 g    AccY:   0.0211 g    AccZ:   1.0092 g
+[0;32mI (27329) SDCARD: acc_gyr written[0m
+GyroX:     0.26 dps GyroY:    -1.14 dps GyroZ:    -0.47 dps
+ AccX:   0.0332 g    AccY:   0.0214 g    AccZ:   1.0091 g
+[0;32mI (27479) SDCARD: acc_gyr written[0m
+GyroX:     0.29 dps GyroY:    -1.09 dps GyroZ:    -0.39 dps
+ AccX:   0.0334 g    AccY:   0.0211 g    AccZ:   1.0090 g
+[0;32mI (27629) SDCARD: acc_gyr written[0m
+GyroX:     0.25 dps GyroY:    -1.11 dps GyroZ:    -0.43 dps
+ AccX:   0.0331 g    AccY:   0.0209 g    AccZ:   1.0082 g
+[0;32mI (27779) SDCARD: acc_gyr written[0m
+GyroX:     0.26 dps GyroY:    -1.06 dps GyroZ:    -0.38 dps
+ AccX:   0.0340 g    AccY:   0.0206 g    AccZ:   1.0089 g
+[0;32mI (27929) SDCARD: acc_gyr written[0m
+GyroX:     0.30 dps GyroY:    -1.13 dps GyroZ:    -0.39 dps
+ AccX:   0.0369 g    AccY:   0.0226 g    AccZ:   1.0089 g
+[0;32mI (28079) SDCARD: acc_gyr written[0m
+GyroX:     0.29 dps GyroY:    -1.07 dps GyroZ:    -0.42 dps
+ AccX:   0.0349 g    AccY:   0.0220 g    AccZ:   1.0092 g
+[0;32mI (28229) SDCARD: acc_gyr written[0m
+GyroX:     0.31 dps GyroY:    -1.11 dps GyroZ:    -0.43 dps
+ AccX:   0.0323 g    AccY:   0.0206 g    AccZ:   1.0087 g
+[0;32mI (28379) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.09 dps GyroZ:    -0.41 dps
+ AccX:   0.0347 g    AccY:   0.0215 g    AccZ:   1.0099 g
+[0;32mI (28529) SDCARD: acc_gyr written[0m
+GyroX:     0.26 dps GyroY:    -1.06 dps GyroZ:    -0.43 dps
+ AccX:   0.0326 g    AccY:   0.0192 g    AccZ:   1.0089 g
+[0;32mI (28679) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.10 dps GyroZ:    -0.41 dps
+ AccX:   0.0416 g    AccY:   0.0258 g    AccZ:   1.0082 g
+[0;32mI (28829) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.11 dps GyroZ:    -0.42 dps
+ AccX:   0.0349 g    AccY:   0.0220 g    AccZ:   1.0086 g
+[0;32mI (28979) SDCARD: acc_gyr written[0m
+GyroX:     0.21 dps GyroY:    -1.05 dps GyroZ:    -0.35 dps
+ AccX:   0.0322 g    AccY:   0.0197 g    AccZ:   1.0094 g
+[0;32mI (29129) SDCARD: acc_gyr written[0m
+GyroX:     0.24 dps GyroY:    -1.11 dps GyroZ:    -0.44 dps
+ AccX:   0.0342 g    AccY:   0.0204 g    AccZ:   1.0092 g
+[0;32mI (29279) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.11 dps GyroZ:    -0.43 dps
+ AccX:   0.0320 g    AccY:   0.0201 g    AccZ:   1.0082 g
+[0;32mI (29429) SDCARD: acc_gyr written[0m
+GyroX:     0.18 dps GyroY:    -1.01 dps GyroZ:    -0.39 dps
+ AccX:   0.0356 g    AccY:   0.0225 g    AccZ:   1.0092 g
+[0;32mI (29579) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.13 dps GyroZ:    -0.44 dps
+ AccX:   0.0327 g    AccY:   0.0203 g    AccZ:   1.0082 g
+[0;32mI (29729) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.12 dps GyroZ:    -0.42 dps
+ AccX:   0.0351 g    AccY:   0.0217 g    AccZ:   1.0087 g
+[0;32mI (29879) SDCARD: acc_gyr written[0m
+GyroX:     0.22 dps GyroY:    -1.17 dps GyroZ:    -2.62 dps
+ AccX:   0.0401 g    AccY:   0.0247 g    AccZ:   1.0108 g
+[0;32mI (30029) SDCARD: acc_gyr written[0m
+GyroX:     0.31 dps GyroY:    -1.16 dps GyroZ:    -0.48 dps
+ AccX:   0.0321 g    AccY:   0.0202 g    AccZ:   1.0081 g
+[0;32mI (30179) SDCARD: acc_gyr written[0m
+GyroX:     0.26 dps GyroY:    -1.11 dps GyroZ:    -0.40 dps
+ AccX:   0.0352 g    AccY:   0.0216 g    AccZ:   1.0079 g
+[0;32mI (30329) SDCARD: acc_gyr written[0m
+GyroX:     0.32 dps GyroY:    -1.11 dps GyroZ:    -0.39 dps
+ AccX:   0.0353 g    AccY:   0.0219 g    AccZ:   1.0086 g
+[0;32mI (30479) SDCARD: acc_gyr written[0m
+GyroX:     0.29 dps GyroY:    -1.09 dps GyroZ:    -0.41 dps
+ AccX:   0.0337 g    AccY:   0.0214 g    AccZ:   1.0082 g
+[0;32mI (30629) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.11 dps GyroZ:    -0.44 dps
+ AccX:   0.0338 g    AccY:   0.0212 g    AccZ:   1.0098 g
+[0;32mI (30779) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.10 dps GyroZ:    -0.44 dps
+ AccX:   0.0322 g    AccY:   0.0205 g    AccZ:   1.0076 g
+[0;32mI (30929) SDCARD: acc_gyr written[0m
+GyroX:     0.29 dps GyroY:    -1.15 dps GyroZ:    -0.44 dps
+ AccX:   0.0352 g    AccY:   0.0226 g    AccZ:   1.0101 g
+[0;32mI (31079) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.08 dps GyroZ:    -0.43 dps
+ AccX:   0.0336 g    AccY:   0.0208 g    AccZ:   1.0084 g
+[0;32mI (31229) SDCARD: acc_gyr written[0m
+GyroX:     0.25 dps GyroY:    -1.11 dps GyroZ:    -0.42 dps
+ AccX:   0.0339 g    AccY:   0.0203 g    AccZ:   1.0081 g
+[0;32mI (31379) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.11 dps GyroZ:    -0.42 dps
+ AccX:   0.0327 g    AccY:   0.0203 g    AccZ:   1.0088 g
+[0;32mI (31529) SDCARD: acc_gyr written[0m
+GyroX:     0.25 dps GyroY:    -1.13 dps GyroZ:    -0.46 dps
+ AccX:   0.0342 g    AccY:   0.0208 g    AccZ:   1.0080 g
+[0;32mI (31679) SDCARD: acc_gyr written[0m
+GyroX:     0.22 dps GyroY:    -1.11 dps GyroZ:    -0.47 dps
+ AccX:   0.0341 g    AccY:   0.0208 g    AccZ:   1.0085 g
+[0;32mI (31829) SDCARD: acc_gyr written[0m
+GyroX:     0.27 dps GyroY:    -1.10 dps GyroZ:    -0.41 dps
+ AccX:   0.0332 g    AccY:   0.0206 g    AccZ:   1.0092 g
+[0;32mI (31979) SDCARD: acc_gyr written[0m
+GyroX:     0.28 dps GyroY:    -1.08 dps GyroZ:    -0.39 dps
+ AccX:   0.0336 g    AccY:   0.0211 g    AccZ:   1.0089 g
+[0;32mI (32129) SDCARD: acc_gyr written[0m

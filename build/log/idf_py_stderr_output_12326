@@ -1,0 +1,45 @@
+[0;33m--- idf_monitor on /dev/cu.usbserial-3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403753a4: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x403796a0: esp_cpu_compare_and_set at /Users/rghuber/esp/esp-idf/components/esp_hw_support/cpu.c:406
+[0m
+[0;33m0x40056f5c: memcpy in ROM
+[0m
+[0;33m0x40056f72: memcpy in ROM
+[0m
+[0;33m0x4037969d: esp_flash_chip_driver_initialized at /Users/rghuber/esp/esp-idf/components/spi_flash/esp_flash_api.c:250
+[0m
+[0;33m0x4037c4f0: vPortEnterCritical at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:575
+ (inlined by) xQueueSemaphoreTake at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1671
+[0m
+[0;33m0x4200a8c5: i2c_master_cmd_begin at /Users/rghuber/esp/esp-idf/components/driver/i2c/i2c.c:1507 (discriminator 2)
+[0m
+[0;33m0x4200aa7b: i2c_master_write_to_device at /Users/rghuber/esp/esp-idf/components/driver/i2c/i2c.c:1011
+[0m
+[0;33m0x4200835a: DEVICE_RTC_read_registers at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:105
+[0m
+[0;33m0x4200864c: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:289 (discriminator 1)
+[0m
+[0;33m0x4201ce5f: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037e25d: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x4037979a: esp_cpu_wait_for_intr at /Users/rghuber/esp/esp-idf/components/esp_hw_support/cpu.c:121
+[0m
+[0;33m0x40379498: ipc_task at /Users/rghuber/esp/esp-idf/components/esp_system/esp_ipc.c:48
+[0m
+[0;33m0x40379797: xt_utils_wait_for_intr at /Users/rghuber/esp/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/rghuber/esp/esp-idf/components/esp_hw_support/cpu.c:111
+[0m
+[0;33m0x42002c3a: esp_vApplicationIdleHook at /Users/rghuber/esp/esp-idf/components/esp_system/freertos_hooks.c:59
+[0m
+[0;33m0x4037cd0d: prvIdleTask at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4351 (discriminator 1)
+[0m
+[0;33m0x4037e25d: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375998: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x403753a4: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0m

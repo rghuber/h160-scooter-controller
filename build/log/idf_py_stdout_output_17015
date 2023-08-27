@@ -1,0 +1,36 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/bootloader/esp-idf/esptool_py && /Users/rghuber/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/rghuber/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/bootloader/bootloader.bin
+Bootloader binary size 0x5290 bytes. 0x2d70 bytes (35%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-scooter-controller.c.obj
+In file included from /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:14:
+/Users/rghuber/esp/esp-idf/components/driver/deprecated/driver/mcpwm.h:15:2: warning: #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)" [-Wcpp]
+   15 | #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)"
+      |  ^~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c: In function 'TASK_TriggerRead':
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:583:40: warning: variable 'timeReleased' set but not used [-Wunused-but-set-variable]
+  583 |     TickType_t timePressed = 10000000 ,timeReleased = 0;
+      |                                        ^~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c: At top level:
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:358:18: warning: 'DEVICE_IMU_read_registers' defined but not used [-Wunused-function]
+  358 | static esp_err_t DEVICE_IMU_read_registers(spi_device_handle_t handle){
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:185:18: warning: 'DEVICE_RTC_read_rtctime' defined but not used [-Wunused-function]
+  185 | static esp_err_t DEVICE_RTC_read_rtctime(rtc_time_t *rtc_date_time){
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:161:18: warning: 'DEVICE_RTC_read_registers' defined but not used [-Wunused-function]
+  161 | static esp_err_t DEVICE_RTC_read_registers(){
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:138:18: warning: 'PERIPH_i2c_scan' defined but not used [-Wunused-function]
+  138 | static esp_err_t PERIPH_i2c_scan()
+      |                  ^~~~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable h160-scooter-controller.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.6.2
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/h160-scooter-controller.bin
+[7/7] cd /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/esp-idf/esptool_py && /Users/rghuber/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/rghuber/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/partition_table/partition-table.bin /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/h160-scooter-controller.bin
+h160-scooter-controller.bin binary size 0x51760 bytes. Smallest app partition is 0x100000 bytes. 0xae8a0 bytes (68%) free.

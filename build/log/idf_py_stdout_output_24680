@@ -1,0 +1,848 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x1718
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc08
+load:0x403cc700,len:0x2f08
+entry 0x403c990c
+[0;32mI (27) boot: ESP-IDF v5.2-dev-1449-gd2471b11e7 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 11 2023 17:12:33[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=0fe2ch ( 65068) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=0001fe54 vaddr=3fc94b00 size=001c4h (   452) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=00020020 vaddr=42000020 size=2df2ch (188204) map[0m
+[0;32mI (152) esp_image: segment 3: paddr=0004df54 vaddr=3fc94cc4 size=028f8h ( 10488) load[0m
+[0;32mI (155) esp_image: segment 4: paddr=00050854 vaddr=40374000 size=109f4h ( 68084) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (192) cpu_start: Pro cpu up.[0m
+[0;32mI (192) cpu_start: Starting app cpu, entry point is 0x403753ec[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (210) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (210) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:     h160-scooter-controller[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (224) cpu_start: Compile time:     Jul 11 2023 17:12:27[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  86550d516...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2-dev-1449-gd2471b11e7[0m
+[0;32mI (242) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (246) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (251) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (256) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (263) heap_init: At 3FC97EF8 len 00051818 (326 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (276) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (293) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (310) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (320) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (327) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (334) app_start: Starting scheduler on CPU0[0m
+[0;32mI (339) app_start: Starting scheduler on CPU1[0m
+[0;32mI (339) main_task: Started on CPU0[0m
+[0;32mI (349) main_task: Calling app_main()[0m
+[0;32mI (349) GPIO: initializing GPIO pins...[0m
+[0;32mI (359) I2C: initializing i2c[0m
+[0;32mI (359) MCPWM: initializing MCPWM...[0m
+[0;32mI (369) SPI: initializing SPI...[0m
+[0;32mI (369) SPI: initializing SPI IMU...[0m
+[0;32mI (369) SPI: starting SPI IMU...[0m
+[0;32mI (379) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (389) sdspi_transaction: cmd=52, R1 response: command not supported[0m
+[0;32mI (389) main_task: Returned from app_main()[0m
+[0;32mI (439) sdspi_transaction: cmd=5, R1 response: command not supported[0m
+Name: EC1S5
+Type: SDHC/SDXC
+Speed: 8.00 MHz (limit: 8.00 MHz)
+Size: 61120MB
+CSD: ver=2, sector_size=512, capacity=125173760 read_bl_len=9
+SSR: bus_width=1
+[0;32mI (459) SDCARD: sdmmc status normal[0m
+[0;32mI (529) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (529) SDCARD: acc_gyr written[0m
+[0;32mI (679) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (679) SDCARD: acc_gyr written[0m
+[0;32mI (829) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (829) SDCARD: acc_gyr written[0m
+[0;32mI (979) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (979) SDCARD: acc_gyr written[0m
+[0;32mI (1129) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (1129) SDCARD: acc_gyr written[0m
+[0;32mI (1279) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (1279) SDCARD: acc_gyr written[0m
+[0;32mI (1429) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (1429) SDCARD: acc_gyr written[0m
+[0;32mI (1579) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (1579) SDCARD: acc_gyr written[0m
+[0;32mI (1729) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (1729) SDCARD: acc_gyr written[0m
+[0;32mI (1879) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (1879) SDCARD: acc_gyr written[0m
+[0;32mI (2029) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (2029) SDCARD: acc_gyr written[0m
+[0;32mI (2179) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (2179) SDCARD: acc_gyr written[0m
+[0;32mI (2329) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (2329) SDCARD: acc_gyr written[0m
+[0;32mI (2479) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (2479) SDCARD: acc_gyr written[0m
+[0;32mI (2629) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (2629) SDCARD: acc_gyr written[0m
+[0;32mI (2779) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (2779) SDCARD: acc_gyr written[0m
+[0;32mI (2929) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (2929) SDCARD: acc_gyr written[0m
+[0;32mI (3079) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (3079) SDCARD: acc_gyr written[0m
+[0;32mI (3229) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (3229) SDCARD: acc_gyr written[0m
+[0;32mI (3379) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (3379) SDCARD: acc_gyr written[0m
+[0;32mI (3529) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (3529) SDCARD: acc_gyr written[0m
+[0;32mI (3679) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (3679) SDCARD: acc_gyr written[0m
+[0;32mI (3829) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (3829) SDCARD: acc_gyr written[0m
+[0;32mI (3979) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (3979) SDCARD: acc_gyr written[0m
+[0;32mI (4129) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (4129) SDCARD: acc_gyr written[0m
+[0;32mI (4279) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (4279) SDCARD: acc_gyr written[0m
+[0;32mI (4429) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (4429) SDCARD: acc_gyr written[0m
+[0;32mI (4579) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (4579) SDCARD: acc_gyr written[0m
+[0;32mI (4729) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (4729) SDCARD: acc_gyr written[0m
+[0;32mI (4879) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (4879) SDCARD: acc_gyr written[0m
+[0;32mI (5029) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (5029) SDCARD: acc_gyr written[0m
+[0;32mI (5179) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (5179) SDCARD: acc_gyr written[0m
+[0;32mI (5329) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (5329) SDCARD: acc_gyr written[0m
+[0;32mI (5479) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (5479) SDCARD: acc_gyr written[0m
+[0;32mI (5629) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (5629) SDCARD: acc_gyr written[0m
+[0;32mI (5779) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (5779) SDCARD: acc_gyr written[0m
+[0;32mI (5929) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (5929) SDCARD: acc_gyr written[0m
+[0;32mI (6079) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (6079) SDCARD: acc_gyr written[0m
+[0;32mI (6229) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (6229) SDCARD: acc_gyr written[0m
+[0;32mI (6379) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (6379) SDCARD: acc_gyr written[0m
+[0;32mI (6529) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (6529) SDCARD: acc_gyr written[0m
+[0;32mI (6679) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (6679) SDCARD: acc_gyr written[0m
+[0;32mI (6829) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (6829) SDCARD: acc_gyr written[0m
+[0;32mI (6979) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (6979) SDCARD: acc_gyr written[0m
+[0;32mI (7129) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (7129) SDCARD: acc_gyr written[0m
+[0;32mI (7279) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (7279) SDCARD: acc_gyr written[0m
+[0;32mI (7429) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (7429) SDCARD: acc_gyr written[0m
+[0;32mI (7579) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (7579) SDCARD: acc_gyr written[0m
+[0;32mI (7729) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (7729) SDCARD: acc_gyr written[0m
+[0;32mI (7879) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (7879) SDCARD: acc_gyr written[0m
+[0;32mI (8029) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (8029) SDCARD: acc_gyr written[0m
+[0;32mI (8179) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (8179) SDCARD: acc_gyr written[0m
+[0;32mI (8329) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (8329) SDCARD: acc_gyr written[0m
+[0;32mI (8479) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (8479) SDCARD: acc_gyr written[0m
+[0;32mI (8629) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (8629) SDCARD: acc_gyr written[0m
+[0;32mI (8779) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (8779) SDCARD: acc_gyr written[0m
+[0;32mI (8929) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (8929) SDCARD: acc_gyr written[0m
+[0;32mI (9079) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (9079) SDCARD: acc_gyr written[0m
+[0;32mI (9229) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (9229) SDCARD: acc_gyr written[0m
+[0;32mI (9379) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (9379) SDCARD: acc_gyr written[0m
+[0;32mI (9529) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (9529) SDCARD: acc_gyr written[0m
+[0;32mI (9679) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (9679) SDCARD: acc_gyr written[0m
+[0;32mI (9829) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (9829) SDCARD: acc_gyr written[0m
+[0;32mI (9979) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (9979) SDCARD: acc_gyr written[0m
+[0;32mI (10129) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (10129) SDCARD: acc_gyr written[0m
+[0;32mI (10289) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (10289) SDCARD: acc_gyr written[0m
+[0;32mI (10439) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (10439) SDCARD: acc_gyr written[0m
+[0;32mI (10589) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (10589) SDCARD: acc_gyr written[0m
+[0;32mI (10739) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (10739) SDCARD: acc_gyr written[0m
+[0;32mI (10889) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (10889) SDCARD: acc_gyr written[0m
+[0;32mI (11039) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (11039) SDCARD: acc_gyr written[0m
+[0;32mI (11189) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (11189) SDCARD: acc_gyr written[0m
+[0;32mI (11339) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (11339) SDCARD: acc_gyr written[0m
+[0;32mI (11489) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (11489) SDCARD: acc_gyr written[0m
+[0;32mI (11639) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (11639) SDCARD: acc_gyr written[0m
+[0;32mI (11789) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (11789) SDCARD: acc_gyr written[0m
+[0;32mI (11939) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (11939) SDCARD: acc_gyr written[0m
+[0;32mI (12089) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (12089) SDCARD: acc_gyr written[0m
+[0;32mI (12239) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (12239) SDCARD: acc_gyr written[0m
+[0;32mI (12389) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (12389) SDCARD: acc_gyr written[0m
+[0;32mI (12539) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (12539) SDCARD: acc_gyr written[0m
+[0;32mI (12689) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (12689) SDCARD: acc_gyr written[0m
+[0;32mI (12839) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (12839) SDCARD: acc_gyr written[0m
+[0;32mI (12989) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (12989) SDCARD: acc_gyr written[0m
+[0;32mI (13139) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (13139) SDCARD: acc_gyr written[0m
+[0;32mI (13289) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (13289) SDCARD: acc_gyr written[0m
+[0;32mI (13439) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (13439) SDCARD: acc_gyr written[0m
+[0;32mI (13589) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (13589) SDCARD: acc_gyr written[0m
+[0;32mI (13739) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (13739) SDCARD: acc_gyr written[0m
+[0;32mI (13889) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (13889) SDCARD: acc_gyr written[0m
+[0;32mI (14039) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (14039) SDCARD: acc_gyr written[0m
+[0;32mI (14189) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (14189) SDCARD: acc_gyr written[0m
+[0;32mI (14339) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (14339) SDCARD: acc_gyr written[0m
+[0;32mI (14489) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (14489) SDCARD: acc_gyr written[0m
+[0;32mI (14639) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (14639) SDCARD: acc_gyr written[0m
+[0;32mI (14789) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (14789) SDCARD: acc_gyr written[0m
+[0;32mI (14939) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (14939) SDCARD: acc_gyr written[0m
+[0;32mI (15089) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (15089) SDCARD: acc_gyr written[0m
+[0;32mI (15239) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (15239) SDCARD: acc_gyr written[0m
+[0;32mI (15389) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (15389) SDCARD: acc_gyr written[0m
+[0;32mI (15539) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (15539) SDCARD: acc_gyr written[0m
+[0;32mI (15689) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (15689) SDCARD: acc_gyr written[0m
+[0;32mI (15839) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (15839) SDCARD: acc_gyr written[0m
+[0;32mI (15989) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (15989) SDCARD: acc_gyr written[0m
+[0;32mI (16139) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (16139) SDCARD: acc_gyr written[0m
+[0;32mI (16289) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (16289) SDCARD: acc_gyr written[0m
+[0;32mI (16439) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (16439) SDCARD: acc_gyr written[0m
+[0;32mI (16589) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (16589) SDCARD: acc_gyr written[0m
+[0;32mI (16739) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (16739) SDCARD: acc_gyr written[0m
+[0;32mI (16889) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (16889) SDCARD: acc_gyr written[0m
+[0;32mI (17039) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (17039) SDCARD: acc_gyr written[0m
+[0;32mI (17189) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (17189) SDCARD: acc_gyr written[0m
+[0;32mI (17339) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (17339) SDCARD: acc_gyr written[0m
+[0;32mI (17489) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (17489) SDCARD: acc_gyr written[0m
+[0;32mI (17639) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (17639) SDCARD: acc_gyr written[0m
+[0;32mI (17789) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (17789) SDCARD: acc_gyr written[0m
+[0;32mI (17939) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (17939) SDCARD: acc_gyr written[0m
+[0;32mI (18089) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (18089) SDCARD: acc_gyr written[0m
+[0;32mI (18239) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (18239) SDCARD: acc_gyr written[0m
+[0;32mI (18389) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (18389) SDCARD: acc_gyr written[0m
+[0;32mI (18539) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (18539) SDCARD: acc_gyr written[0m
+[0;32mI (18689) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (18689) SDCARD: acc_gyr written[0m
+[0;32mI (18849) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (18849) SDCARD: acc_gyr written[0m
+[0;32mI (18999) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (18999) SDCARD: acc_gyr written[0m
+[0;32mI (19149) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (19149) SDCARD: acc_gyr written[0m
+[0;32mI (19299) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (19299) SDCARD: acc_gyr written[0m
+[0;32mI (19449) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (19449) SDCARD: acc_gyr written[0m
+[0;32mI (19599) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (19599) SDCARD: acc_gyr written[0m
+[0;32mI (19749) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (19749) SDCARD: acc_gyr written[0m
+[0;32mI (19899) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (19899) SDCARD: acc_gyr written[0m
+[0;32mI (20049) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (20049) SDCARD: acc_gyr written[0m
+[0;32mI (20199) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (20199) SDCARD: acc_gyr written[0m
+[0;32mI (20349) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (20349) SDCARD: acc_gyr written[0m
+[0;32mI (20499) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (20499) SDCARD: acc_gyr written[0m
+[0;32mI (20649) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (20649) SDCARD: acc_gyr written[0m
+[0;32mI (20799) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (20799) SDCARD: acc_gyr written[0m
+[0;32mI (20949) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (20949) SDCARD: acc_gyr written[0m
+[0;32mI (21099) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (21099) SDCARD: acc_gyr written[0m
+[0;32mI (21249) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (21249) SDCARD: acc_gyr written[0m
+[0;32mI (21399) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (21399) SDCARD: acc_gyr written[0m
+[0;32mI (21549) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (21549) SDCARD: acc_gyr written[0m
+[0;32mI (21709) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (21709) SDCARD: acc_gyr written[0m
+[0;32mI (21859) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (21859) SDCARD: acc_gyr written[0m
+[0;32mI (22009) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (22009) SDCARD: acc_gyr written[0m
+[0;32mI (22159) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (22159) SDCARD: acc_gyr written[0m
+[0;32mI (22309) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (22309) SDCARD: acc_gyr written[0m
+[0;32mI (22459) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (22459) SDCARD: acc_gyr written[0m
+[0;32mI (22609) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (22609) SDCARD: acc_gyr written[0m
+[0;32mI (22759) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (22759) SDCARD: acc_gyr written[0m
+[0;32mI (22909) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (22909) SDCARD: acc_gyr written[0m
+[0;32mI (23059) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (23059) SDCARD: acc_gyr written[0m
+[0;32mI (23209) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (23209) SDCARD: acc_gyr written[0m
+[0;32mI (23359) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (23359) SDCARD: acc_gyr written[0m
+[0;32mI (23509) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (23509) SDCARD: acc_gyr written[0m
+[0;32mI (23659) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (23659) SDCARD: acc_gyr written[0m
+[0;32mI (23809) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (23809) SDCARD: acc_gyr written[0m
+[0;32mI (23959) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (23959) SDCARD: acc_gyr written[0m
+[0;32mI (24109) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (24109) SDCARD: acc_gyr written[0m
+[0;32mI (24259) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (24259) SDCARD: acc_gyr written[0m
+[0;32mI (24409) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (24409) SDCARD: acc_gyr written[0m
+[0;32mI (24559) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (24559) SDCARD: acc_gyr written[0m
+[0;32mI (24709) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (24709) SDCARD: acc_gyr written[0m
+[0;32mI (24859) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (24859) SDCARD: acc_gyr written[0m
+[0;32mI (25009) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (25009) SDCARD: acc_gyr written[0m
+[0;32mI (25159) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (25159) SDCARD: acc_gyr written[0m
+[0;32mI (25309) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (25309) SDCARD: acc_gyr written[0m
+[0;32mI (25459) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (25459) SDCARD: acc_gyr written[0m
+[0;32mI (25609) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (25609) SDCARD: acc_gyr written[0m
+[0;32mI (25759) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (25759) SDCARD: acc_gyr written[0m
+[0;32mI (25909) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (25909) SDCARD: acc_gyr written[0m
+[0;32mI (26059) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (26059) SDCARD: acc_gyr written[0m
+[0;32mI (26209) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (26209) SDCARD: acc_gyr written[0m
+[0;32mI (26359) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (26359) SDCARD: acc_gyr written[0m
+[0;32mI (26509) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (26509) SDCARD: acc_gyr written[0m
+[0;32mI (26659) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (26659) SDCARD: acc_gyr written[0m
+[0;32mI (26809) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (26809) SDCARD: acc_gyr written[0m
+[0;32mI (26959) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (26959) SDCARD: acc_gyr written[0m
+[0;32mI (27109) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (27109) SDCARD: acc_gyr written[0m
+[0;32mI (27259) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (27259) SDCARD: acc_gyr written[0m
+[0;32mI (27409) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (27409) SDCARD: acc_gyr written[0m
+[0;32mI (27559) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (27559) SDCARD: acc_gyr written[0m
+[0;32mI (27709) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (27709) SDCARD: acc_gyr written[0m
+[0;32mI (27859) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (27859) SDCARD: acc_gyr written[0m
+[0;32mI (28009) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (28009) SDCARD: acc_gyr written[0m
+[0;32mI (28159) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (28159) SDCARD: acc_gyr written[0m
+[0;32mI (28309) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (28309) SDCARD: acc_gyr written[0m
+[0;32mI (28459) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (28459) SDCARD: acc_gyr written[0m
+[0;32mI (28609) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (28609) SDCARD: acc_gyr written[0m
+[0;32mI (28759) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (28759) SDCARD: acc_gyr written[0m
+[0;32mI (28909) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (28909) SDCARD: acc_gyr written[0m
+[0;32mI (29059) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (29059) SDCARD: acc_gyr written[0m
+[0;32mI (29209) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (29209) SDCARD: acc_gyr written[0m
+[0;32mI (29359) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (29359) SDCARD: acc_gyr written[0m
+[0;32mI (29509) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (29509) SDCARD: acc_gyr written[0m
+[0;32mI (29659) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (29659) SDCARD: acc_gyr written[0m
+[0;32mI (29809) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (29809) SDCARD: acc_gyr written[0m
+[0;32mI (29959) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (29959) SDCARD: acc_gyr written[0m
+[0;32mI (30109) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (30109) SDCARD: acc_gyr written[0m
+[0;32mI (30259) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (30259) SDCARD: acc_gyr written[0m
+[0;32mI (30409) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (30409) SDCARD: acc_gyr written[0m
+[0;32mI (30559) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (30559) SDCARD: acc_gyr written[0m
+[0;32mI (30709) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (30709) SDCARD: acc_gyr written[0m
+[0;32mI (30859) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (30859) SDCARD: acc_gyr written[0m
+[0;32mI (31009) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (31009) SDCARD: acc_gyr written[0m
+[0;32mI (31159) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (31159) SDCARD: acc_gyr written[0m
+[0;32mI (31309) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (31309) SDCARD: acc_gyr written[0m
+[0;32mI (31459) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (31459) SDCARD: acc_gyr written[0m
+[0;32mI (31609) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (31609) SDCARD: acc_gyr written[0m
+[0;32mI (31759) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (31759) SDCARD: acc_gyr written[0m
+[0;32mI (31909) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (31909) SDCARD: acc_gyr written[0m
+[0;32mI (32059) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (32059) SDCARD: acc_gyr written[0m
+[0;32mI (32209) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (32209) SDCARD: acc_gyr written[0m
+[0;32mI (32359) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (32359) SDCARD: acc_gyr written[0m
+[0;32mI (32509) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (32509) SDCARD: acc_gyr written[0m
+[0;32mI (32659) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (32659) SDCARD: acc_gyr written[0m
+[0;32mI (32809) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (32809) SDCARD: acc_gyr written[0m
+[0;32mI (32959) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (32959) SDCARD: acc_gyr written[0m
+[0;32mI (33109) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (33109) SDCARD: acc_gyr written[0m
+[0;32mI (33259) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (33259) SDCARD: acc_gyr written[0m
+[0;32mI (33409) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (33409) SDCARD: acc_gyr written[0m
+[0;32mI (33559) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (33559) SDCARD: acc_gyr written[0m
+[0;32mI (33709) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (33709) SDCARD: acc_gyr written[0m
+[0;32mI (33869) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (33879) SDCARD: acc_gyr written[0m
+[0;32mI (34029) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (34029) SDCARD: acc_gyr written[0m
+[0;32mI (34179) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (34179) SDCARD: acc_gyr written[0m
+[0;32mI (34329) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (34329) SDCARD: acc_gyr written[0m
+[0;32mI (34479) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (34479) SDCARD: acc_gyr written[0m
+[0;32mI (34629) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (34629) SDCARD: acc_gyr written[0m
+[0;32mI (34779) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (34779) SDCARD: acc_gyr written[0m
+[0;32mI (34929) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (34929) SDCARD: acc_gyr written[0m
+[0;32mI (35079) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (35079) SDCARD: acc_gyr written[0m
+[0;32mI (35229) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (35229) SDCARD: acc_gyr written[0m
+[0;32mI (35379) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (35379) SDCARD: acc_gyr written[0m
+[0;32mI (35529) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (35529) SDCARD: acc_gyr written[0m
+[0;32mI (35679) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (35679) SDCARD: acc_gyr written[0m
+[0;32mI (35829) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (35829) SDCARD: acc_gyr written[0m
+[0;32mI (35979) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (35979) SDCARD: acc_gyr written[0m
+[0;32mI (36129) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (36129) SDCARD: acc_gyr written[0m
+[0;32mI (36279) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (36279) SDCARD: acc_gyr written[0m
+[0;32mI (36429) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (36429) SDCARD: acc_gyr written[0m
+[0;32mI (36579) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (36579) SDCARD: acc_gyr written[0m
+[0;32mI (36729) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (36729) SDCARD: acc_gyr written[0m
+[0;32mI (36879) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (36879) SDCARD: acc_gyr written[0m
+[0;32mI (37029) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (37029) SDCARD: acc_gyr written[0m
+[0;32mI (37179) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (37179) SDCARD: acc_gyr written[0m
+[0;32mI (37329) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (37329) SDCARD: acc_gyr written[0m
+[0;32mI (37479) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (37479) SDCARD: acc_gyr written[0m
+[0;32mI (37629) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (37629) SDCARD: acc_gyr written[0m
+[0;32mI (37779) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (37779) SDCARD: acc_gyr written[0m
+[0;32mI (37929) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (37929) SDCARD: acc_gyr written[0m
+[0;32mI (38079) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (38079) SDCARD: acc_gyr written[0m
+[0;32mI (38239) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (38239) SDCARD: acc_gyr written[0m
+[0;32mI (38389) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (38389) SDCARD: acc_gyr written[0m
+[0;32mI (38539) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (38539) SDCARD: acc_gyr written[0m
+[0;32mI (38689) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (38689) SDCARD: acc_gyr written[0m
+[0;32mI (38839) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (38839) SDCARD: acc_gyr written[0m
+[0;32mI (38989) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (38989) SDCARD: acc_gyr written[0m
+[0;32mI (39139) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (39139) SDCARD: acc_gyr written[0m
+[0;32mI (39289) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (39289) SDCARD: acc_gyr written[0m
+[0;32mI (39439) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (39439) SDCARD: acc_gyr written[0m
+[0;32mI (39589) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (39589) SDCARD: acc_gyr written[0m
+[0;32mI (39739) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (39739) SDCARD: acc_gyr written[0m
+[0;32mI (39889) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (39889) SDCARD: acc_gyr written[0m
+[0;32mI (40039) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (40039) SDCARD: acc_gyr written[0m
+[0;32mI (40199) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (40199) SDCARD: acc_gyr written[0m
+[0;32mI (40349) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (40349) SDCARD: acc_gyr written[0m
+[0;32mI (40499) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (40499) SDCARD: acc_gyr written[0m
+[0;32mI (40649) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (40649) SDCARD: acc_gyr written[0m
+[0;32mI (40799) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (40799) SDCARD: acc_gyr written[0m
+[0;32mI (40949) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (40949) SDCARD: acc_gyr written[0m
+[0;32mI (41099) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (41099) SDCARD: acc_gyr written[0m
+[0;32mI (41249) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (41249) SDCARD: acc_gyr written[0m
+[0;32mI (41399) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (41399) SDCARD: acc_gyr written[0m
+[0;32mI (41549) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (41549) SDCARD: acc_gyr written[0m
+[0;32mI (41699) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (41699) SDCARD: acc_gyr written[0m
+[0;32mI (41849) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (41849) SDCARD: acc_gyr written[0m
+[0;32mI (41999) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (41999) SDCARD: acc_gyr written[0m
+[0;32mI (42149) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (42149) SDCARD: acc_gyr written[0m
+[0;32mI (42299) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (42299) SDCARD: acc_gyr written[0m
+[0;32mI (42449) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (42449) SDCARD: acc_gyr written[0m
+[0;32mI (42599) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (42599) SDCARD: acc_gyr written[0m
+[0;32mI (42749) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (42749) SDCARD: acc_gyr written[0m
+[0;32mI (42899) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (42899) SDCARD: acc_gyr written[0m
+[0;32mI (43049) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (43049) SDCARD: acc_gyr written[0m
+[0;32mI (43199) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (43199) SDCARD: acc_gyr written[0m
+[0;32mI (43349) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (43349) SDCARD: acc_gyr written[0m
+[0;32mI (43499) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (43499) SDCARD: acc_gyr written[0m
+[0;32mI (43649) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (43649) SDCARD: acc_gyr written[0m
+[0;32mI (43799) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (43799) SDCARD: acc_gyr written[0m
+[0;32mI (43949) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (43949) SDCARD: acc_gyr written[0m
+[0;32mI (44099) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (44099) SDCARD: acc_gyr written[0m
+[0;32mI (44249) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (44249) SDCARD: acc_gyr written[0m
+[0;32mI (44399) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (44399) SDCARD: acc_gyr written[0m
+[0;32mI (44549) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (44549) SDCARD: acc_gyr written[0m
+[0;32mI (44699) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (44699) SDCARD: acc_gyr written[0m
+[0;32mI (44849) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (44849) SDCARD: acc_gyr written[0m
+[0;32mI (44999) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (44999) SDCARD: acc_gyr written[0m
+[0;32mI (45149) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (45149) SDCARD: acc_gyr written[0m
+[0;32mI (45299) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (45299) SDCARD: acc_gyr written[0m
+[0;32mI (45449) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (45449) SDCARD: acc_gyr written[0m
+[0;32mI (45599) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (45599) SDCARD: acc_gyr written[0m
+[0;32mI (45749) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (45749) SDCARD: acc_gyr written[0m
+[0;32mI (45899) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (45899) SDCARD: acc_gyr written[0m
+[0;32mI (46049) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (46049) SDCARD: acc_gyr written[0m
+[0;32mI (46199) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (46199) SDCARD: acc_gyr written[0m
+[0;32mI (46349) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (46349) SDCARD: acc_gyr written[0m
+[0;32mI (46519) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (46519) SDCARD: acc_gyr written[0m
+[0;32mI (46669) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (46669) SDCARD: acc_gyr written[0m
+[0;32mI (46819) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (46819) SDCARD: acc_gyr written[0m
+[0;32mI (46969) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (46969) SDCARD: acc_gyr written[0m
+[0;32mI (47119) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (47119) SDCARD: acc_gyr written[0m
+[0;32mI (47269) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (47269) SDCARD: acc_gyr written[0m
+[0;32mI (47419) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (47419) SDCARD: acc_gyr written[0m
+[0;32mI (47569) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (47569) SDCARD: acc_gyr written[0m
+[0;32mI (47719) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (47719) SDCARD: acc_gyr written[0m
+[0;32mI (47869) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (47869) SDCARD: acc_gyr written[0m
+[0;32mI (48019) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (48019) SDCARD: acc_gyr written[0m
+[0;32mI (48169) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (48169) SDCARD: acc_gyr written[0m
+[0;32mI (48319) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (48319) SDCARD: acc_gyr written[0m
+[0;32mI (48469) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (48469) SDCARD: acc_gyr written[0m
+[0;32mI (48619) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (48619) SDCARD: acc_gyr written[0m
+[0;32mI (48769) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (48769) SDCARD: acc_gyr written[0m
+[0;32mI (48919) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (48919) SDCARD: acc_gyr written[0m
+[0;32mI (49069) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (49069) SDCARD: acc_gyr written[0m
+[0;32mI (49219) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (49219) SDCARD: acc_gyr written[0m
+[0;32mI (49369) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (49369) SDCARD: acc_gyr written[0m
+[0;32mI (49519) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (49519) SDCARD: acc_gyr written[0m
+[0;32mI (49669) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (49669) SDCARD: acc_gyr written[0m
+[0;32mI (49819) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (49819) SDCARD: acc_gyr written[0m
+[0;32mI (49969) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (49969) SDCARD: acc_gyr written[0m
+[0;32mI (50119) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (50119) SDCARD: acc_gyr written[0m
+[0;32mI (50269) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (50269) SDCARD: acc_gyr written[0m
+[0;32mI (50419) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (50419) SDCARD: acc_gyr written[0m
+[0;32mI (50569) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (50569) SDCARD: acc_gyr written[0m
+[0;32mI (50719) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (50719) SDCARD: acc_gyr written[0m
+[0;32mI (50879) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (50879) SDCARD: acc_gyr written[0m
+[0;32mI (51029) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (51029) SDCARD: acc_gyr written[0m
+[0;32mI (51179) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (51179) SDCARD: acc_gyr written[0m
+[0;32mI (51329) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (51329) SDCARD: acc_gyr written[0m
+[0;32mI (51479) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (51479) SDCARD: acc_gyr written[0m
+[0;32mI (51629) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (51629) SDCARD: acc_gyr written[0m
+[0;32mI (51779) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (51779) SDCARD: acc_gyr written[0m
+[0;32mI (51929) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (51929) SDCARD: acc_gyr written[0m
+[0;32mI (52079) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (52079) SDCARD: acc_gyr written[0m
+[0;32mI (52229) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (52229) SDCARD: acc_gyr written[0m
+[0;32mI (52379) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (52379) SDCARD: acc_gyr written[0m
+[0;32mI (52529) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (52529) SDCARD: acc_gyr written[0m
+[0;32mI (52679) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (52679) SDCARD: acc_gyr written[0m
+[0;32mI (52829) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (52829) SDCARD: acc_gyr written[0m
+[0;32mI (52979) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (52979) SDCARD: acc_gyr written[0m
+[0;32mI (53129) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (53129) SDCARD: acc_gyr written[0m
+[0;32mI (53279) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (53279) SDCARD: acc_gyr written[0m
+[0;32mI (53429) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (53429) SDCARD: acc_gyr written[0m
+[0;32mI (53579) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (53579) SDCARD: acc_gyr written[0m
+[0;32mI (53729) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (53729) SDCARD: acc_gyr written[0m
+[0;32mI (53879) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (53879) SDCARD: acc_gyr written[0m
+[0;32mI (54029) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (54029) SDCARD: acc_gyr written[0m
+[0;32mI (54179) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (54179) SDCARD: acc_gyr written[0m
+[0;32mI (54329) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (54329) SDCARD: acc_gyr written[0m
+[0;32mI (54479) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (54479) SDCARD: acc_gyr written[0m
+[0;32mI (54629) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (54629) SDCARD: acc_gyr written[0m
+[0;32mI (54779) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (54779) SDCARD: acc_gyr written[0m
+[0;32mI (54929) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (54929) SDCARD: acc_gyr written[0m
+[0;32mI (55079) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (55079) SDCARD: acc_gyr written[0m
+[0;32mI (55229) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (55229) SDCARD: acc_gyr written[0m
+[0;32mI (55379) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (55379) SDCARD: acc_gyr written[0m
+[0;32mI (55529) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (55529) SDCARD: acc_gyr written[0m
+[0;32mI (55679) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (55679) SDCARD: acc_gyr written[0m
+[0;32mI (55829) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (55829) SDCARD: acc_gyr written[0m
+[0;32mI (55979) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (55979) SDCARD: acc_gyr written[0m
+[0;32mI (56129) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (56129) SDCARD: acc_gyr written[0m
+[0;32mI (56279) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (56279) SDCARD: acc_gyr written[0m
+[0;32mI (56429) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (56429) SDCARD: acc_gyr written[0m
+[0;32mI (56579) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (56579) SDCARD: acc_gyr written[0m
+[0;32mI (56729) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (56729) SDCARD: acc_gyr written[0m
+[0;32mI (56879) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (56879) SDCARD: acc_gyr written[0m
+[0;32mI (57029) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (57029) SDCARD: acc_gyr written[0m
+[0;32mI (57179) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (57179) SDCARD: acc_gyr written[0m
+[0;32mI (57329) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (57329) SDCARD: acc_gyr written[0m
+[0;32mI (57479) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (57479) SDCARD: acc_gyr written[0m
+[0;32mI (57629) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (57629) SDCARD: acc_gyr written[0m
+[0;32mI (57779) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (57779) SDCARD: acc_gyr written[0m
+[0;32mI (57929) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (57929) SDCARD: acc_gyr written[0m
+[0;32mI (58079) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (58079) SDCARD: acc_gyr written[0m
+[0;32mI (58229) SDCARD: sdmmc out_total_bytes: 64056524800, out_free_bytes: 64050135040[0m
+[0;32mI (58229) SDCARD: acc_gyr written[0m

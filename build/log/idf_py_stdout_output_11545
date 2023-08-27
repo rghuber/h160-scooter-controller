@@ -1,0 +1,441 @@
+ESP-ROM:�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x1718
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc08
+load:0x403cc700,len:0x2f08
+entry 0x403c990c
+[0;32mI (27) boot: ESP-IDF v5.2-dev-1449-gd2471b11e7 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 11 2023 17:12:33[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0ce88h ( 52872) map[0m
+[0;32mI (110) esp_image: segment 1: paddr=0001ceb0 vaddr=3fc94800 size=029bch ( 10684) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0001f874 vaddr=40374000 size=007a4h (  1956) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1d574h (120180) map[0m
+[0;32mI (148) esp_image: segment 4: paddr=0003d59c vaddr=403747a4 size=0ff5ch ( 65372) load[0m
+[0;32mI (169) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (170) boot: Disabling RNG early entropy source...[0m
+[0;32mI (181) cpu_start: Multicore app[0m
+[0;32mI (181) cpu_start: Pro cpu up.[0m
+[0;32mI (181) cpu_start: Starting app cpu, entry point is 0x403753a4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (200) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (203) cpu_start: Project name:     h160-scooter-controller[0m
+[0;32mI (209) cpu_start: App version:      1[0m
+[0;32mI (213) cpu_start: Compile time:     Jul 11 2023 17:12:27[0m
+[0;32mI (219) cpu_start: ELF file SHA256:  d871d9ee3...[0m
+[0;32mI (225) cpu_start: ESP-IDF:          v5.2-dev-1449-gd2471b11e7[0m
+[0;32mI (231) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (236) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FC97A68 len 00051CA8 (327 KiB): DRAM[0m
+[0;32mI (259) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (279) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (300) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (307) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (314) app_start: Starting scheduler on CPU0[0m
+[0;32mI (319) app_start: Starting scheduler on CPU1[0m
+[0;32mI (319) main_task: Started on CPU0[0m
+[0;32mI (329) main_task: Calling app_main()[0m
+[0;32mI (329) I2C: initializing i2c[0m
+[0;32mI (339) SPI: initializing SPI...[0m
+[0;32mI (339) SPI: initializing SPI IMU...[0m
+GyroX:     0.38 dps GyroY:    -1.45 dps GyroZ:    -0.06 dps
+ AccX:   0.0494 g    AccY:   0.0027 g    AccZ:   0.0073 g
+RTC REGISTER CONTENTS:
+0x00 4002 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 00
+
+GyroX:     0.31 dps GyroY:    -1.46 dps GyroZ:    -0.11 dps
+ AccX:   0.0481 g    AccY:  -0.0002 g    AccZ:   0.0074 g
+RTC REGISTER CONTENTS:
+0x00 4102 0001 0101 0000 0000 0000 0000 1c88
+0x10 0018 c0
+
+GyroX:     0.24 dps GyroY:    -1.47 dps GyroZ:    -0.20 dps
+ AccX:   0.0463 g    AccY:  -0.0007 g    AccZ:   0.0066 g
+RTC REGISTER CONTENTS:
+0x00 4202 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 00
+
+GyroX:     0.08 dps GyroY:    -1.11 dps GyroZ:    -0.15 dps
+ AccX:   0.0505 g    AccY:   0.0003 g    AccZ:   0.0135 g
+RTC REGISTER CONTENTS:
+0x00 4302 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 00
+
+GyroX:    -4.51 dps GyroY:    -3.76 dps GyroZ:   -10.77 dps
+ AccX:   0.0803 g    AccY:   0.0457 g    AccZ:   0.0139 g
+RTC REGISTER CONTENTS:
+0x00 4402 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 00
+
+GyroX:     0.29 dps GyroY:    -0.35 dps GyroZ:   -13.09 dps
+ AccX:   0.0635 g    AccY:   0.0598 g    AccZ:   0.0032 g
+RTC REGISTER CONTENTS:
+0x00 4502 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 00
+
+GyroX:    -7.51 dps GyroY:     3.23 dps GyroZ:    -2.46 dps
+ AccX:  -0.0011 g    AccY:   0.0684 g    AccZ:   0.0106 g
+RTC REGISTER CONTENTS:
+0x00 4602 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 00
+
+GyroX:   -46.21 dps GyroY:    22.71 dps GyroZ:    -3.62 dps
+ AccX:  -0.3918 g    AccY:  -0.8284 g    AccZ:   0.0068 g
+RTC REGISTER CONTENTS:
+0x00 4702 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 00
+
+GyroX:    -3.20 dps GyroY:    -3.12 dps GyroZ:    -3.66 dps
+ AccX:  -0.3087 g    AccY:  -0.9345 g    AccZ:   0.0155 g
+RTC REGISTER CONTENTS:
+0x00 4802 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 00
+
+GyroX:     1.20 dps GyroY:    -2.47 dps GyroZ:    -1.08 dps
+ AccX:  -0.3084 g    AccY:  -0.9520 g    AccZ:   0.0097 g
+RTC REGISTER CONTENTS:
+0x00 4902 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 00
+
+GyroX:    -1.73 dps GyroY:    -0.85 dps GyroZ:     0.27 dps
+ AccX:  -0.3055 g    AccY:  -0.9554 g    AccZ:   0.0109 g
+RTC REGISTER CONTENTS:
+0x00 5002 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 00
+
+GyroX:    35.39 dps GyroY:     5.81 dps GyroZ:   -41.89 dps
+ AccX:   0.6738 g    AccY:  -0.6999 g    AccZ:   0.0031 g
+RTC REGISTER CONTENTS:
+0x00 5102 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 00
+
+GyroX:     6.20 dps GyroY:    -1.75 dps GyroZ:     0.20 dps
+ AccX:   0.8655 g    AccY:  -0.5183 g    AccZ:   0.0059 g
+RTC REGISTER CONTENTS:
+0x00 5202 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:     7.49 dps GyroY:    -3.81 dps GyroZ:   -17.04 dps
+ AccX:   0.9205 g    AccY:  -0.3675 g    AccZ:   0.0156 g
+RTC REGISTER CONTENTS:
+0x00 5302 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:    18.74 dps GyroY:    -3.46 dps GyroZ:   -33.30 dps
+ AccX:   0.9969 g    AccY:  -0.0857 g    AccZ:   0.0110 g
+RTC REGISTER CONTENTS:
+0x00 5402 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:     2.46 dps GyroY:    -1.17 dps GyroZ:    -2.49 dps
+ AccX:   0.9890 g    AccY:  -0.0333 g    AccZ:   0.0093 g
+RTC REGISTER CONTENTS:
+0x00 5502 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:     0.35 dps GyroY:    -4.66 dps GyroZ:    -3.94 dps
+ AccX:   0.9998 g    AccY:   0.0254 g    AccZ:   0.0017 g
+RTC REGISTER CONTENTS:
+0x00 5602 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:     0.70 dps GyroY:    -0.11 dps GyroZ:    -0.05 dps
+ AccX:   0.9887 g    AccY:   0.0144 g    AccZ:   0.0024 g
+RTC REGISTER CONTENTS:
+0x00 5702 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:     1.04 dps GyroY:    -1.05 dps GyroZ:    -0.92 dps
+ AccX:   0.9946 g    AccY:   0.0167 g    AccZ:   0.0109 g
+RTC REGISTER CONTENTS:
+0x00 5802 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:   -36.63 dps GyroY:    -1.51 dps GyroZ:   114.49 dps
+ AccX:   0.3947 g    AccY:  -0.9529 g    AccZ:   0.0093 g
+RTC REGISTER CONTENTS:
+0x00 5902 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:     0.23 dps GyroY:    -2.66 dps GyroZ:     1.36 dps
+ AccX:  -0.2335 g    AccY:  -0.9346 g    AccZ:   0.0155 g
+RTC REGISTER CONTENTS:
+0x00 0003 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:     0.55 dps GyroY:    -1.53 dps GyroZ:     0.99 dps
+ AccX:  -0.2204 g    AccY:  -0.9467 g    AccZ:   0.0141 g
+RTC REGISTER CONTENTS:
+0x00 0103 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:     1.22 dps GyroY:    -0.67 dps GyroZ:     0.31 dps
+ AccX:  -0.2482 g    AccY:  -0.9455 g    AccZ:   0.0045 g
+RTC REGISTER CONTENTS:
+0x00 0203 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:    52.00 dps GyroY:    16.08 dps GyroZ:  -248.47 dps
+ AccX:   0.8460 g    AccY:  -0.6343 g    AccZ:   0.0041 g
+RTC REGISTER CONTENTS:
+0x00 0303 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:     7.35 dps GyroY:     1.44 dps GyroZ:    -9.93 dps
+ AccX:   0.7194 g    AccY:   0.7566 g    AccZ:   0.0002 g
+RTC REGISTER CONTENTS:
+0x00 0403 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:     0.82 dps GyroY:     0.03 dps GyroZ:     5.36 dps
+ AccX:   0.6025 g    AccY:   0.7975 g    AccZ:   0.0074 g
+RTC REGISTER CONTENTS:
+0x00 0503 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:    -0.76 dps GyroY:    -7.99 dps GyroZ:     8.51 dps
+ AccX:   0.8257 g    AccY:   0.5630 g    AccZ:   0.0060 g
+RTC REGISTER CONTENTS:
+0x00 0603 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:    -5.01 dps GyroY:    15.17 dps GyroZ:     5.06 dps
+ AccX:   0.9010 g    AccY:   0.2567 g    AccZ:   0.0056 g
+RTC REGISTER CONTENTS:
+0x00 0703 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:    -0.95 dps GyroY:     0.53 dps GyroZ:     2.13 dps
+ AccX:   0.8785 g    AccY:   0.2308 g    AccZ:   0.0078 g
+RTC REGISTER CONTENTS:
+0x00 0803 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:     5.88 dps GyroY:    27.92 dps GyroZ:     8.44 dps
+ AccX:   0.7469 g    AccY:   0.0226 g    AccZ:   0.0155 g
+RTC REGISTER CONTENTS:
+0x00 0903 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:    -7.51 dps GyroY:     8.01 dps GyroZ:     7.06 dps
+ AccX:   0.4977 g    AccY:  -0.0609 g    AccZ:   0.0108 g
+RTC REGISTER CONTENTS:
+0x00 1003 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:   -30.89 dps GyroY:   -45.53 dps GyroZ:    -2.31 dps
+ AccX:   0.4586 g    AccY:  -0.1716 g    AccZ:   0.0132 g
+RTC REGISTER CONTENTS:
+0x00 1103 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:   -93.93 dps GyroY:   -13.43 dps GyroZ:    65.16 dps
+ AccX:   0.0965 g    AccY:  -0.7017 g    AccZ:   0.0086 g
+RTC REGISTER CONTENTS:
+0x00 1203 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.63 dps GyroY:    -3.94 dps GyroZ:    -2.21 dps
+ AccX:  -0.0643 g    AccY:  -0.3995 g    AccZ:   0.0071 g
+RTC REGISTER CONTENTS:
+0x00 1303 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:    43.90 dps GyroY:     4.89 dps GyroZ:   -15.86 dps
+ AccX:  -0.0187 g    AccY:  -0.5015 g    AccZ:   0.0099 g
+RTC REGISTER CONTENTS:
+0x00 1403 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:   -27.38 dps GyroY:   -27.70 dps GyroZ:    13.30 dps
+ AccX:   0.7824 g    AccY:  -0.5139 g    AccZ:   0.0050 g
+RTC REGISTER CONTENTS:
+0x00 1503 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:     1.20 dps GyroY:     1.32 dps GyroZ:     0.19 dps
+ AccX:   0.7695 g    AccY:  -0.6080 g    AccZ:   0.0151 g
+RTC REGISTER CONTENTS:
+0x00 1603 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     7.29 dps GyroY:    -7.71 dps GyroZ:   -12.34 dps
+ AccX:   0.8566 g    AccY:  -0.4491 g    AccZ:   0.0027 g
+RTC REGISTER CONTENTS:
+0x00 1703 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     3.81 dps GyroY:    -1.69 dps GyroZ:    -5.26 dps
+ AccX:   0.9150 g    AccY:  -0.3818 g    AccZ:   0.0107 g
+RTC REGISTER CONTENTS:
+0x00 1803 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 40
+
+GyroX:     1.47 dps GyroY:    -1.30 dps GyroZ:    -1.67 dps
+ AccX:   0.9332 g    AccY:  -0.3523 g    AccZ:   0.0077 g
+RTC REGISTER CONTENTS:
+0x00 1903 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:    -0.35 dps GyroY:    -1.62 dps GyroZ:     0.71 dps
+ AccX:   0.9206 g    AccY:  -0.3596 g    AccZ:   0.0042 g
+RTC REGISTER CONTENTS:
+0x00 2003 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:   -14.73 dps GyroY:     7.13 dps GyroZ:    41.01 dps
+ AccX:   0.8826 g    AccY:  -0.4232 g    AccZ:   0.0065 g
+RTC REGISTER CONTENTS:
+0x00 2103 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:    29.72 dps GyroY:    22.03 dps GyroZ:     1.49 dps
+ AccX:   0.0933 g    AccY:  -0.0607 g    AccZ:   0.0139 g
+RTC REGISTER CONTENTS:
+0x00 2203 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.25 dps GyroY:    -1.42 dps GyroZ:    -0.11 dps
+ AccX:   0.1140 g    AccY:  -0.0049 g    AccZ:   0.0020 g
+RTC REGISTER CONTENTS:
+0x00 2303 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.21 dps GyroY:    -1.37 dps GyroZ:    -0.10 dps
+ AccX:   0.1122 g    AccY:  -0.0046 g    AccZ:   0.0034 g
+RTC REGISTER CONTENTS:
+0x00 2403 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.27 dps GyroY:    -1.40 dps GyroZ:    -0.14 dps
+ AccX:   0.1111 g    AccY:  -0.0054 g    AccZ:   0.0021 g
+RTC REGISTER CONTENTS:
+0x00 2503 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.28 dps GyroY:    -1.40 dps GyroZ:    -0.14 dps
+ AccX:   0.1107 g    AccY:  -0.0038 g    AccZ:   0.0006 g
+RTC REGISTER CONTENTS:
+0x00 2603 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.28 dps GyroY:    -1.45 dps GyroZ:    -0.17 dps
+ AccX:   0.1115 g    AccY:  -0.0053 g    AccZ:   0.0016 g
+RTC REGISTER CONTENTS:
+0x00 2703 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.21 dps GyroY:    -1.38 dps GyroZ:    -0.17 dps
+ AccX:   0.1110 g    AccY:  -0.0060 g    AccZ:   0.0018 g
+RTC REGISTER CONTENTS:
+0x00 2803 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.25 dps GyroY:    -1.39 dps GyroZ:    -0.14 dps
+ AccX:   0.1108 g    AccY:  -0.0049 g    AccZ:   0.0151 g
+RTC REGISTER CONTENTS:
+0x00 2903 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.31 dps GyroY:    -1.46 dps GyroZ:    -0.15 dps
+ AccX:   0.1096 g    AccY:  -0.0024 g    AccZ:   0.0005 g
+RTC REGISTER CONTENTS:
+0x00 3003 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.37 dps GyroY:    -1.49 dps GyroZ:    -0.22 dps
+ AccX:   0.1113 g    AccY:  -0.0063 g    AccZ:   0.0120 g
+RTC REGISTER CONTENTS:
+0x00 3103 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.21 dps GyroY:    -1.37 dps GyroZ:    -0.19 dps
+ AccX:   0.1108 g    AccY:  -0.0063 g    AccZ:   0.0143 g
+RTC REGISTER CONTENTS:
+0x00 3203 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.33 dps GyroY:    -1.58 dps GyroZ:    -0.19 dps
+ AccX:   0.1134 g    AccY:  -0.0051 g    AccZ:   0.0015 g
+RTC REGISTER CONTENTS:
+0x00 3303 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.18 dps GyroY:    -1.27 dps GyroZ:    -0.11 dps
+ AccX:   0.1111 g    AccY:  -0.0064 g    AccZ:   0.0010 g
+RTC REGISTER CONTENTS:
+0x00 3403 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.27 dps GyroY:    -1.41 dps GyroZ:    -0.15 dps
+ AccX:   0.1100 g    AccY:  -0.0071 g    AccZ:   0.0002 g
+RTC REGISTER CONTENTS:
+0x00 3503 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.25 dps GyroY:    -1.43 dps GyroZ:    -0.17 dps
+ AccX:   0.1109 g    AccY:  -0.0065 g    AccZ:   0.0027 g
+RTC REGISTER CONTENTS:
+0x00 3603 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.37 dps GyroY:    -1.45 dps GyroZ:    -0.18 dps
+ AccX:   0.1108 g    AccY:  -0.0074 g    AccZ:   0.0051 g
+RTC REGISTER CONTENTS:
+0x00 3703 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.48 dps GyroY:    -1.61 dps GyroZ:    -0.18 dps
+ AccX:   0.1115 g    AccY:  -0.0081 g    AccZ:   0.0024 g
+RTC REGISTER CONTENTS:
+0x00 3803 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.57 dps GyroY:    -1.64 dps GyroZ:    -0.19 dps
+ AccX:   0.1105 g    AccY:  -0.0089 g    AccZ:   0.0021 g
+RTC REGISTER CONTENTS:
+0x00 3903 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.08 dps GyroY:    -1.14 dps GyroZ:    -0.12 dps
+ AccX:   0.1088 g    AccY:  -0.0081 g    AccZ:   0.0139 g
+RTC REGISTER CONTENTS:
+0x00 4003 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.31 dps GyroY:    -1.43 dps GyroZ:    -0.18 dps
+ AccX:   0.1121 g    AccY:  -0.0065 g    AccZ:   0.0009 g
+RTC REGISTER CONTENTS:
+0x00 4103 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+
+GyroX:     0.22 dps GyroY:    -1.40 dps GyroZ:    -0.17 dps
+ AccX:   0.1105 g    AccY:  -0.0067 g    AccZ:   0.0004 g
+RTC REGISTER CONTENTS:
+0x00 4203 0001 0101 0000 0000 0000 0000 1c88
+0x10 0019 80
+

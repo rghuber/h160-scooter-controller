@@ -1,0 +1,769 @@
+ESP-ROM:esESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x1718
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc08
+load:0x403cc700,len:0x2f08
+entry 0x403c990c
+[0;32mI (27) boot: ESP-IDF v5.2-dev-1449-gd2471b11e7 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 11 2023 17:12:33[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d100h ( 53504) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0001d128 vaddr=3fc94900 size=029bch ( 10684) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0001faec vaddr=40374000 size=0052ch (  1324) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1dbf0h (121840) map[0m
+[0;32mI (148) esp_image: segment 4: paddr=0003dc18 vaddr=4037452c size=10388h ( 66440) load[0m
+[0;32mI (170) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (170) boot: Disabling RNG early entropy source...[0m
+[0;32mI (181) cpu_start: Multicore app[0m
+[0;32mI (182) cpu_start: Pro cpu up.[0m
+[0;32mI (182) cpu_start: Starting app cpu, entry point is 0x403753c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (200) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (203) cpu_start: Project name:     h160-scooter-controller[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (214) cpu_start: Compile time:     Jul 11 2023 17:12:27[0m
+[0;32mI (220) cpu_start: ELF file SHA256:  189d2f481...[0m
+[0;32mI (225) cpu_start: ESP-IDF:          v5.2-dev-1449-gd2471b11e7[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (253) heap_init: At 3FC97B88 len 00051B88 (326 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (272) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (301) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (307) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (315) app_start: Starting scheduler on CPU0[0m
+[0;32mI (319) app_start: Starting scheduler on CPU1[0m
+[0;32mI (319) main_task: Started on CPU0[0m
+[0;32mI (329) main_task: Calling app_main()[0m
+[0;32mI (329) GPIO: initializing GPIO pins...[0m
+[0;32mI (339) I2C: initializing i2c[0m
+[0;32mI (339) SPI: initializing SPI...[0m
+[0;32mI (349) SPI: initializing SPI IMU...[0m
+GyroX:     0.25 dps GyroY:    -1.44 dps GyroZ:    -0.22 dps
+ AccX:   0.0266 g    AccY:   0.0143 g    AccZ:   1.0089 g
+[0;32mI (849) main_task: Returned from app_main()[0m
+Now: 2000-01-01T02:38:16.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.46 dps GyroZ:    -0.17 dps
+ AccX:   0.0258 g    AccY:   0.0136 g    AccZ:   1.0062 g
+Now: 2000-01-01T02:38:19.000+08:00
+
+Button is pressed and debounced, current tick=384
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=399
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.27 dps GyroY:    -1.47 dps GyroZ:    -0.19 dps
+ AccX:   0.0258 g    AccY:   0.0136 g    AccZ:   1.0072 g
+Now: 2000-01-01T02:38:22.000+08:00
+
+Button is pressed and debounced, current tick=740
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=758
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=858
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=877
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=949
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+GyroX:     0.26 dps GyroY:    -1.47 dps GyroZ:    -0.23 dps
+ AccX:   0.0259 g    AccY:   0.0125 g    AccZ:   1.0071 g
+Now: 2000-01-01T02:38:25.000+08:00
+
+Button is released and debounced, current tick=976
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=1050
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=1071
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=1147
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=1221
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.24 dps GyroY:    -1.44 dps GyroZ:    -0.24 dps
+ AccX:   0.0257 g    AccY:   0.0140 g    AccZ:   1.0067 g
+Now: 2000-01-01T02:38:34.000+08:00
+
+Button is pressed and debounced, current tick=1310
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=1434
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.24 dps GyroY:    -1.42 dps GyroZ:    -0.18 dps
+ AccX:   0.0258 g    AccY:   0.0126 g    AccZ:   1.0066 g
+Now: 2000-01-01T02:38:37.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.44 dps GyroZ:    -0.21 dps
+ AccX:   0.0256 g    AccY:   0.0132 g    AccZ:   1.0079 g
+Now: 2000-01-01T02:38:40.000+08:00
+
+Button is pressed and debounced, current tick=2112
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+GyroX:     0.25 dps GyroY:    -1.46 dps GyroZ:    -0.23 dps
+ AccX:   0.0255 g    AccY:   0.0132 g    AccZ:   1.0065 g
+Now: 2000-01-01T02:38:49.000+08:00
+
+Button is released and debounced, current tick=2270
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=2447
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+GyroX:     0.26 dps GyroY:    -1.43 dps GyroZ:    -0.21 dps
+ AccX:   0.0270 g    AccY:   0.0126 g    AccZ:   1.0070 g
+Now: 2000-01-01T02:38:52.000+08:00
+
+Button is released and debounced, current tick=2634
+Button Interrupt Triggered 5 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=2724
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+GyroX:     0.25 dps GyroY:    -1.46 dps GyroZ:    -0.20 dps
+ AccX:   0.0255 g    AccY:   0.0129 g    AccZ:   1.0071 g
+Now: 2000-01-01T02:38:55.000+08:00
+
+Button is released and debounced, current tick=2839
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.27 dps GyroY:    -1.45 dps GyroZ:    -0.24 dps
+ AccX:   0.0259 g    AccY:   0.0128 g    AccZ:   1.0065 g
+Now: 2000-01-01T02:38:64.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.43 dps GyroZ:    -0.20 dps
+ AccX:   0.0264 g    AccY:   0.0135 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:38:67.000+08:00
+
+GyroX:     0.24 dps GyroY:    -1.43 dps GyroZ:    -0.21 dps
+ AccX:   0.0256 g    AccY:   0.0131 g    AccZ:   1.0060 g
+Now: 2000-01-01T02:38:70.000+08:00
+
+GyroX:     0.26 dps GyroY:    -1.46 dps GyroZ:    -0.23 dps
+ AccX:   0.0257 g    AccY:   0.0132 g    AccZ:   1.0071 g
+Now: 2000-01-01T02:38:73.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.46 dps GyroZ:    -0.21 dps
+ AccX:   0.0253 g    AccY:   0.0129 g    AccZ:   1.0070 g
+Now: 2000-01-01T02:38:82.000+08:00
+
+GyroX:     0.26 dps GyroY:    -1.46 dps GyroZ:    -0.20 dps
+ AccX:   0.0255 g    AccY:   0.0136 g    AccZ:   1.0064 g
+Now: 2000-01-01T02:38:85.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.44 dps GyroZ:    -0.22 dps
+ AccX:   0.0257 g    AccY:   0.0127 g    AccZ:   1.0063 g
+Now: 2000-01-01T02:38:88.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.43 dps GyroZ:    -0.19 dps
+ AccX:   0.0264 g    AccY:   0.0137 g    AccZ:   1.0066 g
+Now: 2000-01-01T02:39:01.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.44 dps GyroZ:    -0.21 dps
+ AccX:   0.0255 g    AccY:   0.0128 g    AccZ:   1.0072 g
+Now: 2000-01-01T02:39:04.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.44 dps GyroZ:    -0.21 dps
+ AccX:   0.0279 g    AccY:   0.0153 g    AccZ:   1.0072 g
+Now: 2000-01-01T02:39:07.000+08:00
+
+GyroX:     0.30 dps GyroY:    -1.46 dps GyroZ:    -0.18 dps
+ AccX:   0.0250 g    AccY:   0.0126 g    AccZ:   1.0064 g
+Now: 2000-01-01T02:39:16.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.45 dps GyroZ:    -0.23 dps
+ AccX:   0.0256 g    AccY:   0.0138 g    AccZ:   1.0071 g
+Now: 2000-01-01T02:39:19.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.45 dps GyroZ:    -0.23 dps
+ AccX:   0.0249 g    AccY:   0.0130 g    AccZ:   1.0066 g
+Now: 2000-01-01T02:39:22.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.44 dps GyroZ:    -0.22 dps
+ AccX:   0.0262 g    AccY:   0.0139 g    AccZ:   1.0065 g
+Now: 2000-01-01T02:39:25.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.45 dps GyroZ:    -0.17 dps
+ AccX:   0.0260 g    AccY:   0.0135 g    AccZ:   1.0066 g
+Now: 2000-01-01T02:39:34.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.45 dps GyroZ:    -0.19 dps
+ AccX:   0.0261 g    AccY:   0.0134 g    AccZ:   1.0059 g
+Now: 2000-01-01T02:39:37.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.46 dps GyroZ:    -0.17 dps
+ AccX:   0.0266 g    AccY:   0.0128 g    AccZ:   1.0074 g
+Now: 2000-01-01T02:39:40.000+08:00
+
+GyroX:     0.24 dps GyroY:    -1.43 dps GyroZ:    -0.22 dps
+ AccX:   0.0259 g    AccY:   0.0137 g    AccZ:   1.0067 g
+Now: 2000-01-01T02:39:49.000+08:00
+
+GyroX:     0.26 dps GyroY:    -1.43 dps GyroZ:    -0.20 dps
+ AccX:   0.0263 g    AccY:   0.0133 g    AccZ:   1.0068 g
+Now: 2000-01-01T02:39:52.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.44 dps GyroZ:    -0.19 dps
+ AccX:   0.0257 g    AccY:   0.0129 g    AccZ:   1.0063 g
+Now: 2000-01-01T02:39:55.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.44 dps GyroZ:    -0.20 dps
+ AccX:   0.0265 g    AccY:   0.0131 g    AccZ:   1.0073 g
+Now: 2000-01-01T02:39:64.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.43 dps GyroZ:    -0.18 dps
+ AccX:   0.0263 g    AccY:   0.0126 g    AccZ:   1.0059 g
+Now: 2000-01-01T02:39:67.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.46 dps GyroZ:    -0.22 dps
+ AccX:   0.0259 g    AccY:   0.0141 g    AccZ:   1.0050 g
+Now: 2000-01-01T02:39:70.000+08:00
+
+GyroX:     0.24 dps GyroY:    -1.40 dps GyroZ:    -0.17 dps
+ AccX:   0.0198 g    AccY:   0.0142 g    AccZ:   1.0045 g
+Now: 2000-01-01T02:39:73.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.37 dps GyroZ:    -0.19 dps
+ AccX:   0.0269 g    AccY:   0.0147 g    AccZ:   1.0062 g
+Now: 2000-01-01T02:39:82.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.46 dps GyroZ:    -0.23 dps
+ AccX:   0.0241 g    AccY:   0.0145 g    AccZ:   1.0074 g
+Now: 2000-01-01T02:39:85.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.39 dps GyroZ:    -0.21 dps
+ AccX:   0.0264 g    AccY:   0.0134 g    AccZ:   1.0059 g
+Now: 2000-01-01T02:39:88.000+08:00
+
+GyroX:     0.26 dps GyroY:    -1.45 dps GyroZ:    -0.24 dps
+ AccX:   0.0252 g    AccY:   0.0142 g    AccZ:   1.0074 g
+Now: 2000-01-01T02:40:01.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.43 dps GyroZ:    -0.21 dps
+ AccX:   0.0265 g    AccY:   0.0127 g    AccZ:   1.0065 g
+Now: 2000-01-01T02:40:04.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.45 dps GyroZ:    -0.21 dps
+ AccX:   0.0264 g    AccY:   0.0124 g    AccZ:   1.0071 g
+Now: 2000-01-01T02:40:07.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.45 dps GyroZ:    -0.20 dps
+ AccX:   0.0259 g    AccY:   0.0138 g    AccZ:   1.0068 g
+Now: 2000-01-01T02:40:16.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.45 dps GyroZ:    -0.19 dps
+ AccX:   0.0258 g    AccY:   0.0137 g    AccZ:   1.0070 g
+Now: 2000-01-01T02:40:19.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.43 dps GyroZ:    -0.20 dps
+ AccX:   0.0259 g    AccY:   0.0134 g    AccZ:   1.0074 g
+Now: 2000-01-01T02:40:22.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.45 dps GyroZ:    -0.21 dps
+ AccX:   0.0261 g    AccY:   0.0127 g    AccZ:   1.0063 g
+Now: 2000-01-01T02:40:25.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.44 dps GyroZ:    -0.24 dps
+ AccX:   0.0256 g    AccY:   0.0131 g    AccZ:   1.0075 g
+Now: 2000-01-01T02:40:34.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.46 dps GyroZ:    -0.21 dps
+ AccX:   0.0258 g    AccY:   0.0123 g    AccZ:   1.0074 g
+Now: 2000-01-01T02:40:37.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.44 dps GyroZ:    -0.16 dps
+ AccX:   0.0263 g    AccY:   0.0140 g    AccZ:   1.0075 g
+Now: 2000-01-01T02:40:40.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.46 dps GyroZ:    -0.19 dps
+ AccX:   0.0258 g    AccY:   0.0125 g    AccZ:   1.0058 g
+Now: 2000-01-01T02:40:49.000+08:00
+
+GyroX:     0.24 dps GyroY:    -1.47 dps GyroZ:    -0.18 dps
+ AccX:   0.0264 g    AccY:   0.0125 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:40:52.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.44 dps GyroZ:    -0.22 dps
+ AccX:   0.0266 g    AccY:   0.0126 g    AccZ:   1.0061 g
+Now: 2000-01-01T02:40:55.000+08:00
+
+GyroX:     0.30 dps GyroY:    -1.44 dps GyroZ:    -0.20 dps
+ AccX:   0.0258 g    AccY:   0.0133 g    AccZ:   1.0067 g
+Now: 2000-01-01T02:40:64.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.46 dps GyroZ:    -0.22 dps
+ AccX:   0.0252 g    AccY:   0.0137 g    AccZ:   1.0060 g
+Now: 2000-01-01T02:40:67.000+08:00
+
+GyroX:     0.32 dps GyroY:    -1.48 dps GyroZ:    -0.20 dps
+ AccX:   0.0268 g    AccY:   0.0121 g    AccZ:   1.0058 g
+Now: 2000-01-01T02:40:70.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.43 dps GyroZ:    -0.20 dps
+ AccX:   0.0254 g    AccY:   0.0127 g    AccZ:   1.0064 g
+Now: 2000-01-01T02:40:73.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.43 dps GyroZ:    -0.18 dps
+ AccX:   0.0243 g    AccY:   0.0128 g    AccZ:   1.0056 g
+Now: 2000-01-01T02:40:82.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.40 dps GyroZ:    -0.21 dps
+ AccX:   0.0261 g    AccY:   0.0122 g    AccZ:   1.0063 g
+Now: 2000-01-01T02:40:85.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.47 dps GyroZ:    -0.23 dps
+ AccX:   0.0247 g    AccY:   0.0129 g    AccZ:   1.0069 g
+Now: 2000-01-01T02:40:88.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.45 dps GyroZ:    -0.20 dps
+ AccX:   0.0262 g    AccY:   0.0128 g    AccZ:   1.0076 g
+Now: 2000-01-01T02:41:01.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.48 dps GyroZ:    -0.22 dps
+ AccX:   0.0268 g    AccY:   0.0126 g    AccZ:   1.0071 g
+Now: 2000-01-01T02:41:04.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.41 dps GyroZ:    -0.18 dps
+ AccX:   0.0261 g    AccY:   0.0128 g    AccZ:   1.0076 g
+Now: 2000-01-01T02:41:07.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.45 dps GyroZ:    -0.22 dps
+ AccX:   0.0264 g    AccY:   0.0122 g    AccZ:   1.0067 g
+Now: 2000-01-01T02:41:16.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.45 dps GyroZ:    -0.24 dps
+ AccX:   0.0257 g    AccY:   0.0123 g    AccZ:   1.0069 g
+Now: 2000-01-01T02:41:19.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.47 dps GyroZ:    -0.21 dps
+ AccX:   0.0267 g    AccY:   0.0124 g    AccZ:   1.0083 g
+Now: 2000-01-01T02:41:22.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.41 dps GyroZ:    -0.21 dps
+ AccX:   0.0258 g    AccY:   0.0135 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:41:25.000+08:00
+
+GyroX:     0.32 dps GyroY:    -1.44 dps GyroZ:    -0.21 dps
+ AccX:   0.0261 g    AccY:   0.0135 g    AccZ:   1.0076 g
+Now: 2000-01-01T02:41:34.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.44 dps GyroZ:    -0.18 dps
+ AccX:   0.0259 g    AccY:   0.0123 g    AccZ:   1.0085 g
+Now: 2000-01-01T02:41:37.000+08:00
+
+GyroX:     0.26 dps GyroY:    -1.41 dps GyroZ:    -0.23 dps
+ AccX:   0.0256 g    AccY:   0.0132 g    AccZ:   1.0054 g
+Now: 2000-01-01T02:41:40.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.43 dps GyroZ:    -0.21 dps
+ AccX:   0.0243 g    AccY:   0.0134 g    AccZ:   1.0075 g
+Now: 2000-01-01T02:41:49.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.46 dps GyroZ:    -0.21 dps
+ AccX:   0.0248 g    AccY:   0.0135 g    AccZ:   1.0070 g
+Now: 2000-01-01T02:41:52.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.47 dps GyroZ:    -0.24 dps
+ AccX:   0.0258 g    AccY:   0.0129 g    AccZ:   1.0068 g
+Now: 2000-01-01T02:41:55.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.46 dps GyroZ:    -0.20 dps
+ AccX:   0.0248 g    AccY:   0.0128 g    AccZ:   1.0070 g
+Now: 2000-01-01T02:41:64.000+08:00
+
+GyroX:     0.24 dps GyroY:    -1.46 dps GyroZ:    -0.21 dps
+ AccX:   0.0267 g    AccY:   0.0134 g    AccZ:   1.0079 g
+Now: 2000-01-01T02:41:67.000+08:00
+
+GyroX:     0.23 dps GyroY:    -1.45 dps GyroZ:    -0.23 dps
+ AccX:   0.0274 g    AccY:   0.0126 g    AccZ:   1.0079 g
+Now: 2000-01-01T02:41:70.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.45 dps GyroZ:    -0.20 dps
+ AccX:   0.0267 g    AccY:   0.0140 g    AccZ:   1.0074 g
+Now: 2000-01-01T02:41:73.000+08:00
+
+GyroX:     0.26 dps GyroY:    -1.46 dps GyroZ:    -0.19 dps
+ AccX:   0.0197 g    AccY:   0.0131 g    AccZ:   1.0071 g
+Now: 2000-01-01T02:41:82.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.44 dps GyroZ:    -0.24 dps
+ AccX:   0.0258 g    AccY:   0.0128 g    AccZ:   1.0063 g
+Now: 2000-01-01T02:41:85.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.48 dps GyroZ:    -0.22 dps
+ AccX:   0.0253 g    AccY:   0.0132 g    AccZ:   1.0080 g
+Now: 2000-01-01T02:41:88.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.48 dps GyroZ:    -0.21 dps
+ AccX:   0.0255 g    AccY:   0.0127 g    AccZ:   1.0069 g
+Now: 2000-01-01T02:48:01.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.43 dps GyroZ:    -0.18 dps
+ AccX:   0.0272 g    AccY:   0.0137 g    AccZ:   1.0068 g
+Now: 2000-01-01T02:48:04.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.46 dps GyroZ:    -0.19 dps
+ AccX:   0.0253 g    AccY:   0.0134 g    AccZ:   1.0070 g
+Now: 2000-01-01T02:48:07.000+08:00
+
+GyroX:     0.24 dps GyroY:    -1.46 dps GyroZ:    -0.21 dps
+ AccX:   0.0251 g    AccY:   0.0123 g    AccZ:   1.0080 g
+Now: 2000-01-01T02:48:16.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.47 dps GyroZ:    -0.23 dps
+ AccX:   0.0250 g    AccY:   0.0132 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:48:19.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.45 dps GyroZ:    -0.24 dps
+ AccX:   0.0262 g    AccY:   0.0135 g    AccZ:   1.0076 g
+Now: 2000-01-01T02:48:22.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.44 dps GyroZ:    -0.18 dps
+ AccX:   0.0264 g    AccY:   0.0134 g    AccZ:   1.0067 g
+Now: 2000-01-01T02:48:25.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.47 dps GyroZ:    -0.19 dps
+ AccX:   0.0256 g    AccY:   0.0129 g    AccZ:   1.0057 g
+Now: 2000-01-01T02:48:34.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.44 dps GyroZ:    -0.18 dps
+ AccX:   0.0263 g    AccY:   0.0131 g    AccZ:   1.0063 g
+Now: 2000-01-01T02:48:37.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.43 dps GyroZ:    -0.18 dps
+ AccX:   0.0250 g    AccY:   0.0131 g    AccZ:   1.0059 g
+Now: 2000-01-01T02:48:40.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.48 dps GyroZ:    -0.22 dps
+ AccX:   0.0259 g    AccY:   0.0132 g    AccZ:   1.0083 g
+Now: 2000-01-01T02:48:49.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.47 dps GyroZ:    -0.19 dps
+ AccX:   0.0256 g    AccY:   0.0127 g    AccZ:   1.0065 g
+Now: 2000-01-01T02:48:52.000+08:00
+
+GyroX:     0.24 dps GyroY:    -1.47 dps GyroZ:    -0.20 dps
+ AccX:   0.0261 g    AccY:   0.0129 g    AccZ:   1.0084 g
+Now: 2000-01-01T02:48:55.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.48 dps GyroZ:    -0.22 dps
+ AccX:   0.0259 g    AccY:   0.0132 g    AccZ:   1.0072 g
+Now: 2000-01-01T02:48:64.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.50 dps GyroZ:    -0.23 dps
+ AccX:   0.0255 g    AccY:   0.0137 g    AccZ:   1.0076 g
+Now: 2000-01-01T02:48:67.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.46 dps GyroZ:    -0.20 dps
+ AccX:   0.0248 g    AccY:   0.0134 g    AccZ:   1.0073 g
+Now: 2000-01-01T02:48:70.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.46 dps GyroZ:    -0.23 dps
+ AccX:   0.0259 g    AccY:   0.0138 g    AccZ:   1.0067 g
+Now: 2000-01-01T02:48:73.000+08:00
+
+GyroX:     0.26 dps GyroY:    -1.45 dps GyroZ:    -0.23 dps
+ AccX:   0.0264 g    AccY:   0.0131 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:48:82.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.46 dps GyroZ:    -0.21 dps
+ AccX:   0.0255 g    AccY:   0.0129 g    AccZ:   1.0063 g
+Now: 2000-01-01T02:48:85.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.47 dps GyroZ:    -0.19 dps
+ AccX:   0.0249 g    AccY:   0.0136 g    AccZ:   1.0072 g
+Now: 2000-01-01T02:48:88.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.43 dps GyroZ:    -0.24 dps
+ AccX:   0.0270 g    AccY:   0.0135 g    AccZ:   1.0081 g
+Now: 2000-01-01T02:49:01.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.46 dps GyroZ:    -0.19 dps
+ AccX:   0.0251 g    AccY:   0.0123 g    AccZ:   1.0084 g
+Now: 2000-01-01T02:49:04.000+08:00
+
+GyroX:     0.26 dps GyroY:    -1.45 dps GyroZ:    -0.21 dps
+ AccX:   0.0260 g    AccY:   0.0127 g    AccZ:   1.0075 g
+Now: 2000-01-01T02:49:07.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.41 dps GyroZ:    -0.20 dps
+ AccX:   0.0251 g    AccY:   0.0134 g    AccZ:   1.0072 g
+Now: 2000-01-01T02:49:16.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.45 dps GyroZ:    -0.20 dps
+ AccX:   0.0259 g    AccY:   0.0129 g    AccZ:   1.0084 g
+Now: 2000-01-01T02:49:19.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.45 dps GyroZ:    -0.23 dps
+ AccX:   0.0255 g    AccY:   0.0131 g    AccZ:   1.0077 g
+Now: 2000-01-01T02:49:22.000+08:00
+
+GyroX:     0.26 dps GyroY:    -1.46 dps GyroZ:    -0.20 dps
+ AccX:   0.0259 g    AccY:   0.0128 g    AccZ:   1.0083 g
+Now: 2000-01-01T02:49:25.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.44 dps GyroZ:    -0.23 dps
+ AccX:   0.0246 g    AccY:   0.0138 g    AccZ:   1.0073 g
+Now: 2000-01-01T02:49:34.000+08:00
+
+GyroX:     0.24 dps GyroY:    -1.45 dps GyroZ:    -0.24 dps
+ AccX:   0.0271 g    AccY:   0.0129 g    AccZ:   1.0067 g
+Now: 2000-01-01T02:49:37.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.45 dps GyroZ:    -0.21 dps
+ AccX:   0.0259 g    AccY:   0.0129 g    AccZ:   1.0076 g
+Now: 2000-01-01T02:49:40.000+08:00
+
+GyroX:     0.30 dps GyroY:    -1.43 dps GyroZ:    -0.21 dps
+ AccX:   0.0258 g    AccY:   0.0130 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:49:49.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.44 dps GyroZ:    -0.23 dps
+ AccX:   0.0258 g    AccY:   0.0137 g    AccZ:   1.0074 g
+Now: 2000-01-01T02:49:52.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.47 dps GyroZ:    -0.19 dps
+ AccX:   0.0261 g    AccY:   0.0129 g    AccZ:   1.0081 g
+Now: 2000-01-01T02:49:55.000+08:00
+
+GyroX:     0.32 dps GyroY:    -1.43 dps GyroZ:    -0.20 dps
+ AccX:   0.0267 g    AccY:   0.0137 g    AccZ:   1.0073 g
+Now: 2000-01-01T02:49:64.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.42 dps GyroZ:    -0.19 dps
+ AccX:   0.0251 g    AccY:   0.0131 g    AccZ:   1.0066 g
+Now: 2000-01-01T02:49:67.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.44 dps GyroZ:    -0.22 dps
+ AccX:   0.0264 g    AccY:   0.0135 g    AccZ:   1.0060 g
+Now: 2000-01-01T02:49:70.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.46 dps GyroZ:    -0.22 dps
+ AccX:   0.0252 g    AccY:   0.0129 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:49:73.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.48 dps GyroZ:    -0.24 dps
+ AccX:   0.0266 g    AccY:   0.0124 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:49:82.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.49 dps GyroZ:    -0.21 dps
+ AccX:   0.0270 g    AccY:   0.0128 g    AccZ:   1.0074 g
+Now: 2000-01-01T02:49:85.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.43 dps GyroZ:    -0.24 dps
+ AccX:   0.0257 g    AccY:   0.0127 g    AccZ:   1.0067 g
+Now: 2000-01-01T02:49:88.000+08:00
+
+GyroX:     0.23 dps GyroY:    -1.46 dps GyroZ:    -0.21 dps
+ AccX:   0.0253 g    AccY:   0.0127 g    AccZ:   1.0076 g
+Now: 2000-01-01T02:50:01.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.45 dps GyroZ:    -0.21 dps
+ AccX:   0.0252 g    AccY:   0.0127 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:50:04.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.46 dps GyroZ:    -0.21 dps
+ AccX:   0.0250 g    AccY:   0.0126 g    AccZ:   1.0067 g
+Now: 2000-01-01T02:50:07.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.48 dps GyroZ:    -0.23 dps
+ AccX:   0.0265 g    AccY:   0.0131 g    AccZ:   1.0056 g
+Now: 2000-01-01T02:50:16.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.43 dps GyroZ:    -0.18 dps
+ AccX:   0.0250 g    AccY:   0.0123 g    AccZ:   1.0075 g
+Now: 2000-01-01T02:50:19.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.45 dps GyroZ:    -0.19 dps
+ AccX:   0.0251 g    AccY:   0.0124 g    AccZ:   1.0065 g
+Now: 2000-01-01T02:50:22.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.44 dps GyroZ:    -0.19 dps
+ AccX:   0.0266 g    AccY:   0.0140 g    AccZ:   1.0070 g
+Now: 2000-01-01T02:50:25.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.45 dps GyroZ:    -0.17 dps
+ AccX:   0.0264 g    AccY:   0.0132 g    AccZ:   1.0069 g
+Now: 2000-01-01T02:50:34.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.46 dps GyroZ:    -0.19 dps
+ AccX:   0.0258 g    AccY:   0.0131 g    AccZ:   1.0069 g
+Now: 2000-01-01T02:50:37.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.48 dps GyroZ:    -0.20 dps
+ AccX:   0.0259 g    AccY:   0.0134 g    AccZ:   1.0062 g
+Now: 2000-01-01T02:50:40.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.47 dps GyroZ:    -0.21 dps
+ AccX:   0.0271 g    AccY:   0.0132 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:50:49.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.47 dps GyroZ:    -0.20 dps
+ AccX:   0.0276 g    AccY:   0.0119 g    AccZ:   1.0067 g
+Now: 2000-01-01T02:50:52.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.47 dps GyroZ:    -0.18 dps
+ AccX:   0.0266 g    AccY:   0.0127 g    AccZ:   1.0077 g
+Now: 2000-01-01T02:50:55.000+08:00
+
+GyroX:     0.32 dps GyroY:    -1.44 dps GyroZ:    -0.20 dps
+ AccX:   0.0258 g    AccY:   0.0135 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:50:64.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.50 dps GyroZ:    -0.20 dps
+ AccX:   0.0275 g    AccY:   0.0131 g    AccZ:   1.0073 g
+Now: 2000-01-01T02:50:67.000+08:00
+
+GyroX:     0.30 dps GyroY:    -1.41 dps GyroZ:    -0.17 dps
+ AccX:   0.0270 g    AccY:   0.0128 g    AccZ:   1.0074 g
+Now: 2000-01-01T02:50:70.000+08:00
+
+GyroX:     0.24 dps GyroY:    -1.46 dps GyroZ:    -0.21 dps
+ AccX:   0.0247 g    AccY:   0.0131 g    AccZ:   1.0089 g
+Now: 2000-01-01T02:50:73.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.46 dps GyroZ:    -0.22 dps
+ AccX:   0.0248 g    AccY:   0.0130 g    AccZ:   1.0073 g
+Now: 2000-01-01T02:50:82.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.46 dps GyroZ:    -0.22 dps
+ AccX:   0.0259 g    AccY:   0.0128 g    AccZ:   1.0084 g
+Now: 2000-01-01T02:50:85.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.45 dps GyroZ:    -0.21 dps
+ AccX:   0.0245 g    AccY:   0.0134 g    AccZ:   1.0067 g
+Now: 2000-01-01T02:50:88.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.43 dps GyroZ:    -0.22 dps
+ AccX:   0.0272 g    AccY:   0.0134 g    AccZ:   1.0059 g
+Now: 2000-01-01T02:51:01.000+08:00
+
+GyroX:     0.26 dps GyroY:    -1.46 dps GyroZ:    -0.20 dps
+ AccX:   0.0249 g    AccY:   0.0125 g    AccZ:   1.0069 g
+Now: 2000-01-01T02:51:04.000+08:00
+
+GyroX:     0.24 dps GyroY:    -1.48 dps GyroZ:    -0.21 dps
+ AccX:   0.0259 g    AccY:   0.0129 g    AccZ:   1.0067 g
+Now: 2000-01-01T02:51:07.000+08:00
+
+GyroX:     0.30 dps GyroY:    -1.47 dps GyroZ:    -0.20 dps
+ AccX:   0.0264 g    AccY:   0.0140 g    AccZ:   1.0069 g
+Now: 2000-01-01T02:51:16.000+08:00
+
+GyroX:     0.26 dps GyroY:    -1.45 dps GyroZ:    -0.21 dps
+ AccX:   0.0256 g    AccY:   0.0137 g    AccZ:   1.0079 g
+Now: 2000-01-01T02:51:19.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.50 dps GyroZ:    -0.23 dps
+ AccX:   0.0259 g    AccY:   0.0137 g    AccZ:   1.0062 g
+Now: 2000-01-01T02:51:22.000+08:00
+
+GyroX:     0.24 dps GyroY:    -1.48 dps GyroZ:    -0.21 dps
+ AccX:   0.0247 g    AccY:   0.0130 g    AccZ:   1.0068 g
+Now: 2000-01-01T02:51:25.000+08:00
+
+GyroX:     0.32 dps GyroY:    -1.43 dps GyroZ:    -0.19 dps
+ AccX:   0.0248 g    AccY:   0.0131 g    AccZ:   1.0081 g
+Now: 2000-01-01T02:51:34.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.43 dps GyroZ:    -0.23 dps
+ AccX:   0.0255 g    AccY:   0.0130 g    AccZ:   1.0071 g
+Now: 2000-01-01T02:51:37.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.45 dps GyroZ:    -0.21 dps
+ AccX:   0.0261 g    AccY:   0.0127 g    AccZ:   1.0070 g
+Now: 2000-01-01T02:51:40.000+08:00
+
+GyroX:     0.30 dps GyroY:    -1.45 dps GyroZ:    -0.19 dps
+ AccX:   0.0247 g    AccY:   0.0139 g    AccZ:   1.0071 g
+Now: 2000-01-01T02:51:49.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.45 dps GyroZ:    -0.24 dps
+ AccX:   0.0257 g    AccY:   0.0132 g    AccZ:   1.0054 g
+Now: 2000-01-01T02:51:52.000+08:00
+
+GyroX:     0.29 dps GyroY:    -1.46 dps GyroZ:    -0.21 dps
+ AccX:   0.0262 g    AccY:   0.0134 g    AccZ:   1.0064 g
+Now: 2000-01-01T02:51:55.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.46 dps GyroZ:    -0.22 dps
+ AccX:   0.0255 g    AccY:   0.0130 g    AccZ:   1.0067 g
+Now: 2000-01-01T02:51:64.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.45 dps GyroZ:    -0.20 dps
+ AccX:   0.0254 g    AccY:   0.0132 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:51:67.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.44 dps GyroZ:    -0.19 dps
+ AccX:   0.0251 g    AccY:   0.0128 g    AccZ:   1.0059 g
+Now: 2000-01-01T02:51:70.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.46 dps GyroZ:    -0.21 dps
+ AccX:   0.0255 g    AccY:   0.0131 g    AccZ:   1.0068 g
+Now: 2000-01-01T02:51:73.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.44 dps GyroZ:    -0.19 dps
+ AccX:   0.0259 g    AccY:   0.0126 g    AccZ:   1.0077 g
+Now: 2000-01-01T02:51:82.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.44 dps GyroZ:    -0.22 dps
+ AccX:   0.0263 g    AccY:   0.0131 g    AccZ:   1.0074 g
+Now: 2000-01-01T02:51:85.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.43 dps GyroZ:    -0.15 dps
+ AccX:   0.0255 g    AccY:   0.0129 g    AccZ:   1.0062 g
+Now: 2000-01-01T02:51:88.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.43 dps GyroZ:    -0.22 dps
+ AccX:   0.0266 g    AccY:   0.0126 g    AccZ:   1.0069 g
+Now: 2000-01-01T02:52:01.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.46 dps GyroZ:    -0.23 dps
+ AccX:   0.0264 g    AccY:   0.0130 g    AccZ:   1.0053 g
+Now: 2000-01-01T02:52:04.000+08:00
+
+GyroX:     0.24 dps GyroY:    -1.45 dps GyroZ:    -0.18 dps
+ AccX:   0.0258 g    AccY:   0.0136 g    AccZ:   1.0072 g
+Now: 2000-01-01T02:52:07.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.46 dps GyroZ:    -0.20 dps
+ AccX:   0.0264 g    AccY:   0.0131 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:52:16.000+08:00
+
+GyroX:     0.32 dps GyroY:    -1.46 dps GyroZ:    -0.19 dps
+ AccX:   0.0255 g    AccY:   0.0126 g    AccZ:   1.0076 g
+Now: 2000-01-01T02:52:19.000+08:00
+
+GyroX:     0.24 dps GyroY:    -1.50 dps GyroZ:    -0.19 dps
+ AccX:   0.0250 g    AccY:   0.0132 g    AccZ:   1.0065 g
+Now: 2000-01-01T02:52:22.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.47 dps GyroZ:    -0.19 dps
+ AccX:   0.0261 g    AccY:   0.0132 g    AccZ:   1.0068 g
+Now: 2000-01-01T02:52:25.000+08:00
+
+GyroX:     0.24 dps GyroY:    -1.46 dps GyroZ:    -0.21 dps
+ AccX:   0.0259 g    AccY:   0.0131 g    AccZ:   1.0071 g
+Now: 2000-01-01T02:52:34.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.45 dps GyroZ:    -0.18 dps
+ AccX:   0.0256 g    AccY:   0.0133 g    AccZ:   1.0074 g
+Now: 2000-01-01T02:52:37.000+08:00
+

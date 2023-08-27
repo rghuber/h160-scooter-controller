@@ -1,0 +1,467 @@
+ESP-ROM:es�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x1718
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc08
+load:0x403cc700,len:0x2f08
+entry 0x403c990c
+[0;32mI (27) boot: ESP-IDF v5.2-dev-1449-gd2471b11e7 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 11 2023 17:12:33[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0d120h ( 53536) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=0001d148 vaddr=3fc94900 size=029bch ( 10684) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0001fb0c vaddr=40374000 size=0050ch (  1292) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1dc38h (121912) map[0m
+[0;32mI (148) esp_image: segment 4: paddr=0003dc60 vaddr=4037450c size=103a8h ( 66472) load[0m
+[0;32mI (170) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (170) boot: Disabling RNG early entropy source...[0m
+[0;32mI (181) cpu_start: Multicore app[0m
+[0;32mI (182) cpu_start: Pro cpu up.[0m
+[0;32mI (182) cpu_start: Starting app cpu, entry point is 0x403753c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (200) cpu_start: Pro cpu start user code[0m
+[0;32mI (200) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (200) cpu_start: Application information:[0m
+[0;32mI (203) cpu_start: Project name:     h160-scooter-controller[0m
+[0;32mI (210) cpu_start: App version:      1[0m
+[0;32mI (214) cpu_start: Compile time:     Jul 11 2023 17:12:27[0m
+[0;32mI (220) cpu_start: ELF file SHA256:  6cfa4bbed...[0m
+[0;32mI (225) cpu_start: ESP-IDF:          v5.2-dev-1449-gd2471b11e7[0m
+[0;32mI (232) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (237) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (241) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (246) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (254) heap_init: At 3FC97B88 len 00051B88 (326 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (266) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (280) spi_flash: detected chip: generic[0m
+[0;32mI (283) spi_flash: flash io: dio[0m
+[0;33mW (287) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (301) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (307) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (315) app_start: Starting scheduler on CPU0[0m
+[0;32mI (319) app_start: Starting scheduler on CPU1[0m
+[0;32mI (319) main_task: Started on CPU0[0m
+[0;32mI (329) main_task: Calling app_main()[0m
+[0;32mI (329) GPIO: initializing GPIO pins...[0m
+[0;32mI (339) I2C: initializing i2c[0m
+[0;32mI (339) SPI: initializing SPI...[0m
+[0;32mI (349) SPI: initializing SPI IMU...[0m
+GyroX:     0.31 dps GyroY:    -1.45 dps GyroZ:    -0.19 dps
+ AccX:   0.0251 g    AccY:   0.0131 g    AccZ:   1.0085 g
+[0;32mI (849) main_task: Returned from app_main()[0m
+Now: 2000-01-01T02:56:16.000+08:00
+
+Button is pressed and debounced, current tick=202
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=213
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=276
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=299
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.27 dps GyroY:    -1.47 dps GyroZ:    -0.21 dps
+ AccX:   0.0269 g    AccY:   0.0133 g    AccZ:   1.0071 g
+Now: 2000-01-01T02:56:19.000+08:00
+
+Button is pressed and debounced, current tick=359
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=377
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=521
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...GyroX:     0.28 dps GyroY:    -1.42 dps GyroZ:    -0.21 dps
+ AccX:   0.0255 g    AccY:   0.0125 g    AccZ:   1.0082 g
+Now: 2000-01-01T02:56:22.000+08:00
+
+Button is released and debounced, current tick=711
+Button Interrupt Triggered 5 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=865
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=876
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=929
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=942
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.30 dps GyroY:    -1.42 dps GyroZ:    -0.17 dps
+ AccX:   0.0257 g    AccY:   0.0129 g    AccZ:   1.0067 g
+Now: 2000-01-01T02:56:25.000+08:00
+
+Button is pressed and debounced, current tick=998
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=1022
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=1069
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=1086
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=1118
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=1136
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=1163
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=1180
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=1210
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=1226
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.29 dps GyroY:    -1.44 dps GyroZ:    -0.19 dps
+ AccX:   0.0259 g    AccY:   0.0134 g    AccZ:   1.0086 g
+Now: 2000-01-01T02:56:34.000+08:00
+
+Button is pressed and debounced, current tick=1267
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...GyroX:     0.28 dps GyroY:    -1.43 dps GyroZ:    -0.19 dps
+ AccX:   0.0260 g    AccY:   0.0129 g    AccZ:   1.0076 g
+Now: 2000-01-01T02:56:37.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.46 dps GyroZ:    -0.21 dps
+ AccX:   0.0261 g    AccY:   0.0135 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:56:40.000+08:00
+
+Button is released and debounced, current tick=2073
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=2152
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+GyroX:     0.28 dps GyroY:    -1.43 dps GyroZ:    -0.17 dps
+ AccX:   0.0265 g    AccY:   0.0128 g    AccZ:   1.0077 g
+Now: 2000-01-01T02:56:49.000+08:00
+
+Button is released and debounced, current tick=2178
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=2202
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=2220
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=2282
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=2298
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=2341
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=2357
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=2403
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=2420
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.29 dps GyroY:    -1.41 dps GyroZ:    -0.21 dps
+ AccX:   0.0265 g    AccY:   0.0123 g    AccZ:   1.0089 g
+Now: 2000-01-01T02:56:52.000+08:00
+
+Button is pressed and debounced, current tick=2468
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=2504
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.30 dps GyroY:    -1.49 dps GyroZ:    -0.18 dps
+ AccX:   0.0251 g    AccY:   0.0123 g    AccZ:   1.0069 g
+Now: 2000-01-01T02:56:55.000+08:00
+
+GyroX:     0.31 dps GyroY:    -1.43 dps GyroZ:    -0.20 dps
+ AccX:   0.0258 g    AccY:   0.0138 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:56:64.000+08:00
+
+Button is pressed and debounced, current tick=3123
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=3138
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=3190
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=3204
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=3239
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=3253
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=3293
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=3309
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=3339
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=3352
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.28 dps GyroY:    -1.50 dps GyroZ:    -0.16 dps
+ AccX:   0.0264 g    AccY:   0.0127 g    AccZ:   1.0079 g
+Now: 2000-01-01T02:56:67.000+08:00
+
+Button is pressed and debounced, current tick=3388
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=3401
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=3449
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=3463
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=3496
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=3510
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=3545
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=3557
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=3594
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=3607
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=3643
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+GyroX:     0.31 dps GyroY:    -1.42 dps GyroZ:    -0.23 dps
+ AccX:   0.0261 g    AccY:   0.0127 g    AccZ:   1.0073 g
+Now: 2000-01-01T02:56:70.000+08:00
+
+Button is released and debounced, current tick=3658
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=3758
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=3771
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=3834
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=3851
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=3905
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=3921
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.27 dps GyroY:    -1.43 dps GyroZ:    -0.18 dps
+ AccX:   0.0261 g    AccY:   0.0128 g    AccZ:   1.0074 g
+Now: 2000-01-01T02:56:73.000+08:00
+
+Button is pressed and debounced, current tick=3957
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=3972
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=4026
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=4062
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=4109
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=4152
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=4202
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=4230
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.29 dps GyroY:    -1.48 dps GyroZ:    -0.19 dps
+ AccX:   0.0252 g    AccY:   0.0127 g    AccZ:   1.0075 g
+Now: 2000-01-01T02:56:82.000+08:00
+
+Button is pressed and debounced, current tick=4288
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=4320
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=4385
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=4431
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=4504
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...GyroX:     0.25 dps GyroY:    -1.45 dps GyroZ:    -0.20 dps
+ AccX:   0.0251 g    AccY:   0.0125 g    AccZ:   1.0082 g
+Now: 2000-01-01T02:56:85.000+08:00
+
+Button is released and debounced, current tick=4634
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=4690
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=4722
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=4756
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=4775
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.27 dps GyroY:    -1.41 dps GyroZ:    -0.21 dps
+ AccX:   0.0264 g    AccY:   0.0132 g    AccZ:   1.0073 g
+Now: 2000-01-01T02:56:88.000+08:00
+
+Button is pressed and debounced, current tick=4971
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=5062
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.27 dps GyroY:    -1.46 dps GyroZ:    -0.19 dps
+ AccX:   0.0258 g    AccY:   0.0127 g    AccZ:   1.0076 g
+Now: 2000-01-01T02:57:01.000+08:00
+
+Button is pressed and debounced, current tick=5172
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...GyroX:     0.31 dps GyroY:    -1.42 dps GyroZ:    -0.15 dps
+ AccX:   0.0262 g    AccY:   0.0128 g    AccZ:   1.0074 g
+Now: 2000-01-01T02:57:04.000+08:00
+
+GyroX:     0.26 dps GyroY:    -1.46 dps GyroZ:    -0.17 dps
+ AccX:   0.0258 g    AccY:   0.0128 g    AccZ:   1.0075 g
+Now: 2000-01-01T02:57:07.000+08:00
+
+Button is released and debounced, current tick=5965
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.27 dps GyroY:    -1.48 dps GyroZ:    -0.18 dps
+ AccX:   0.0257 g    AccY:   0.0126 g    AccZ:   1.0073 g
+Now: 2000-01-01T02:57:16.000+08:00
+
+Button is released and debounced, current tick=6253
+Button Interrupt Triggered 3 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=6276
+Button Interrupt Triggered 4 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=6287
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.29 dps GyroY:    -1.45 dps GyroZ:    -0.21 dps
+ AccX:   0.0255 g    AccY:   0.0135 g    AccZ:   1.0077 g
+Now: 2000-01-01T02:57:19.000+08:00
+
+Button is pressed and debounced, current tick=6489
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=6513
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=6596
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...GyroX:     0.28 dps GyroY:    -1.46 dps GyroZ:    -0.15 dps
+ AccX:   0.0262 g    AccY:   0.0128 g    AccZ:   1.0084 g
+Now: 2000-01-01T02:57:22.000+08:00
+
+Button is released and debounced, current tick=6743
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=6803
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...GyroX:     0.28 dps GyroY:    -1.50 dps GyroZ:    -0.16 dps
+ AccX:   0.0267 g    AccY:   0.0131 g    AccZ:   1.0085 g
+Now: 2000-01-01T02:57:25.000+08:00
+
+Button is released and debounced, current tick=7014
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=7078
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...GyroX:     0.28 dps GyroY:    -1.44 dps GyroZ:    -0.20 dps
+ AccX:   0.0259 g    AccY:   0.0123 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:57:34.000+08:00
+
+Button is released and debounced, current tick=7353
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.29 dps GyroY:    -1.45 dps GyroZ:    -0.16 dps
+ AccX:   0.0258 g    AccY:   0.0134 g    AccZ:   1.0080 g
+Now: 2000-01-01T02:57:37.000+08:00
+
+Button is pressed and debounced, current tick=7716
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=7741
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=7812
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...GyroX:     0.32 dps GyroY:    -1.44 dps GyroZ:    -0.18 dps
+ AccX:   0.0261 g    AccY:   0.0131 g    AccZ:   1.0082 g
+Now: 2000-01-01T02:57:40.000+08:00
+
+Button is released and debounced, current tick=7881
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=7961
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=8028
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=8122
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=8150
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.29 dps GyroY:    -1.45 dps GyroZ:    -0.18 dps
+ AccX:   0.0262 g    AccY:   0.0131 g    AccZ:   1.0081 g
+Now: 2000-01-01T02:57:49.000+08:00
+
+Button is pressed and debounced, current tick=8196
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=8260
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=8330
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=8393
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.31 dps GyroY:    -1.48 dps GyroZ:    -0.21 dps
+ AccX:   0.0265 g    AccY:   0.0135 g    AccZ:   1.0072 g
+Now: 2000-01-01T02:57:52.000+08:00
+
+Button is pressed and debounced, current tick=8502
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=8571
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=8730
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+GyroX:     0.28 dps GyroY:    -1.42 dps GyroZ:    -0.19 dps
+ AccX:   0.0262 g    AccY:   0.0134 g    AccZ:   1.0076 g
+Now: 2000-01-01T02:57:55.000+08:00
+
+Long press, we are going...Button is released and debounced, current tick=8800
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=8939
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=9010
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.27 dps GyroY:    -1.46 dps GyroZ:    -0.18 dps
+ AccX:   0.0272 g    AccY:   0.0137 g    AccZ:   1.0073 g
+Now: 2000-01-01T02:57:64.000+08:00
+
+Button is pressed and debounced, current tick=9109
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Button is released and debounced, current tick=9123
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=9193
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=9317
+Button Interrupt Triggered 5 times, current State=0, time since last trigger 44ms
+GyroX:     0.31 dps GyroY:    -1.41 dps GyroZ:    -0.19 dps
+ AccX:   0.0257 g    AccY:   0.0130 g    AccZ:   1.0073 g
+Now: 2000-01-01T02:57:67.000+08:00
+
+GyroX:     0.23 dps GyroY:    -1.46 dps GyroZ:    -0.20 dps
+ AccX:   0.0261 g    AccY:   0.0128 g    AccZ:   1.0070 g
+Now: 2000-01-01T02:57:70.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.44 dps GyroZ:    -0.19 dps
+ AccX:   0.0260 g    AccY:   0.0126 g    AccZ:   1.0086 g
+Now: 2000-01-01T02:57:73.000+08:00
+
+GyroX:     0.27 dps GyroY:    -1.44 dps GyroZ:    -0.18 dps
+ AccX:   0.0261 g    AccY:   0.0133 g    AccZ:   1.0069 g
+Now: 2000-01-01T02:57:82.000+08:00
+
+GyroX:     0.25 dps GyroY:    -1.45 dps GyroZ:    -0.20 dps
+ AccX:   0.0256 g    AccY:   0.0138 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:57:85.000+08:00
+
+Button is pressed and debounced, current tick=10555
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=10608
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+Button is pressed and debounced, current tick=10743
+Button Interrupt Triggered 1 times, current State=1, time since last trigger 44ms
+Long press, we are going...Button is released and debounced, current tick=10799
+Button Interrupt Triggered 2 times, current State=0, time since last trigger 44ms
+GyroX:     0.27 dps GyroY:    -1.44 dps GyroZ:    -0.17 dps
+ AccX:   0.0267 g    AccY:   0.0126 g    AccZ:   1.0078 g
+Now: 2000-01-01T02:57:88.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.43 dps GyroZ:    -0.19 dps
+ AccX:   0.0267 g    AccY:   0.0129 g    AccZ:   1.0095 g
+Now: 2000-01-01T02:64:01.000+08:00
+
+GyroX:     0.28 dps GyroY:    -1.43 dps GyroZ:    -0.15 dps
+ AccX:   0.0263 g    AccY:   0.0131 g    AccZ:   1.0075 g
+Now: 2000-01-01T02:64:04.000+08:00
+

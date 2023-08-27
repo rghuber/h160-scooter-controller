@@ -1,0 +1,103 @@
+[0;33m--- idf_monitor on /dev/cu.usbserial-3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403753a4: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40377933: check_trans_valid at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:765 (discriminator 2)
+[0m
+[0;33m0x400570e8: memset in ROM
+[0m
+[0;33m0x400570f3: memset in ROM
+[0m
+[0;33m0x40377930: check_trans_valid at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:764 (discriminator 2)
+[0m
+[0;33m0x40378113: spi_device_polling_start at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:1041 (discriminator 2)
+[0m
+[0;33m0x40378268: spi_device_polling_transmit at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:1110
+[0m
+[0;33m0x4200815d: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:126
+[0m
+[0;33m0x42008337: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:182 (discriminator 13)
+[0m
+[0;33m0x4201ca33: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037e25d: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375998: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x403753a4: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40377933: check_trans_valid at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:765 (discriminator 2)
+[0m
+[0;33m0x400570e8: memset in ROM
+[0m
+[0;33m0x400570f3: memset in ROM
+[0m
+[0;33m0x40377930: check_trans_valid at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:764 (discriminator 2)
+[0m
+[0;33m0x40378113: spi_device_polling_start at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:1041 (discriminator 2)
+[0m
+[0;33m0x40378268: spi_device_polling_transmit at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:1110
+[0m
+[0;33m0x4200815d: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:126
+[0m
+[0;33m0x42008337: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:182 (discriminator 13)
+[0m
+[0;33m0x4201ca33: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037e25d: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375998: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x403753a4: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40377933: check_trans_valid at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:765 (discriminator 2)
+[0m
+[0;33m0x400570e8: memset in ROM
+[0m
+[0;33m0x400570f3: memset in ROM
+[0m
+[0;33m0x40377930: check_trans_valid at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:764 (discriminator 2)
+[0m
+[0;33m0x40378113: spi_device_polling_start at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:1041 (discriminator 2)
+[0m
+[0;33m0x40378268: spi_device_polling_transmit at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:1110
+[0m
+[0;33m0x4200815d: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:126
+[0m
+[0;33m0x42008337: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:182 (discriminator 13)
+[0m
+[0;33m0x4201ca33: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037e25d: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375998: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x403753a4: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40377933: check_trans_valid at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:765 (discriminator 2)
+[0m
+[0;33m0x400570e8: memset in ROM
+[0m
+[0;33m0x400570f3: memset in ROM
+[0m
+[0;33m0x40377930: check_trans_valid at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:764 (discriminator 2)
+[0m
+[0;33m0x40378113: spi_device_polling_start at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:1041 (discriminator 2)
+[0m
+[0;33m0x40378268: spi_device_polling_transmit at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:1110
+[0m
+[0;33m0x4200815d: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:126
+[0m
+[0;33m0x42008337: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:182 (discriminator 13)
+[0m
+[0;33m0x4201ca33: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037e25d: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375998: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x403753a4: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40377933: check_trans_valid at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:765 (discriminator 2)
+[0m
+[0m

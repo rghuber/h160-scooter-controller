@@ -1,0 +1,64 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/bootloader/esp-idf/esptool_py && /Users/rghuber/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/rghuber/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/bootloader/bootloader.bin
+Bootloader binary size 0x5290 bytes. 0x2d70 bytes (35%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-scooter-controller.c.obj
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c: In function 'DEVICE_RTC_read_rtctime':
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:173:52: warning: passing argument 3 of 'i2c_master_read_from_device' from incompatible pointer type [-Wincompatible-pointer-types]
+  173 |     ret=i2c_master_read_from_device(I2C_NUM_0,0x68,rtc_date_time,7,portMAX_DELAY);
+      |                                                    ^~~~~~~~~~~~~
+      |                                                    |
+      |                                                    rtc_time_t *
+In file included from /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:5:
+/Users/rghuber/esp/esp-idf/components/driver/i2c/include/driver/i2c.h:216:48: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'rtc_time_t *'
+  216 |                                       uint8_t* read_buffer, size_t read_size,
+      |                                       ~~~~~~~~~^~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c: In function 'TASK_TriggerRead':
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:365:40: warning: variable 'timeReleased' set but not used [-Wunused-but-set-variable]
+  365 |     TickType_t timePressed = 10000000 ,timeReleased = 0;
+      |                                        ^~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c: In function 'STATE_change_speed':
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:329:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  329 |             SOUND_beep(600,1);
+      |             ^~~~~~~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:330:9: note: here
+  330 |         case 40:
+      |         ^~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:331:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  331 |             SOUND_beep(300,2);
+      |             ^~~~~~~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:332:9: note: here
+  332 |         case 60:
+      |         ^~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:333:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  333 |             SOUND_beep(200,3);
+      |             ^~~~~~~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:334:9: note: here
+  334 |         case 80:
+      |         ^~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:335:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  335 |             SOUND_beep(150,4);
+      |             ^~~~~~~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:336:9: note: here
+  336 |         case 100:
+      |         ^~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c: At top level:
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:232:18: warning: 'DEVICE_IMU_read_registers' defined but not used [-Wunused-function]
+  232 | static esp_err_t DEVICE_IMU_read_registers(spi_device_handle_t handle){
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:145:18: warning: 'DEVICE_RTC_read_registers' defined but not used [-Wunused-function]
+  145 | static esp_err_t DEVICE_RTC_read_registers(){
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:122:18: warning: 'PERIPH_i2c_scan' defined but not used [-Wunused-function]
+  122 | static esp_err_t PERIPH_i2c_scan()
+      |                  ^~~~~~~~~~~~~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable h160-scooter-controller.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.6.2
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/h160-scooter-controller.bin
+[7/7] cd /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/esp-idf/esptool_py && /Users/rghuber/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/rghuber/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/partition_table/partition-table.bin /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/h160-scooter-controller.bin
+h160-scooter-controller.bin binary size 0x3c9c0 bytes. Smallest app partition is 0x100000 bytes. 0xc3640 bytes (76%) free.

@@ -1,0 +1,49 @@
+[0;33m--- idf_monitor on /dev/cu.usbserial-3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40375360: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x42008316: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:176 (discriminator 3)
+[0m
+[0;33m0x400556d5: strlen in ROM
+[0m
+[0;33m0x400556e5: strlen in ROM
+[0m
+[0;33m0x42008313: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:176 (discriminator 3)
+[0m
+[0;33m0x4201cb7f: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037ddfd: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375954: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x40375360: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x42008316: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:176 (discriminator 3)
+[0m
+[0;33m0x400556d5: strlen in ROM
+[0m
+[0;33m0x400556e5: strlen in ROM
+[0m
+[0;33m0x42008313: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:176 (discriminator 3)
+[0m
+[0;33m0x4201cb7f: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037ddfd: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40375954: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x40375360: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x42008316: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:176 (discriminator 3)
+[0m
+[0;33m0x400556d5: strlen in ROM
+[0m
+[0;33m0x400556e5: strlen in ROM
+[0m
+[0;33m0x42008313: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:176 (discriminator 3)
+[0m
+[0;33m0x4201cb7f: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:208 (discriminator 13)
+[0m
+[0;33m0x4037ddfd: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0m

@@ -1,0 +1,54 @@
+[0;33m--- idf_monitor on /dev/cu.usbserial-3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403753ec: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40375ace: panic_abort at /Users/rghuber/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037be71: esp_system_abort at /Users/rghuber/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e882: vApplicationStackOverflowHook at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:581
+[0m
+[0;33m0x4037d4fb: vTaskSwitchContext at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3729
+[0m
+[0;33m0x4037e950: _frxt_dispatch at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:450
+[0m
+[0;33m0x4037e946: _frxt_int_exit at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:245
+[0m
+[0;33m0x40379a62: esp_cpu_wait_for_intr at /Users/rghuber/esp/esp-idf/components/esp_hw_support/cpu.c:121
+[0m
+[0;33m0x403753ec: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40375ace: panic_abort at /Users/rghuber/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037be71: esp_system_abort at /Users/rghuber/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e882: vApplicationStackOverflowHook at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:581
+[0m
+[0;33m0x4037d4fb: vTaskSwitchContext at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3729
+[0m
+[0;33m0x4037e950: _frxt_dispatch at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:450
+[0m
+[0;33m0x4037e946: _frxt_int_exit at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:245
+[0m
+[0;33m0x4037996b: xt_utils_compare_and_set at /Users/rghuber/esp/esp-idf/components/xtensa/include/xt_utils.h:215
+ (inlined by) esp_cpu_compare_and_set at /Users/rghuber/esp/esp-idf/components/esp_hw_support/cpu.c:438
+[0m
+[0;33m0x403753ec: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40375ace: panic_abort at /Users/rghuber/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037be71: esp_system_abort at /Users/rghuber/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x4037e882: vApplicationStackOverflowHook at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:581
+[0m
+[0;33m0x4037d4fb: vTaskSwitchContext at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3729
+[0m
+[0;33m0x4037e950: _frxt_dispatch at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:450
+[0m
+[0;33m0x4037e946: _frxt_int_exit at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:245
+[0m
+[0;33m0x40379a62: esp_cpu_wait_for_intr at /Users/rghuber/esp/esp-idf/components/esp_hw_support/cpu.c:121
+[0m
+[0;33m0x403753ec: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0m

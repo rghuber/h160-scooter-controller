@@ -1,0 +1,51 @@
+[0;33m--- idf_monitor on /dev/cu.usbserial-3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4037530c: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 2ba8571c5c3d63f0b80f9ac473bea59c9b2b19d84eb9e3aca8964bc171ff6e9c[0m
+[0;33m0x403759ee: panic_abort at /Users/rghuber/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037b179: esp_system_abort at /Users/rghuber/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40381889: __assert_func at /Users/rghuber/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b464: xQueueGenericCreate at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:479 (discriminator 1)
+[0m
+[0;33m0x4200b3cb: spi_bus_add_device at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:426
+[0m
+[0;33m0x42008029: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:59
+[0m
+[0;33m0x42008079: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:92 (discriminator 3)
+[0m
+[0;33m0x4201b977: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:206 (discriminator 13)
+[0m
+[0;33m0x4037d729: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 2ba8571c5c3d63f0b80f9ac473bea59c9b2b19d84eb9e3aca8964bc171ff6e9c[0m
+[0;33m0x40375900: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x4037530c: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 2ba8571c5c3d63f0b80f9ac473bea59c9b2b19d84eb9e3aca8964bc171ff6e9c[0m
+[0;33m0x403759ee: panic_abort at /Users/rghuber/esp/esp-idf/components/esp_system/panic.c:452
+[0m
+[0;33m0x4037b179: esp_system_abort at /Users/rghuber/esp/esp-idf/components/esp_system/port/esp_system_chip.c:93
+[0m
+[0;33m0x40381889: __assert_func at /Users/rghuber/esp/esp-idf/components/newlib/assert.c:81
+[0m
+[0;33m0x4037b464: xQueueGenericCreate at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:479 (discriminator 1)
+[0m
+[0;33m0x4200b3cb: spi_bus_add_device at /Users/rghuber/esp/esp-idf/components/driver/spi/gpspi/spi_master.c:426
+[0m
+[0;33m0x42008029: spi_imu_init at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:59
+[0m
+[0;33m0x42008079: app_main at /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-scooter-controller.c:92 (discriminator 3)
+[0m
+[0;33m0x4201b977: main_task at /Users/rghuber/esp/esp-idf/components/freertos/app_startup.c:206 (discriminator 13)
+[0m
+[0;33m0x4037d729: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 2ba8571c5c3d63f0b80f9ac473bea59c9b2b19d84eb9e3aca8964bc171ff6e9c[0m
+[0;33m0x40375900: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0m

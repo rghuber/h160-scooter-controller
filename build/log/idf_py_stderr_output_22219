@@ -1,0 +1,75 @@
+[0;33m--- idf_monitor on /dev/cu.usbserial-3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403753c4: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x40377587: gpio_isr_loop at /Users/rghuber/esp/esp-idf/components/driver/gpio/gpio.c:467
+[0m
+[0;33m0x400570e8: memset in ROM
+[0m
+[0;33m0x400570f3: memset in ROM
+[0m
+[0;33m0x4201bd97: uart_hal_write_txfifo at /Users/rghuber/esp/esp-idf/components/hal/uart_hal_iram.c:35
+[0m
+[0;33m0x400559e0: _xtos_set_intlevel in ROM
+[0m
+[0;33m0x40377587: gpio_isr_loop at /Users/rghuber/esp/esp-idf/components/driver/gpio/gpio.c:467
+[0m
+[0;33m0x40377584: gpio_isr_loop at /Users/rghuber/esp/esp-idf/components/driver/gpio/gpio.c:466
+[0m
+[0;33m0x40377613: gpio_intr_service at /Users/rghuber/esp/esp-idf/components/driver/gpio/gpio.c:492
+[0m
+[0;33m0x403773e1: _xt_medint2 at /Users/rghuber/esp/esp-idf/components/xtensa/xtensa_vectors.S:1325
+[0m
+[0;33m0x400559dd: _xtos_set_intlevel in ROM
+[0m
+[0;33m0x4037994e: esp_cpu_wait_for_intr at /Users/rghuber/esp/esp-idf/components/esp_hw_support/cpu.c:121
+[0m
+[0;33m0x4037964c: ipc_task at /Users/rghuber/esp/esp-idf/components/esp_system/esp_ipc.c:48
+[0m
+[0;33m0x4037994b: xt_utils_wait_for_intr at /Users/rghuber/esp/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/rghuber/esp/esp-idf/components/esp_hw_support/cpu.c:111
+[0m
+[0;33m0x42002c92: esp_vApplicationIdleHook at /Users/rghuber/esp/esp-idf/components/esp_system/freertos_hooks.c:59
+[0m
+[0;33m0x4037cec1: prvIdleTask at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4351 (discriminator 1)
+[0m
+[0;33m0x4037e411: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x403759b8: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x403753c4: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x403773ac: _xt_medint2 at /Users/rghuber/esp/esp-idf/components/xtensa/xtensa_vectors.S:1325
+[0m
+[0;33m0x400559e0: _xtos_set_intlevel in ROM
+[0m
+[0;33m0x4037e786: _frxt_int_enter at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:139
+[0m
+[0;33m0x4201bd97: uart_hal_write_txfifo at /Users/rghuber/esp/esp-idf/components/hal/uart_hal_iram.c:35
+[0m
+[0;33m0x400559e0: _xtos_set_intlevel in ROM
+[0m
+[0;33m0x403773ac: _xt_medint2 at /Users/rghuber/esp/esp-idf/components/xtensa/xtensa_vectors.S:1325
+[0m
+[0;33m0x403773a9: _xt_medint2 at /Users/rghuber/esp/esp-idf/components/xtensa/xtensa_vectors.S:1325
+[0m
+[0;33m0x400559dd: _xtos_set_intlevel in ROM
+[0m
+[0;33m0x4037994e: esp_cpu_wait_for_intr at /Users/rghuber/esp/esp-idf/components/esp_hw_support/cpu.c:121
+[0m
+[0;33m0x4037964c: ipc_task at /Users/rghuber/esp/esp-idf/components/esp_system/esp_ipc.c:48
+[0m
+[0;33m0x4037994b: xt_utils_wait_for_intr at /Users/rghuber/esp/esp-idf/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at /Users/rghuber/esp/esp-idf/components/esp_hw_support/cpu.c:111
+[0m
+[0;33m0x42002c92: esp_vApplicationIdleHook at /Users/rghuber/esp/esp-idf/components/esp_system/freertos_hooks.c:59
+[0m
+[0;33m0x4037cec1: prvIdleTask at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4351 (discriminator 1)
+[0m
+[0;33m0x4037e411: vPortTaskWrapper at /Users/rghuber/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x403759b8: esp_restart_noos at /Users/rghuber/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:158 (discriminator 1)
+[0m
+[0;33m0x403753c4: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0m
