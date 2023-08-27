@@ -15,6 +15,7 @@
 #define TAG_SDCARD "SDCARD"
 #define TAG_NVS "NVS"
 #define TAG_BLE "BLE"
+#define TAG_ADC "ADC"
 
 #define I2C_SDA_PIN 7
 #define I2C_SCL_PIN 6

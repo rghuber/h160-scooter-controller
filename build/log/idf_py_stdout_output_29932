@@ -1,0 +1,4292 @@
+ESP-R�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x1718
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc08
+load:0x403cc700,len:0x2f08
+entry 0x403c990c
+[0;32mI (27) boot: ESP-IDF v5.2-dev-1449-gd2471b11e7 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 11 2023 17:12:33[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=10af4h ( 68340) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=00020b1c vaddr=3fc95400 size=02c34h ( 11316) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00023758 vaddr=40374000 size=0c8c0h ( 51392) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=324a4h (205988) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=000624cc vaddr=403808c0 size=04a98h ( 19096) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (191) cpu_start: Pro cpu up.[0m
+[0;32mI (191) cpu_start: Starting app cpu, entry point is 0x40375438[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (210) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (210) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:     h160-scooter-controller[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (223) cpu_start: Compile time:     Aug 21 2023 14:14:24[0m
+[0;32mI (229) cpu_start: ELF file SHA256:  a978fc3c2...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2-dev-1449-gd2471b11e7[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (246) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (251) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (256) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (263) heap_init: At 3FC98A38 len 00050CD8 (323 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (276) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (293) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (310) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (319) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (326) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (333) coexist: coex firmware version: 5221224[0m
+[0;32mI (338) coexist: coexist rom version e7ae62f[0m
+[0;32mI (344) app_start: Starting scheduler on CPU0[0m
+[0;32mI (348) app_start: Starting scheduler on CPU1[0m
+[0;32mI (348) main_task: Started on CPU0[0m
+[0;32mI (358) main_task: Calling app_main()[0m
+[0;32mI (358) NVS: initializing nonvolatile storage...[0m
+[0;32mI (378) GPIO: initializing GPIO pins...[0m
+[0;32mI (378) I2C: initializing i2c[0m
+i2c scan: 
+Found device at: 0x48
+Found device at: 0x68
+ADC REGISTER CONTENTS:
+ADS1115_CONF_R: 4283
+ADS1115_CONV_R: 1245
+ADS1115_LOTH_R: 8000
+ADS1115_HITH_R: 7fff
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.623V 0xffffae05
+ADC Channel 3: 2.765V 0x5667
+
+2000-01-01T00:00:14+08:00
+[0;32mI (608) MCPWM: initializing MCPWM...[0m
+[0;32mI (608) SPI: initializing SPI...[0m
+[0;32mI (618) SPI: initializing SPI IMU...[0m
+[0;32mI (618) SPI: starting SPI IMU...[0m
+IMU REGISTER CONTENTS:
+0x00 0000 0000 0000 0000 0000 0000 0000 006a
+0x10 4040 0400 0000 0000 e000 0000 0000 07c2
+0x20 4e00 3b00 6cff fdff 73fd 8f00 0543 0000
+0x30 0000 0000 0000 0000 0000 0010 0000 ffff
+0x40 0000 0000 0000 0000 0000 0000 0000 0000
+0x50 0000 0000 8400 0000 0000 0000 0000 0000
+0x60 0000 0000 00ff 0000 0000 0000 0000 0000
+0x70 0000 0000 0000 0000 0000 0000 0000 00ff
+
+Temp:   78
+GyroX:  59
+GyroY:  -148
+GyroZ:  -3
+AccelX: -653
+AccelY: 143
+AccelZ: 17157
+[0;32mI (668) SPI: initializing SDMCC card...[0m
+[0;32mI (668) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (678) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (688) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (698) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (708) gpio: GPIO[41]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (718) gpio: GPIO[42]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (758) gpio: GPIO[42]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Name: EC1S5
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 61120MB
+CSD: ver=2, sector_size=512, capacity=125173760 read_bl_len=9
+SSR: bus_width=4
+[0;32mI (768) SDCARD: sdmmc status normal[0m
+[0;32mI (1278) main_task: Returned from app_main()[0m
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.454V 0xffff9412
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.719V 0xffffab05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 0.000V 0x0000
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 1.344V 0x2a02
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.745V 0x7504
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.081V 0x4106
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -1.535V 0xffffd007
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.313V 0x2909
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.721V 0x550a
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.881V 0x5a0b
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.530V 0x4f0c
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.578V 0x120d
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -2.174V 0xffffbc0d
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.594V 0x510e
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -1.470V 0xffffd20e
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.466V 0x4d0f
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -2.366V 0xffffb60f
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.514V 0x1010
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.010V 0x5e10
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.038V 0xffffa110
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -1.214V 0xffffda10
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.354V 0x0b11
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 1.730V 0x3611
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.818V 0x5811
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.778V 0x7611
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.518V 0xffff9211
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -2.750V 0xffffaa11
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -2.110V 0xffffbe11
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -1.534V 0xffffd011
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -1.086V 0xffffde11
+ADC Channel 1: -0.000V 0xffffffff
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: -0.670V 0xffffeb11
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -0.286V 0xfffff711
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.002V 0x0012
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.290V 0x0912
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.514V 0x1012
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 0.738V 0x1712
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.898V 0x1c12
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.058V 0x2112
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.186V 0x2512
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 1.282V 0x2812
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.410V 0x2c12
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.474V 0x2e12
+ADC Channel 1: 0.000V 0x0000
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.538V 0x3012
+ADC Channel 1: -0.064V 0xfffffe00
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.602V 0x3212
+ADC Channel 1: 3.968V 0x7c03
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.666V 0x3412
+ADC Channel 1: -3.455V 0xffff9405
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.698V 0x3512
+ADC Channel 1: 4.001V 0x7d07
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.730V 0x3612
+ADC Channel 1: -0.127V 0xfffffc08
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.794V 0x3812
+ADC Channel 1: 1.473V 0x2e0a
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.826V 0x3912
+ADC Channel 1: 1.761V 0x370b
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.858V 0x3a12
+ADC Channel 1: 1.570V 0x310c
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.890V 0x3b12
+ADC Channel 1: 0.770V 0x180d
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.890V 0x3b12
+ADC Channel 1: -1.598V 0xffffce0d
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.922V 0x3c12
+ADC Channel 1: 3.426V 0x6b0e
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.954V 0x3d12
+ADC Channel 1: -0.798V 0xffffe70e
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.954V 0x3d12
+ADC Channel 1: 3.010V 0x5e0f
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.954V 0x3d12
+ADC Channel 1: -1.694V 0xffffcb0f
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 1.090V 0x2210
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 3.266V 0x6610
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: -2.526V 0xffffb110
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: -0.798V 0xffffe710
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 0.802V 0x1911
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: 2.178V 0x4411
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 3.170V 0x6311
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: -4.094V 0xffff8011
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: -3.294V 0xffff9911
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: -2.526V 0xffffb111
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: -1.886V 0xffffc511
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: -1.406V 0xffffd411
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: -1.022V 0xffffe011
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: -0.670V 0xffffeb11
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: -0.350V 0xfffff511
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: -0.030V 0xffffff11
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 0.226V 0x0712
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 0.386V 0x0c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 0.578V 0x1212
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 0.706V 0x1612
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 0.866V 0x1b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 0.962V 0x1e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.058V 0x2112
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.154V 0x2412
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.218V 0x2612
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.282V 0x2812
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.346V 0x2a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.378V 0x2b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.442V 0x2d12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.474V 0x2e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.474V 0x2e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.506V 0x2f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.538V 0x3012
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.570V 0x3112
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.602V 0x3212
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.602V 0x3212
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.602V 0x3212
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.634V 0x3312
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.666V 0x3412
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.666V 0x3412
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.666V 0x3412
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.666V 0x3412
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.666V 0x3412
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.082V 0x4112
+ADC Channel 1: 1.666V 0x3412
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 1.666V 0x3412
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 2.701V 0x5467
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 2.701V 0x5467
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 2.701V 0x5467
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.050V 0x4012
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 1.954V 0x3d12
+ADC Channel 1: 2.765V 0x5667
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 1.954V 0x3d12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 1.922V 0x3c12
+ADC Channel 1: 2.765V 0x5667
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 1.922V 0x3c12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.922V 0x3c12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.922V 0x3c12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.890V 0x3b12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 1.890V 0x3b12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 1.890V 0x3b12
+ADC Channel 1: -1.363V 0xffffd565
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.890V 0x3b12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.890V 0x3b12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 1.922V 0x3c12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.922V 0x3c12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.954V 0x3d12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.922V 0x3c12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.954V 0x3d12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 1.954V 0x3d12
+ADC Channel 1: 2.701V 0x5467
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.954V 0x3d12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.954V 0x3d12
+ADC Channel 1: 2.701V 0x5467
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 1.954V 0x3d12
+ADC Channel 1: 2.701V 0x5467
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.701V 0x5467
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.701V 0x5467
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.701V 0x5467
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.954V 0x3d12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.765V 0x5667
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.381V 0x4a67
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.669V 0x5367
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.573V 0x5067
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.986V 0x3e12
+ADC Channel 1: 2.733V 0x5567
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: 2.605V 0x5167
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: 2.125V 0x4267
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: -2.036V 0xffffc062
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: 2.891V 0x5a58
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: -0.534V 0xffffef4e
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: -4.055V 0xffff8147
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: 0.456V 0x0e41
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: 3.527V 0x6e3b
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: -3.929V 0xffff8536
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: 1.606V 0x3231
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: 2.214V 0x452d
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: 0.933V 0x1d2a
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.018V 0x3f12
+ADC Channel 1: 0.869V 0x1b27
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: -2.652V 0xffffad24
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.413V 0x4b67
+ADC Channel 1: -3.772V 0xffff8a22
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: 4.036V 0x7e20
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.956V 0xffff845d
+ADC Channel 1: -1.212V 0xffffda1e
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: 2.308V 0x481d
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -1.076V 0xffffde62
+ADC Channel 1: 0.164V 0x051c
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.029V 0x3f67
+ADC Channel 1: -0.829V 0xffffe61a
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 4.012V 0x7d5d
+ADC Channel 1: -0.733V 0xffffe919
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.811V 0x1954
+ADC Channel 1: 0.323V 0x0a19
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: 1.635V 0x3318
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.916V 0x7a5d
+ADC Channel 1: -3.869V 0xffff8717
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -1.875V 0xffffc566
+ADC Channel 1: -0.541V 0xffffef16
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -1.300V 0xffffd762
+ADC Channel 1: 3.331V 0x6816
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.637V 0xffff8e5c
+ADC Channel 1: -0.477V 0xfffff115
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.994V 0x3e53
+ADC Channel 1: -3.869V 0xffff8715
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.281V 0x474b
+ADC Channel 1: 1.347V 0x2a15
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -1.240V 0xffffd943
+ADC Channel 1: -1.278V 0xffffd814
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.592V 0x703d
+ADC Channel 1: -3.614V 0xffff8f14
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -0.857V 0xffffe537
+ADC Channel 1: 2.499V 0x4e14
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.710V 0x1633
+ADC Channel 1: 0.675V 0x1514
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.701V 0x5467
+ADC Channel 1: -0.926V 0xffffe313
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 4.044V 0x7e5c
+ADC Channel 1: -2.366V 0xffffb613
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: -3.646V 0xffff8e13
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.701V 0x5467
+ADC Channel 1: 3.426V 0x6b13
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: 2.338V 0x4913
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: 1.474V 0x2e13
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: 0.706V 0x1613
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: 0.034V 0x0113
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.901V 0x3b67
+ADC Channel 1: -0.574V 0xffffee12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.701V 0x5467
+ADC Channel 1: -1.182V 0xffffdb12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.701V 0x5467
+ADC Channel 1: -1.662V 0xffffcc12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.701V 0x5467
+ADC Channel 1: -2.110V 0xffffbe12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.701V 0x5467
+ADC Channel 1: -2.494V 0xffffb212
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: -2.846V 0xffffa712
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: -3.166V 0xffff9d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: -3.454V 0xffff9412
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: -3.710V 0xffff8c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: -3.902V 0xffff8612
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.701V 0x5467
+ADC Channel 1: -4.094V 0xffff8012
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.733V 0x5567
+ADC Channel 1: 3.938V 0x7b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.989V 0x5d66
+ADC Channel 1: 3.778V 0x7612
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.605V 0xffff8f5a
+ADC Channel 1: 3.586V 0x7012
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -1.430V 0xffffd350
+ADC Channel 1: 3.490V 0x6d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.575V 0xffff9048
+ADC Channel 1: 3.362V 0x6912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.848V 0x7841
+ADC Channel 1: 3.266V 0x6612
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.727V 0x553b
+ADC Channel 1: 3.138V 0x6212
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.591V 0x7036
+ADC Channel 1: 3.042V 0x5f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.158V 0x2432
+ADC Channel 1: 2.946V 0x5c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.046V 0x5f2e
+ADC Channel 1: 2.882V 0x5a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.675V 0xffff8d2a
+ADC Channel 1: 2.818V 0x5812
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.973V 0x7c27
+ADC Channel 1: 2.786V 0x5712
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.261V 0x0825
+ADC Channel 1: 2.722V 0x5512
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -1.180V 0xffffdb22
+ADC Channel 1: 2.658V 0x5312
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -0.476V 0xfffff120
+ADC Channel 1: 2.594V 0x5112
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.052V 0x401f
+ADC Channel 1: 2.562V 0x5012
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.036V 0xffffa11d
+ADC Channel 1: 2.530V 0x4f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.724V 0x551c
+ADC Channel 1: 2.498V 0x4e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.475V 0x2e1b
+ADC Channel 1: 2.466V 0x4d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.347V 0x2a1a
+ADC Channel 1: 2.434V 0x4c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.179V 0x4419
+ADC Channel 1: 2.402V 0x4b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.875V 0x7918
+ADC Channel 1: 2.402V 0x4b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: -1.853V 0xffffc617
+ADC Channel 1: 2.402V 0x4b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.803V 0x1917
+ADC Channel 1: 2.370V 0x4a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.613V 0xffff8f16
+ADC Channel 1: 2.338V 0x4912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 0.643V 0x1416
+ADC Channel 1: 2.338V 0x4912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -2.813V 0xffffa815
+ADC Channel 1: 2.306V 0x4812
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.307V 0x4815
+ADC Channel 1: 2.306V 0x4812
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -0.414V 0xfffff314
+ADC Channel 1: 2.274V 0x4712
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -2.814V 0xffffa814
+ADC Channel 1: 2.274V 0x4712
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.235V 0x6514
+ADC Channel 1: 2.242V 0x4612
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.347V 0x2a14
+ADC Channel 1: 2.242V 0x4612
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -0.478V 0xfffff113
+ADC Channel 1: 2.242V 0x4612
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -1.918V 0xffffc413
+ADC Channel 1: 2.242V 0x4612
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.198V 0xffff9c13
+ADC Channel 1: 2.210V 0x4512
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 3.842V 0x7813
+ADC Channel 1: 2.210V 0x4512
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.818V 0x5813
+ADC Channel 1: 2.210V 0x4512
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.922V 0x3c13
+ADC Channel 1: 2.178V 0x4412
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 1.122V 0x2313
+ADC Channel 1: 2.178V 0x4412
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 0.418V 0x0d13
+ADC Channel 1: 2.178V 0x4412
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: -0.222V 0xfffff912
+ADC Channel 1: 2.178V 0x4412
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: -0.766V 0xffffe812
+ADC Channel 1: 2.146V 0x4312
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -1.246V 0xffffd912
+ADC Channel 1: 2.146V 0x4312
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -1.726V 0xffffca12
+ADC Channel 1: 2.146V 0x4312
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -2.110V 0xffffbe12
+ADC Channel 1: 2.146V 0x4312
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -2.462V 0xffffb312
+ADC Channel 1: 2.146V 0x4312
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -2.782V 0xffffa912
+ADC Channel 1: 2.114V 0x4212
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.070V 0xffffa012
+ADC Channel 1: 2.114V 0x4212
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.326V 0xffff9812
+ADC Channel 1: 2.114V 0x4212
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.550V 0xffff9112
+ADC Channel 1: 2.114V 0x4212
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.774V 0xffff8a12
+ADC Channel 1: 2.082V 0x4112
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: -3.966V 0xffff8412
+ADC Channel 1: 2.114V 0x4212
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 4.066V 0x7f12
+ADC Channel 1: 2.082V 0x4112
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.938V 0x7b12
+ADC Channel 1: 2.082V 0x4112
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.810V 0x7712
+ADC Channel 1: 2.082V 0x4112
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.682V 0x7312
+ADC Channel 1: 2.082V 0x4112
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.586V 0x7012
+ADC Channel 1: 2.082V 0x4112
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.490V 0x6d12
+ADC Channel 1: 2.082V 0x4112
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.394V 0x6a12
+ADC Channel 1: 2.082V 0x4112
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.330V 0x6812
+ADC Channel 1: 2.082V 0x4112
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 3.234V 0x6512
+ADC Channel 1: 2.050V 0x4012
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.170V 0x6312
+ADC Channel 1: 2.050V 0x4012
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.106V 0x6112
+ADC Channel 1: 2.050V 0x4012
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.042V 0x5f12
+ADC Channel 1: 2.050V 0x4012
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 3.010V 0x5e12
+ADC Channel 1: 2.050V 0x4012
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.978V 0x5d12
+ADC Channel 1: 2.050V 0x4012
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.946V 0x5c12
+ADC Channel 1: 2.018V 0x3f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.882V 0x5a12
+ADC Channel 1: 2.050V 0x4012
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.850V 0x5912
+ADC Channel 1: 2.050V 0x4012
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.850V 0x5912
+ADC Channel 1: 2.018V 0x3f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.818V 0x5812
+ADC Channel 1: 2.018V 0x3f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.786V 0x5712
+ADC Channel 1: 2.018V 0x3f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.786V 0x5712
+ADC Channel 1: 2.018V 0x3f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.754V 0x5612
+ADC Channel 1: 2.018V 0x3f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.722V 0x5512
+ADC Channel 1: 2.018V 0x3f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.722V 0x5512
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.690V 0x5412
+ADC Channel 1: 2.018V 0x3f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.658V 0x5312
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.658V 0x5312
+ADC Channel 1: 2.018V 0x3f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.658V 0x5312
+ADC Channel 1: 2.018V 0x3f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.626V 0x5212
+ADC Channel 1: 2.018V 0x3f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.626V 0x5212
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.594V 0x5112
+ADC Channel 1: 2.018V 0x3f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.594V 0x5112
+ADC Channel 1: 2.018V 0x3f12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.562V 0x5012
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.562V 0x5012
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.562V 0x5012
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.530V 0x4f12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.530V 0x4f12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.530V 0x4f12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.530V 0x4f12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.530V 0x4f12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.498V 0x4e12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.498V 0x4e12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.498V 0x4e12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.498V 0x4e12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.498V 0x4e12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.466V 0x4d12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.466V 0x4d12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.466V 0x4d12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.466V 0x4d12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.466V 0x4d12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.466V 0x4d12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.434V 0x4c12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.434V 0x4c12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.434V 0x4c12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.434V 0x4c12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.434V 0x4c12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.434V 0x4c12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.402V 0x4b12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.402V 0x4b12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.402V 0x4b12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.402V 0x4b12
+ADC Channel 1: 1.986V 0x3e12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.402V 0x4b12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.402V 0x4b12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.402V 0x4b12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.370V 0x4a12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.370V 0x4a12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.370V 0x4a12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.370V 0x4a12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.370V 0x4a12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.370V 0x4a12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.370V 0x4a12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.370V 0x4a12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.370V 0x4a12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.370V 0x4a12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.370V 0x4a12
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.669V 0x5367
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.338V 0x4912
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.306V 0x4812
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.954V 0x3d12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.274V 0x4712
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.765V 0x5667
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.922V 0x3c12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.242V 0x4612
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.890V 0x3b12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.210V 0x4512
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.765V 0x5667
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.765V 0x5667
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.765V 0x5667
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.178V 0x4412
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.858V 0x3a12
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.765V 0x5667
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.765V 0x5667
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.146V 0x4312
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.765V 0x5667
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.765V 0x5667
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.765V 0x5667
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.765V 0x5667
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.826V 0x3912
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.765V 0x5667
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.082V 0x4112
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.082V 0x4112
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.701V 0x5467
+
+ADC Channel 0: 2.082V 0x4112
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.082V 0x4112
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.082V 0x4112
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.687V 0xffffac05
+ADC Channel 3: 2.733V 0x5567
+
+ADC Channel 0: 2.114V 0x4212
+ADC Channel 1: 1.794V 0x3812
+ADC Channel 2: -2.655V 0xffffad05
+ADC Channel 3: 2.765V 0x5667
+

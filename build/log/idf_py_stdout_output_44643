@@ -1,0 +1,647 @@
+ESP-ROM:�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x1718
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc08
+load:0x403cc700,len:0x2f08
+entry 0x403c990c
+[0;32mI (27) boot: ESP-IDF v5.2-dev-1449-gd2471b11e7 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 11 2023 17:12:33[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=10ad4h ( 68308) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=00020afc vaddr=3fc95400 size=02c34h ( 11316) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=00023738 vaddr=40374000 size=0c8e0h ( 51424) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=324c8h (206024) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=000624f0 vaddr=403808e0 size=04a78h ( 19064) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (191) cpu_start: Pro cpu up.[0m
+[0;32mI (191) cpu_start: Starting app cpu, entry point is 0x40375438[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (210) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (210) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:     h160-scooter-controller[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (223) cpu_start: Compile time:     Aug 21 2023 14:14:24[0m
+[0;32mI (229) cpu_start: ELF file SHA256:  d20c7afc5...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2-dev-1449-gd2471b11e7[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (246) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (251) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (256) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (263) heap_init: At 3FC98A38 len 00050CD8 (323 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (276) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (293) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (310) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (319) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (326) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (333) coexist: coex firmware version: 5221224[0m
+[0;32mI (338) coexist: coexist rom version e7ae62f[0m
+[0;32mI (344) app_start: Starting scheduler on CPU0[0m
+[0;32mI (348) app_start: Starting scheduler on CPU1[0m
+[0;32mI (348) main_task: Started on CPU0[0m
+[0;32mI (358) main_task: Calling app_main()[0m
+[0;32mI (358) NVS: initializing nonvolatile storage...[0m
+[0;32mI (378) GPIO: initializing GPIO pins...[0m
+[0;32mI (378) I2C: initializing i2c[0m
+i2c scan: 
+Found device at: 0x48
+Found device at: 0x68
+ADC REGISTER CONTENTS:
+ADS1115_CONF_R: 4283
+ADS1115_CONV_R: 3373
+ADS1115_LOTH_R: 8000
+ADS1115_HITH_R: 7fff
+ADC Channel 0: 0.583V
+ADC Channel 1: 0.580V
+ADC Channel 2: 0.580V
+ADC Channel 3: 1.647V
+
+2023-08-28T01:33:30+08:00
+[0;32mI (608) MCPWM: initializing MCPWM...[0m
+[0;32mI (608) SPI: initializing SPI...[0m
+[0;32mI (608) SPI: initializing SPI IMU...[0m
+[0;32mI (618) SPI: starting SPI IMU...[0m
+IMU REGISTER CONTENTS:
+0x00 0000 0000 0000 0000 0000 0000 0000 006a
+0x10 4040 0400 0000 0000 e000 0000 0000 07c2
+0x20 ffff 5c01 3cfe befe 3af4 790d 1c3d 0000
+0x30 0000 0000 0000 0000 0000 0010 0000 aaaa
+0x40 0000 0000 0000 0000 0000 0000 0000 0000
+0x50 0000 0000 8400 0000 0000 0000 0000 0000
+0x60 0000 0000 00aa 0000 0000 0000 0000 0000
+0x70 0000 0000 0000 0000 0000 0000 0000 00ff
+
+Temp:   -1
+GyroX:  348
+GyroY:  -452
+GyroZ:  -322
+AccelX: -3014
+AccelY: 3449
+AccelZ: 15644
+[0;32mI (658) SPI: initializing SDMCC card...[0m
+[0;32mI (668) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (678) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (688) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (698) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (708) gpio: GPIO[41]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (718) gpio: GPIO[42]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (758) gpio: GPIO[42]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Name: EC1S5
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 61120MB
+CSD: ver=2, sector_size=512, capacity=125173760 read_bl_len=9
+SSR: bus_width=4
+[0;32mI (768) SDCARD: sdmmc status normal[0m
+[0;32mI (1278) main_task: Returned from app_main()[0m
+ADC Channel 0: 0.583V
+ADC Channel 1: 0.580V
+ADC Channel 2: 0.580V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.583V
+ADC Channel 1: 0.581V
+ADC Channel 2: 0.580V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.583V
+ADC Channel 1: 0.581V
+ADC Channel 2: 0.580V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.583V
+ADC Channel 1: 0.581V
+ADC Channel 2: 0.580V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.583V
+ADC Channel 1: 0.581V
+ADC Channel 2: 0.580V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.583V
+ADC Channel 1: 0.581V
+ADC Channel 2: 0.580V
+ADC Channel 3: 1.646V
+
+ADC Channel 0: 0.583V
+ADC Channel 1: 0.581V
+ADC Channel 2: 0.581V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.583V
+ADC Channel 1: 0.581V
+ADC Channel 2: 0.581V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.580V
+ADC Channel 1: 0.581V
+ADC Channel 2: 0.580V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.575V
+ADC Channel 1: 0.581V
+ADC Channel 2: 0.580V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.573V
+ADC Channel 1: 0.581V
+ADC Channel 2: 0.579V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.661V
+ADC Channel 1: 0.581V
+ADC Channel 2: 0.578V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.751V
+ADC Channel 1: 0.580V
+ADC Channel 2: 0.578V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.814V
+ADC Channel 1: 0.579V
+ADC Channel 2: 0.578V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.859V
+ADC Channel 1: 0.578V
+ADC Channel 2: 0.581V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.892V
+ADC Channel 1: 0.577V
+ADC Channel 2: 0.578V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.918V
+ADC Channel 1: 0.577V
+ADC Channel 2: 0.579V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.913V
+ADC Channel 1: 0.576V
+ADC Channel 2: 0.576V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.906V
+ADC Channel 1: 0.576V
+ADC Channel 2: 0.576V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.192V
+ADC Channel 1: 0.575V
+ADC Channel 2: 0.586V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.599V
+ADC Channel 1: 0.575V
+ADC Channel 2: 0.609V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.896V
+ADC Channel 1: 0.574V
+ADC Channel 2: 0.616V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 2.042V
+ADC Channel 1: 0.573V
+ADC Channel 2: 0.616V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.998V
+ADC Channel 1: 0.573V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.796V
+ADC Channel 1: 0.573V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.628V
+ADC Channel 1: 0.573V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.463V
+ADC Channel 1: 0.573V
+ADC Channel 2: 0.576V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.329V
+ADC Channel 1: 0.573V
+ADC Channel 2: 0.580V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.216V
+ADC Channel 1: 0.572V
+ADC Channel 2: 0.578V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.118V
+ADC Channel 1: 0.572V
+ADC Channel 2: 0.579V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.037V
+ADC Channel 1: 0.572V
+ADC Channel 2: 0.582V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.982V
+ADC Channel 1: 0.572V
+ADC Channel 2: 0.574V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.969V
+ADC Channel 1: 0.572V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.931V
+ADC Channel 1: 0.572V
+ADC Channel 2: 0.574V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.905V
+ADC Channel 1: 0.572V
+ADC Channel 2: 0.574V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.878V
+ADC Channel 1: 0.572V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.828V
+ADC Channel 1: 0.572V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.849V
+ADC Channel 1: 0.572V
+ADC Channel 2: 0.597V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.876V
+ADC Channel 1: 0.572V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.836V
+ADC Channel 1: 0.572V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.827V
+ADC Channel 1: 0.572V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.837V
+ADC Channel 1: 0.573V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.802V
+ADC Channel 1: 0.573V
+ADC Channel 2: 0.574V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.746V
+ADC Channel 1: 0.575V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.781V
+ADC Channel 1: 0.619V
+ADC Channel 2: 0.632V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.915V
+ADC Channel 1: 0.654V
+ADC Channel 2: 0.629V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.986V
+ADC Channel 1: 0.683V
+ADC Channel 2: 0.634V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.012V
+ADC Channel 1: 0.706V
+ADC Channel 2: 0.633V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.040V
+ADC Channel 1: 0.701V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.025V
+ADC Channel 1: 0.684V
+ADC Channel 2: 0.572V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.038V
+ADC Channel 1: 0.669V
+ADC Channel 2: 0.632V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.082V
+ADC Channel 1: 0.659V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.123V
+ADC Channel 1: 0.667V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.142V
+ADC Channel 1: 0.685V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.140V
+ADC Channel 1: 0.683V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.069V
+ADC Channel 1: 0.668V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.119V
+ADC Channel 1: 0.655V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.100V
+ADC Channel 1: 0.644V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.089V
+ADC Channel 1: 0.635V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.131V
+ADC Channel 1: 0.626V
+ADC Channel 2: 0.646V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.154V
+ADC Channel 1: 0.619V
+ADC Channel 2: 0.633V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.131V
+ADC Channel 1: 0.612V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.082V
+ADC Channel 1: 0.607V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.000V
+ADC Channel 1: 0.602V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.975V
+ADC Channel 1: 0.599V
+ADC Channel 2: 0.577V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.928V
+ADC Channel 1: 0.595V
+ADC Channel 2: 0.632V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.005V
+ADC Channel 1: 0.592V
+ADC Channel 2: 0.662V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.079V
+ADC Channel 1: 0.590V
+ADC Channel 2: 0.639V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.107V
+ADC Channel 1: 0.587V
+ADC Channel 2: 0.652V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.064V
+ADC Channel 1: 0.619V
+ADC Channel 2: 0.685V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 1.034V
+ADC Channel 1: 0.646V
+ADC Channel 2: 0.572V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.972V
+ADC Channel 1: 0.699V
+ADC Channel 2: 0.580V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.922V
+ADC Channel 1: 0.750V
+ADC Channel 2: 0.596V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.878V
+ADC Channel 1: 0.745V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.836V
+ADC Channel 1: 0.722V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.800V
+ADC Channel 1: 0.703V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.776V
+ADC Channel 1: 0.747V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.769V
+ADC Channel 1: 0.763V
+ADC Channel 2: 0.572V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.785V
+ADC Channel 1: 0.939V
+ADC Channel 2: 0.694V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.854V
+ADC Channel 1: 1.114V
+ADC Channel 2: 0.824V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.913V
+ADC Channel 1: 1.215V
+ADC Channel 2: 0.843V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.964V
+ADC Channel 1: 1.283V
+ADC Channel 2: 0.840V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.969V
+ADC Channel 1: 1.251V
+ADC Channel 2: 0.785V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.917V
+ADC Channel 1: 1.205V
+ADC Channel 2: 0.742V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.872V
+ADC Channel 1: 1.154V
+ADC Channel 2: 0.572V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.829V
+ADC Channel 1: 1.079V
+ADC Channel 2: 0.572V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.793V
+ADC Channel 1: 1.028V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.765V
+ADC Channel 1: 0.986V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.740V
+ADC Channel 1: 0.934V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.719V
+ADC Channel 1: 0.930V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.722V
+ADC Channel 1: 1.245V
+ADC Channel 2: 0.591V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.745V
+ADC Channel 1: 1.501V
+ADC Channel 2: 0.579V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.771V
+ADC Channel 1: 1.666V
+ADC Channel 2: 0.948V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.760V
+ADC Channel 1: 1.598V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.735V
+ADC Channel 1: 1.454V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.711V
+ADC Channel 1: 1.333V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.692V
+ADC Channel 1: 1.237V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.677V
+ADC Channel 1: 1.140V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.664V
+ADC Channel 1: 1.069V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.653V
+ADC Channel 1: 1.002V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.643V
+ADC Channel 1: 0.949V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.634V
+ADC Channel 1: 0.902V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.626V
+ADC Channel 1: 0.862V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.620V
+ADC Channel 1: 0.826V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.614V
+ADC Channel 1: 0.793V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+
+ADC Channel 0: 0.609V
+ADC Channel 1: 0.764V
+ADC Channel 2: 0.573V
+ADC Channel 3: 1.647V
+

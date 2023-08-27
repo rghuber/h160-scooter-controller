@@ -49,6 +49,8 @@ void TASK_DataLogger(){
         DEVICE_ADC_read_voltages(&adc_voltages);
         DEVICE_RTC_read_rtctime(&rtc_date_time);
 
+        DEVICE_ADC_print_voltages(&adc_voltages);
+
         acc_gyr_f = fopen("/sdcard/acc_gyr.dat", "ab");
         fwrite(&rtc_date_time,sizeof(rtc_time_t),1,acc_gyr_f);
         fwrite(&acc_gyr,sizeof(acc_gyr_t),1,acc_gyr_f);
@@ -150,6 +152,12 @@ void app_main()
     if (PERIPH_i2c_master_init() != ESP_OK){
         ESP_LOGE(TAG_I2C, "i2c init failed");
     }
+    DEVICE_i2c_scan();
+    DEVICE_ADC_init();
+    DEVICE_ADC_read_registers();
+    //DEVICE_RTC_set_rtctime();
+    DEVICE_ADC_print_voltages(&adc_voltages);
+    DEVICE_RTC_print_datetime(&rtc_date_time);
     
     ESP_LOGI(TAG_MCPWM,"initializing MCPWM...");
     if (PERIPH_mcpwm_init() != ESP_OK)
@@ -172,6 +180,7 @@ void app_main()
     {
         ESP_LOGE(TAG_SPI,"spi imu start failed");
     }
+    DEVICE_IMU_read_registers(imu);
 
     ESP_LOGI(TAG_SPI,"initializing SDMCC card...");
     if (DEVICE_sdcard_init() != ESP_OK)

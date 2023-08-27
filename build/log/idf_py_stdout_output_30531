@@ -1,0 +1,32 @@
+[1/18] Performing build step for 'bootloader'
+[1/1] cd /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/bootloader/esp-idf/esptool_py && /Users/rghuber/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/rghuber/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/bootloader/bootloader.bin
+Bootloader binary size 0x5290 bytes. 0x2d70 bytes (35%) free.
+[2/16] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-rtc.c.obj
+[3/16] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-mcpwm.c.obj
+In file included from /Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-mcpwm.c:1:
+/Users/rghuber/esp/esp-idf/components/driver/deprecated/driver/mcpwm.h:15:2: warning: #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)" [-Wcpp]
+   15 | #warning "legacy MCPWM driver is deprecated, please migrate to the new driver (include driver/mcpwm_prelude.h)"
+      |  ^~~~~~~
+[4/16] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-ISR.c.obj
+[5/16] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-i2c.c.obj
+[6/16] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-spi.c.obj
+[7/16] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-sdcard.c.obj
+[8/16] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-gpio.c.obj
+[9/16] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-adc.c.obj
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-adc.c: In function 'DEVICE_ADC_print_voltages':
+/Users/rghuber/Downloads/Firmware/h160-scooter-controller/main/h160-adc.c:107:11: warning: unused variable 'fs' [-Wunused-variable]
+  107 |     float fs=4.096;
+      |           ^~
+[10/16] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-imu.c.obj
+[11/16] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/h160-scooter-controller.c.obj
+[12/16] Linking C static library esp-idf/main/libmain.a
+[13/16] Generating ld/sections.ld
+[14/16] Linking CXX executable h160-scooter-controller.elf
+[15/16] Generating binary image from built executable
+esptool.py v4.6.2
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/h160-scooter-controller.bin
+[16/16] cd /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/esp-idf/esptool_py && /Users/rghuber/.espressif/python_env/idf5.2_py3.9_env/bin/python /Users/rghuber/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/partition_table/partition-table.bin /Users/rghuber/Downloads/Firmware/h160-scooter-controller/build/h160-scooter-controller.bin
+h160-scooter-controller.bin binary size 0x56ed0 bytes. Smallest app partition is 0x100000 bytes. 0xa9130 bytes (66%) free.

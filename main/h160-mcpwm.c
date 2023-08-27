@@ -41,7 +41,7 @@ void DEVICE_MCPWM_stop(){
 void STATE_change_speed(){
     
     if(MOTOR_speed == 40){
-        MOTOR_speed=100;
+        MOTOR_speed=70;
     } else if (MOTOR_speed == 70){
         MOTOR_speed=100;
     } else if (MOTOR_speed == 100){

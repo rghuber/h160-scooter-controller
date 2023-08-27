@@ -1,0 +1,26 @@
+[0;33m--- idf_monitor on /dev/cu.usbserial-3 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40375424: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[1;31mNone[0m
+[0;33mWaiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m0x40375438: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 0fbc64c9086baec61e50c0d47e5c3bb0bcb253654da93ba0ae3372c6c5423f68[0m
+[0;33m0x400556d5: strlen in ROM
+[0m
+[0;33m0x400556d5: strlen in ROM
+[0m
+[0;33m0x400556e5: strlen in ROM
+[0m
+[0;33m0x400556d2: strlen in ROM
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 0fbc64c9086baec61e50c0d47e5c3bb0bcb253654da93ba0ae3372c6c5423f68[0m
+[0;33m0x40375a2c: esp_ipc_isr_handler at /Users/rghuber/esp/esp-idf/components/esp_system/port/arch/xtensa/esp_ipc_isr_handler.S:65
+[0m
+[0;33m0x40375438: call_start_cpu1 at /Users/rghuber/esp/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 0fbc64c9086baec61e50c0d47e5c3bb0bcb253654da93ba0ae3372c6c5423f68[0m
+[0;33m0x400556d5: strlen in ROM
+[0m
+[0m

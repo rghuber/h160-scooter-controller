@@ -1,0 +1,192 @@
+ESP-ROMESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x1718
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc08
+load:0x403cc700,len:0x2f08
+entry 0x403c990c
+[0;32mI (27) boot: ESP-IDF v5.2-dev-1449-gd2471b11e7 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 11 2023 17:12:33[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=1098ch ( 67980) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=000209b4 vaddr=3fc95400 size=02c34h ( 11316) load[0m
+[0;32mI (116) esp_image: segment 2: paddr=000235f0 vaddr=40374000 size=0ca28h ( 51752) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=32154h (205140) map[0m
+[0;32mI (168) esp_image: segment 4: paddr=0006217c vaddr=40380a28 size=04930h ( 18736) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (191) cpu_start: Pro cpu up.[0m
+[0;32mI (191) cpu_start: Starting app cpu, entry point is 0x40375438[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (209) cpu_start: Pro cpu start user code[0m
+[0;32mI (209) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (209) cpu_start: Application information:[0m
+[0;32mI (212) cpu_start: Project name:     h160-scooter-controller[0m
+[0;32mI (219) cpu_start: App version:      1[0m
+[0;32mI (223) cpu_start: Compile time:     Aug 21 2023 14:14:24[0m
+[0;32mI (229) cpu_start: ELF file SHA256:  3405621a3...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          v5.2-dev-1449-gd2471b11e7[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (246) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (251) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (263) heap_init: At 3FC98A28 len 00050CE8 (323 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (276) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (282) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (293) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (310) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (319) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (326) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (333) coexist: coex firmware version: 5221224[0m
+[0;32mI (338) coexist: coexist rom version e7ae62f[0m
+[0;32mI (343) app_start: Starting scheduler on CPU0[0m
+[0;32mI (348) app_start: Starting scheduler on CPU1[0m
+[0;32mI (348) main_task: Started on CPU0[0m
+[0;32mI (358) main_task: Calling app_main()[0m
+[0;32mI (358) NVS: initializing nonvolatile storage...[0m
+[0;32mI (378) GPIO: initializing GPIO pins...[0m
+[0;32mI (378) I2C: initializing i2c[0m
+i2c scan: 
+Found device at: 0x48
+Found device at: 0x68
+ADC REGISTER CONTENTS:
+ADS1115_CONF_R: 4283
+ADS1115_CONV_R: 674c
+ADS1115_LOTH_R: 8000
+ADS1115_HITH_R: 7fff
+ADC Channel 0: 2.445V
+ADC Channel 1: 2.445V
+ADC Channel 2: 2.445V
+ADC Channel 3: 2.445V
+2000-01-01T00:00:19+08:00
+[0;32mI (408) MCPWM: initializing MCPWM...[0m
+[0;32mI (418) SPI: initializing SPI...[0m
+[0;32mI (418) SPI: initializing SPI IMU...[0m
+[0;32mI (418) SPI: starting SPI IMU...[0m
+IMU REGISTER CONTENTS:
+0x00 0000 0000 0000 0000 0000 0000 0000 006a
+0x10 4040 0400 0000 0000 e000 0000 0000 07c2
+0x20 3dff 3900 74ff f7ff 57fd 0000 7243 0000
+0x30 0000 0000 0000 0000 0000 0010 0000 ffff
+0x40 0000 0000 0000 0000 0000 0000 0000 0000
+0x50 0000 0000 8400 0000 0000 0000 0000 0000
+0x60 0000 0000 00ff 0000 0000 0000 0000 0000
+0x70 0000 0000 0000 0000 0000 0000 0000 00ff
+
+Temp:   -195
+GyroX:  57
+GyroY:  -140
+GyroZ:  -9
+AccelX: -681
+AccelY: 0
+AccelZ: 17266
+[0;32mI (468) SPI: initializing SDMCC card...[0m
+[0;32mI (468) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (478) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (488) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (498) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (508) gpio: GPIO[41]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (518) gpio: GPIO[42]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;31mE (548) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[0;31mE (548) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[0;31mE (548) SDCARD: Failed to initialize the card (ESP_ERR_TIMEOUT). Make sure SD card lines have pull-up resistors in place.[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x400556d5  PS      : 0x00060b30  A0      : 0x820252ca  A1      : 0x3fc9c2c0  
+A2      : 0x80382de4  A3      : 0x80382de0  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x00000000  A9      : 0x3fc9c280  
+A10     : 0x3fc9c2a0  A11     : 0x00000000  A12     : 0x00060520  A13     : 0x00000010  
+A14     : 0x00ff0000  A15     : 0xff000000  SAR     : 0x00000004  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x80382de4  LBEG    : 0x400556d5  LEND    : 0x400556e5  LCOUNT  : 0xffffffff  
+
+
+Backtrace: 0x400556d2:0x3fc9c2c0 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 3405621a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a2c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x1718
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc08
+load:0x403cc700,len:0x2f08
+entry 0x403c990c
+[0;32mI (31) boot: ESP-IDF v5.2-dev-1449-gd2471b11e7 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 11 2023 17:12:33[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=1098ch ( 67980) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=000209b4 vaddr=3fc95400 size=02c34h ( 11316) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=000235f0 vaddr=40374000 size=0ca28h ( 51752) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=32154h (205140) map[0m
+[0;32mI (172) esp_image: segment 4: paddr=0006217c vaddr=40380a28 size=04930h ( 18736) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu up.[0m
+[0;32mI (196) cpu_start: Starting app cpu, entry point is 0x40375438[0m
+[0;32mI (175) cpu_start: App cpu up.[0m
+[0;32mI (214) cpu_start: Pro cpu start user code[0m
+[0;32mI (214) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (214) cpu_start: Application information:[0m
+[0;32mI (217) cpu_start: Project name:     h160-scooter-controller[0m
+[0;32mI (223) cpu_start: App version:      1[0m
+[0;32mI (228) cpu_start: Compile time:     Aug 21 2023 14:14:24[0m
+[0;32mI (234) cpu_start: ELF file SHA256:  3405621a3...[0m
+[0;32mI (239) cpu_start: ESP-IDF:          v5.2-dev-1449-gd2471b11e7[0m
+[0;32mI (246) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (250) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (255) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (267) heap_init: At 3FC98A28 len 00050CE8 (323 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (280) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (294) spi_flash: detected chip: generic[0m
+[0;32mI (297) spi_flash: flash io: dio[0m
+[0;33mW (301) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (314) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (324) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (330) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (338) coexist: coex firmware version: 5221224[0m
+[0;32mI (343) coexist: coexist rom version e7ae62f[0m
+[0;32mI (348) app_start: Starting scheduler on CPU0[0m
+[0;32mI (353) app_start: Starting scheduler on CPU1[0m
+[0;32mI (353) main_task: Started on CPU0[0m
