@@ -4,9 +4,10 @@
 #include "esp_log.h"
 #include "freertos/FreeRTOS.h"
 
-
 #ifndef H160_DEFINES
 #define H160_DEFINES
+
+#define SCOOTER_NAME "H160_RGH"
 
 #define TAG_GPIO "GPIO"
 #define TAG_I2C "I2C"

@@ -1,6 +1,7 @@
 // setup i2c master
 #include <stdio.h>
 #include <string.h>
+#include <dirent.h>
 #include <sys/unistd.h>
 #include <sys/stat.h>
 #include <time.h>
@@ -30,6 +31,8 @@
 
 #include "h160-mcpwm.h"
 
+#include "h160-bluetooth.h"
+
 #include "h160-ISR.h"
 
 struct tm tm;
@@ -40,7 +43,16 @@ char timestamp[100];
 void TASK_DataLogger(){
 
     FILE * data_log_f;
-    data_log_f = fopen("/sdcard/data_log.dat", "wb");
+    char fname[100];
+    sprintf(fname,"/sdcard/data_log_20%02d-%02d-%02dT%02d_%02d_%02d.dat",
+                                                            rtc_date_time.year,
+                                                            rtc_date_time.month,
+                                                            rtc_date_time.day,
+                                                            rtc_date_time.hour,
+                                                            rtc_date_time.min,
+                                                            rtc_date_time.sec
+                                                            );
+    data_log_f = fopen(fname, "wb");
     fclose(data_log_f);
 
     while(1){
@@ -48,10 +60,8 @@ void TASK_DataLogger(){
         DEVICE_IMU_read_acc_gyr(imu,&acc_gyr);
         DEVICE_ADC_read_voltages(&adc_voltages);
         gettimeofday(&now,NULL);
-        
-        //printf("%lld.%ld\n",now.tv_sec,now.tv_usec);
 
-        data_log_f = fopen("/sdcard/data_log.dat", "ab");
+        data_log_f = fopen(fname, "ab");
         fwrite(&now,sizeof(long long int)+sizeof(long int),1,data_log_f);
         fwrite(&acc_gyr,sizeof(acc_gyr_t),1,data_log_f);
         fwrite(&adc_voltages,sizeof(adc_voltage_t),1,data_log_f);
@@ -132,11 +142,21 @@ void TASK_TriggerRead( void * parameter)
 
 void app_main()
 {
+    esp_err_t ret;
+
     ESP_LOGI(TAG_NVS,"initializing nonvolatile storage...");
-    if (nvs_flash_init() != ESP_OK)
-    {
-        ESP_LOGE(TAG_NVS,"NVS init failed");
+    ret=nvs_flash_init();
+    if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND){
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        ESP_LOGI(TAG_NVS,"erased NVS...");
+        ret = nvs_flash_init();
+        {
+            ESP_LOGE(TAG_NVS,"NVS init failed");
+        }
     }
+
+    ESP_LOGI(TAG_GPIO,"initializing BLE..."); 
+    startBLE();
 
     ESP_LOGI(TAG_GPIO,"initializing GPIO pins...");
     if (PERIPH_gpio_init() != ESP_OK)
@@ -202,7 +222,7 @@ void app_main()
     {
         ESP_LOGE(TAG_SPI,"sdcard init failed");
     }
-    
+
     gpio_set_level(BUZZER_PIN, 1);
     vTaskDelay(500/portTICK_PERIOD_MS);
     gpio_set_level(BUZZER_PIN, 0);
