@@ -3,6 +3,8 @@
 #include <string.h>
 #include <sys/unistd.h>
 #include <sys/stat.h>
+#include <time.h>
+#include <sys/time.h>
 
 #include "nvs_flash.h"
 #include "esp_heap_caps.h"
@@ -30,38 +32,32 @@
 
 #include "h160-ISR.h"
 
+struct tm tm;
+struct timeval now;
+time_t epoch;
+char timestamp[100];
 
 void TASK_DataLogger(){
 
-    FILE * acc_gyr_f;
-    FILE * bat_curr_f;
-    //FILE * rtc_date_time_f;
-
-    acc_gyr_f = fopen("/sdcard/acc_gyr.dat", "wb");
-    fclose(acc_gyr_f);
-
-    bat_curr_f = fopen("/sdcard/bat_curr.dat", "wb");
-    fclose(bat_curr_f);
+    FILE * data_log_f;
+    data_log_f = fopen("/sdcard/data_log.dat", "wb");
+    fclose(data_log_f);
 
     while(1){
         
         DEVICE_IMU_read_acc_gyr(imu,&acc_gyr);
         DEVICE_ADC_read_voltages(&adc_voltages);
-        DEVICE_RTC_read_rtctime(&rtc_date_time);
-
-        DEVICE_ADC_print_voltages(&adc_voltages);
-
-        acc_gyr_f = fopen("/sdcard/acc_gyr.dat", "ab");
-        fwrite(&rtc_date_time,sizeof(rtc_time_t),1,acc_gyr_f);
-        fwrite(&acc_gyr,sizeof(acc_gyr_t),1,acc_gyr_f);
-        fclose(acc_gyr_f);
+        gettimeofday(&now,NULL);
         
-        bat_curr_f = fopen("/sdcard/bat_curr.dat", "ab");
-        fwrite(&rtc_date_time,sizeof(rtc_time_t),1,bat_curr_f);
-        fwrite(&adc_voltages,sizeof(adc_voltage_t),1,bat_curr_f);
-        fclose(bat_curr_f);
+        //printf("%lld.%ld\n",now.tv_sec,now.tv_usec);
 
-        vTaskDelay(50/portTICK_PERIOD_MS);
+        data_log_f = fopen("/sdcard/data_log.dat", "ab");
+        fwrite(&now,sizeof(long long int)+sizeof(long int),1,data_log_f);
+        fwrite(&acc_gyr,sizeof(acc_gyr_t),1,data_log_f);
+        fwrite(&adc_voltages,sizeof(adc_voltage_t),1,data_log_f);
+        fclose(data_log_f);
+        
+        vTaskDelay(100/portTICK_PERIOD_MS);
     }
 }
 
@@ -158,6 +154,25 @@ void app_main()
     //DEVICE_RTC_set_rtctime();
     DEVICE_ADC_print_voltages(&adc_voltages);
     DEVICE_RTC_print_datetime(&rtc_date_time);
+    sprintf(timestamp,"20%02d-%02d-%02dT%02d:%02d:%02d",
+                                                                    rtc_date_time.year,
+                                                                    rtc_date_time.month,
+                                                                    rtc_date_time.day,
+                                                                    rtc_date_time.hour,
+                                                                    rtc_date_time.min,
+                                                                    rtc_date_time.sec
+    );
+    if ( strptime(timestamp, "%Y-%m-%dT%H:%M:%S", &tm) != NULL ){
+        epoch = mktime(&tm);
+        printf("UNIX EPOCH: %lld",epoch);
+        now.tv_sec=epoch;
+        now.tv_usec=0;
+        settimeofday(&now,NULL);
+    } else {
+        ESP_LOGE(TAG_I2C,"Error setting time");
+    }
+
+
     
     ESP_LOGI(TAG_MCPWM,"initializing MCPWM...");
     if (PERIPH_mcpwm_init() != ESP_OK)

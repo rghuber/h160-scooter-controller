@@ -114,9 +114,9 @@ esp_err_t DEVICE_ADC_read_voltages(adc_voltage_t *adc_voltages){
 void DEVICE_ADC_print_voltages(adc_voltage_t *adc_voltages){
     DEVICE_ADC_read_voltages(adc_voltages);
     float fs=4.096;
-    printf("ADC Channel 0: %.3fV\n",((float)adc_voltages->adc0)/32768.0*fs);
-    printf("ADC Channel 1: %.3fV\n",((float)adc_voltages->adc1)/32768.0*fs);
-    printf("ADC Channel 2: %.3fV\n",((float)adc_voltages->adc2)/32768.0*fs);
-    printf("ADC Channel 3: %.3fV\n",((float)adc_voltages->adc3)/32768.0*fs);
+    printf("ADC Channel 0: %.3fV\n",((float)adc_voltages->adc0)/32768.0*fs); 
+    printf("ADC Channel 1: %.3fV\n",((float)adc_voltages->adc1)/32768.0*fs); 
+    printf("ADC Channel 2: %.3fV\n",((float)adc_voltages->adc2)/32768.0*fs); // battery divider VBAT-100k-BDIV-4.7k-GND
+    printf("ADC Channel 3: %.3fV\n",((float)adc_voltages->adc3)/32768.0*fs); // motor current sensor, Vcc/2 + 0.45 mV/A
     printf("\n");
 }
