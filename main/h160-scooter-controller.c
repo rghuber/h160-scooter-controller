@@ -41,10 +41,12 @@ time_t epoch;
 char timestamp[100];
 
 void TASK_DataLogger(){
-
-    FILE * data_log_f;
+    
+    FILE * data_log_f = NULL;
     char fname[100];
-    sprintf(fname,"/sdcard/data_log_20%02d-%02d-%02dT%02d_%02d_%02d.dat",
+
+    if(sdcard_ready){
+        sprintf(fname,"/sdcard/data_log_20%02d-%02d-%02dT%02d_%02d_%02d.dat",
                                                             rtc_date_time.year,
                                                             rtc_date_time.month,
                                                             rtc_date_time.day,
@@ -52,22 +54,33 @@ void TASK_DataLogger(){
                                                             rtc_date_time.min,
                                                             rtc_date_time.sec
                                                             );
-    data_log_f = fopen(fname, "wb");
-    fclose(data_log_f);
+        data_log_f = fopen(fname, "wb");
+    }
 
     while(1){
         
+
+        //gettimeofday(&now,NULL);
+        //printf("start: %lld.%ld\n",now.tv_sec,now.tv_usec);
         DEVICE_IMU_read_acc_gyr(imu,&acc_gyr);
+        //gettimeofday(&now,NULL);
+        //printf("imu_read: %lld.%ld\n",now.tv_sec,now.tv_usec);
         DEVICE_ADC_read_voltages(&adc_voltages);
+        //printf("adc_read: %lld.%ld\n",now.tv_sec,now.tv_usec);
         gettimeofday(&now,NULL);
 
-        data_log_f = fopen(fname, "ab");
-        fwrite(&now,sizeof(long long int)+sizeof(long int),1,data_log_f);
-        fwrite(&acc_gyr,sizeof(acc_gyr_t),1,data_log_f);
-        fwrite(&adc_voltages,sizeof(adc_voltage_t),1,data_log_f);
-        fclose(data_log_f);
+        if(sdcard_ready){
+            fwrite(&now,sizeof(long long int)+sizeof(long int),1,data_log_f);
+            fwrite(&acc_gyr,sizeof(acc_gyr_t),1,data_log_f);
+            fwrite(&adc_voltages,sizeof(adc_voltage_t),1,data_log_f);
+            fflush(data_log_f);
+            fsync(fileno(data_log_f));
+        }
+        //gettimeofday(&now,NULL);
+        //printf("file_write: %lld.%ld\n\n",now.tv_sec,now.tv_usec);
         
-        vTaskDelay(100/portTICK_PERIOD_MS);
+
+        vTaskDelay(50/portTICK_PERIOD_MS);
     }
 }
 
@@ -217,6 +230,7 @@ void app_main()
     }
     DEVICE_IMU_read_registers(imu);
 
+    sdcard_ready=false;
     ESP_LOGI(TAG_SPI,"initializing SDMCC card...");
     if (DEVICE_sdcard_init() != ESP_OK)
     {

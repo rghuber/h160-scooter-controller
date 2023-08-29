@@ -20,7 +20,7 @@
 
 #define I2C_SDA_PIN 7
 #define I2C_SCL_PIN 6
-#define I2C_MASTER_FREQ_HZ 100000
+#define I2C_MASTER_FREQ_HZ 400000
 
 #define SPI_MOSI_PIN 11
 #define SPI_MISO_PIN 13

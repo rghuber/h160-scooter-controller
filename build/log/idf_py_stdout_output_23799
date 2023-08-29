@@ -163,4 +163,110 @@ File 003: data_log_2023-08-28T22_02_16.dat
 File 004: data_log_2023-08-28T22_03_15.dat
 File 005: data_log_2023-08-28T22_11_39.dat
 File 006: data_log_2023-08-28T22_11_44.dat
-File 007: data
+File 007: data_log_2023-08-28T22_23_08.dat
+File 008: data_log_2023-08-28T22_23_14.dat
+File 009: data_log_2023-08-28T22_30_28.dat
+File 010: data_log_2023-08-28T22_30_32.dat
+File 011: data_log_2023-08-28T22_37_28.dat
+File 012: data_log_2023-08-28T22_37_32.dat
+File 013: data_log_2023-08-28T22_43_39.dat
+File 014: data_log_2023-08-28T22_43_45.dat
+File 015: data_log_2023-08-28T22_46_45.dat
+File 016: data_log_2023-08-28T22_46_49.dat
+File 017: data_log_2023-08-28T22_47_22.dat
+File 018: data_log_2023-08-28T22_49_50.dat
+File 019: data_log_2023-08-28T22_49_54.dat
+File 020: data_log_2023-08-28T22_50_39.dat
+File 021: data_log_2023-08-28T22_54_03.dat
+File 022: data_log_2023-08-28T22_54_07.dat
+File 023: data_log_2023-08-28T22_54_50.dat
+File 024: data_log_2023-08-28T22_56_15.dat
+File 025: data_log_2023-08-28T22_56_19.dat
+File 026: data_log_2023-08-28T23_23_53.dat
+File 027: data_log_2023-08-28T23_35_43.dat
+File 028: data_log_2023-08-28T23_36_04.dat
+File 029: data_log_2023-08-28T23_36_25.dat
+File 030: data_log_2023-08-28T23_42_22.dat
+File 031: data_log_2023-08-28T23_42_40.dat
+File 032: data_log_2023-08-28T23_59_57.dat
+File 033: data_log_2023-08-29T00_00_12.dat
+File 034: data_log_2023-08-29T00_03_11.dat
+File 035: data_log_2023-08-29T00_03_16.dat
+Received=d data_log_2023-08-28T23_20_48.dat
+received d, providing file data_log_2023-08-28T23_20_48.dat
+reading block 0, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 1, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 2, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 3, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 4, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 5, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 6, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 7, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 8, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 9, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 10, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 11, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 12, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 13, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 14, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 15, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 16, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 17, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 18, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 19, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 20, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 21, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 22, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 23, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 24, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 25, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 26, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 27, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 28, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 29, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 30, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 31, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 32, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 33, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 34, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 35, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 36, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 37, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 38, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 39, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 40, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 41, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 42, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 43, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 44, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 45, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 46, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 47, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 48, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 49, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 50, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 51, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 52, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 53, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 54, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 55, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 56, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 57, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 58, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 59, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 60, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 61, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 62, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 63, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 64, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 65, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 66, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 67, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 68, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 69, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 70, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 71, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 72, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 73, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 74, file /sdcard/data_log_2023-08-28T23_20_48.dat
+reading block 75, file /sdcard/data_log_2023-08-28T23_20_48.dat

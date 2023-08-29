@@ -1,4 +1,3 @@
-
 #include <assert.h>
 #include <stdio.h>
 #include <string.h>
@@ -15,6 +14,7 @@
 #include "console/console.h"
 #include "services/gap/ble_svc_gap.h"
 #include "services/gatt/ble_svc_gatt.h"
+#include "h160-sdcard.h"
 #include "h160-bluetooth.h"
 #include "h160-defines.h"
 
@@ -24,11 +24,7 @@ static const char *tag = "NimBLE";
 static uint8_t own_addr_type;
 uint16_t notification_handle;
 uint16_t conn_handle;
-bool notify_state; //!! When client subscribe to notifications, the value is set to 1.Check this value before sending notifictions.
-TaskHandle_t xHandle = NULL;
-char *notification; //! You will set this value and send it as notification.
 
-//@_____________________Define UUIDs______________________________________
 //!! 5853a5f5-730a-40b2-9b3c-061ff33106f2 data transfer service
 static const ble_uuid128_t gatt_svr_svc_uuid =
     BLE_UUID128_INIT(0xf2, 0x06, 0x31, 0xf3, 0x1f, 0x06, 0x3c, 0x9b, 0xb2, 0x40, 0x0a, 0x73, 0xf5, 0xa5, 0x53, 0x58);
@@ -50,8 +46,8 @@ long int flen;
 long int readpos;
 uint8_t dl_mode;
 
-uint16_t min_length = 1;   //!! minimum length the client can write to a characterstic
-uint16_t max_length = 255; //!! maximum length the client can write to a characterstic
+uint16_t min_length = 1;   
+uint16_t max_length = 255;
 
 
 
@@ -61,19 +57,17 @@ static int bleprph_gap_event(struct ble_gap_event *event, void *arg);
 
 static int gatt_svr_chr_cmd_access(uint16_t conn_handle, uint16_t attr_handle,
                                struct ble_gatt_access_ctxt *ctxt,
-                               void *arg); //!! Callback function. When ever characrstic will be accessed by user, this function will execute
+                               void *arg); // command callback function
 
 static int gatt_svr_chr_dat_access(uint16_t conn_handle, uint16_t attr_handle,
                                struct ble_gatt_access_ctxt *ctxt,
-                               void *arg); //!! Callback function. When ever characrstic will be accessed by user, this function will execute
+                               void *arg); // data callback function
 
-
-static int gatt_svr_chr_cmd_write(struct os_mbuf *om, uint16_t min_len, uint16_t max_len, void *dst, uint16_t *len); //!! Callback function. When ever user write to this characterstic,this function will execute
+static int gatt_svr_chr_cmd_write(struct os_mbuf *om, uint16_t min_len, uint16_t max_len, void *dst, uint16_t *len); // command write callback function
 
 static void bleprph_on_reset(int reason);
 void bleprph_host_task(void *param);
 static void bleprph_on_sync(void);
-//@___________________________Heart of nimble code _________________________________________
 
 static const struct ble_gatt_svc_def gatt_svr_svcs[] = {
     {
@@ -81,16 +75,16 @@ static const struct ble_gatt_svc_def gatt_svr_svcs[] = {
         .type = BLE_GATT_SVC_TYPE_PRIMARY,
         .uuid = &gatt_svr_svc_uuid.u,
         .characteristics = (struct ble_gatt_chr_def[]){{
-                                                           .uuid = &gatt_svr_chr_cmd_uuid.u,     //!! UUID as given above
-                                                           .access_cb = gatt_svr_chr_cmd_access, //!! Callback function. When ever this characrstic will be accessed by user, this function will execute
+                                                           .uuid = &gatt_svr_chr_cmd_uuid.u,     // command characteristic UUID
+                                                           .access_cb = gatt_svr_chr_cmd_access, // command callback
                                                            .val_handle = &notification_handle,
-                                                           .flags = BLE_GATT_CHR_F_READ | BLE_GATT_CHR_F_WRITE, //!! flags set permissions. In this case User can read this characterstic, can write to it,and get notified. 
+                                                           .flags = BLE_GATT_CHR_F_READ | BLE_GATT_CHR_F_WRITE, // permissions
                                                        },
                                                        {
-                                                           .uuid = &gatt_svr_chr_dat_uuid.u,     //!! UUID as given above
-                                                           .access_cb = gatt_svr_chr_dat_access, //!! Callback function. When ever this characrstic will be accessed by user, this function will execute
+                                                           .uuid = &gatt_svr_chr_dat_uuid.u,     // data characterisitc UUID
+                                                           .access_cb = gatt_svr_chr_dat_access, // data callback
                                                            .val_handle = &notification_handle,
-                                                           .flags = BLE_GATT_CHR_F_READ, //!! flags set permissions. In this case User can read this characterstic, can write to it,and get notified. 
+                                                           .flags = BLE_GATT_CHR_F_READ, // permissions
                                                        },
                                                        {
                                                            0, /* No more characteristics in this service. This is necessary */
@@ -104,7 +98,7 @@ static const struct ble_gatt_svc_def gatt_svr_svcs[] = {
 
 static int gatt_svr_chr_cmd_access(uint16_t conn_handle, uint16_t attr_handle,
                                struct ble_gatt_access_ctxt *ctxt,
-                               void *arg)  //!! Callback function. When ever characrstic will be accessed by user, this function will execute
+                               void *arg)  // command callback
 {
 
   int rc;
@@ -117,36 +111,41 @@ static int gatt_svr_chr_cmd_access(uint16_t conn_handle, uint16_t attr_handle,
     return rc == 0 ? 0 : BLE_ATT_ERR_INSUFFICIENT_RES;
 
   case BLE_GATT_ACCESS_OP_WRITE_CHR: //!! In case user accessed this characterstic to write, bellow lines will executed.
-    rc = gatt_svr_chr_cmd_write(ctxt->om, min_length, max_length, &characteristic_received_value, NULL); //!! Function "gatt_svr_chr_write" will fire.
-    printf("Received=%s\n", characteristic_received_value);  // Print the received value
+    rc = gatt_svr_chr_cmd_write(ctxt->om, min_length, max_length, &characteristic_received_value, NULL); //!! Function "gatt_svr_chr_cmd_write" will fire.
+    //printf("Received=%s\n", characteristic_received_value);  // Print the received value
     //! Use received value in you code. For example
     if(characteristic_received_value[0] == 'l'){
         printf("received l, listing directory\n");
-        DIR* dir = opendir("/sdcard");
-        flist=(char**)malloc(256*sizeof(char*));
-        for(int i = 0;i<256;i++){
-            flist[i]=(char*)malloc(256*sizeof(char));
-        }
-        int i=0;
-        while (true) {
-            struct dirent* de = readdir(dir);
-            if (!de) {
+        if(sdcard_ready){
+          DIR* dir = opendir("/sdcard");
+          flist=(char**)malloc(256*sizeof(char*));
+          for(int i = 0;i<256;i++){
+              flist[i]=(char*)malloc(256*sizeof(char));
+          }
+          int i=0;
+          while (true) {
+              struct dirent* de = readdir(dir);
+              if (!de) {
                 break;
-            }
-            if(de->d_name[0] != '.' && i < 256){
+              }
+              if(de->d_name[0] != '.' && i < 256){
                 strcpy(flist[i],de->d_name);
                 i++;
-            }
-        }
-        flen=i;
-        readpos=0;
-        for(i=0;i<flen;i++){
-            printf("File %03d: %s\n",i,flist[i]);
+              }
+          }
+          flen=i;
+          readpos=0;
+          for(i=0;i<flen;i++){
+            //printf("File %03d: %s\n",i,flist[i]);
             sprintf(characteristic_value,"%ld files",flen);
+          }
+          dl_mode = DL_MODE_DIRLIST;
+        } else {
+          sprintf(characteristic_value,"0 files"); 
         }
-        dl_mode = DL_MODE_DIRLIST;
 
     } else if (characteristic_received_value[0] == 'd') {
+      if(sdcard_ready){
         printf("received d, providing file %s\n",characteristic_received_value+2);
         char prefix[]="/sdcard/";
         memcpy(fname,prefix,8);
@@ -159,19 +158,26 @@ static int gatt_svr_chr_cmd_access(uint16_t conn_handle, uint16_t attr_handle,
         readpos=0;
         fp=fopen(fname,"rb");
         dl_mode = DL_MODE_FILE;
+      } else {
+          sprintf(characteristic_value,"0 blocks"); 
+      }
 
 
     } else if (characteristic_received_value[0] == 'r') {
+      if(sdcard_ready){
         char prefix[]="/sdcard/";
         memcpy(fname,prefix,8);
         memcpy(fname+8,characteristic_received_value+2,248);
         printf("received r, removing file %s\n",fname);
         if(remove(fname)==0){
             printf("deleted file %s\n",fname);
+            sprintf(characteristic_value,"deleted 1 file"); 
         } else {
             printf("failed to delete file %s\n",fname);
         }
-
+      } else {
+            sprintf(characteristic_value,"deleted 0 files"); 
+      }
     }
 
     return rc;
@@ -194,7 +200,7 @@ static int gatt_svr_chr_dat_access(uint16_t conn_handle, uint16_t attr_handle,
     
     switch(dl_mode){
         case DL_MODE_DIRLIST:
-            printf("reading position %ld, file %s\n",readpos,flist[readpos]);
+            //printf("reading position %ld, file %s\n",readpos,flist[readpos]);
             memset(characteristic_value,0,256);
             strcpy(characteristic_value,flist[readpos]);
             readpos++;
@@ -205,7 +211,7 @@ static int gatt_svr_chr_dat_access(uint16_t conn_handle, uint16_t attr_handle,
                         sizeof characteristic_value);
             return rc == 0 ? 0 : BLE_ATT_ERR_INSUFFICIENT_RES;
         case DL_MODE_FILE:
-            printf("reading block %ld, file %s\n",readpos,fname);
+            //printf("reading block %ld, file %s\n",readpos,fname);
             memset(characteristic_value,0,256);
             fread(characteristic_value,256,1,fp);
             readpos++;
@@ -259,36 +265,6 @@ void startBLE() //! Call this function to start BLE
 
   nimble_port_freertos_init(bleprph_host_task);
 }
-
-void stopBLE() //! Call this function to stop BLE
-{
-  //! Below is the sequence of APIs to be called to disable/deinit NimBLE host and ESP controller:
-  printf("\n Stoping BLE and notification task \n");
-  // vTaskDelete(xHandle);
-  int ret = nimble_port_stop();
-  if (ret == 0)
-  {
-    ret=nimble_port_deinit();
-
-    if (ret != ESP_OK)
-    {
-      ESP_LOGE(TAG_BLE, "nimble_port_deinit() failed with error: %d", ret);
-    }
-  }
-}
-
-void startNVS() //! Mandatory to initialize NVS at the start.
-{
-  /* Initialize NVS — it is used to store PHY calibration data */
-  esp_err_t ret = nvs_flash_init();
-  if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND)
-  {
-    ESP_ERROR_CHECK(nvs_flash_erase());
-    ret = nvs_flash_init();
-  }
-}
-
-//@________________Bellow code will remain as it is.Take it abracadabra of BLE 😀 😀________________
 
 static int gatt_svr_chr_cmd_write(struct os_mbuf *om, uint16_t min_len, uint16_t max_len, void *dst, uint16_t *len)
 {
@@ -517,36 +493,6 @@ bleprph_gap_event(struct ble_gap_event *event, void *arg)
     MODLOG_DFLT(INFO, "advertise complete; reason=%d",
                 event->adv_complete.reason);
     bleprph_advertise();
-    return 0;
-
-  case BLE_GAP_EVENT_SUBSCRIBE:
-
-    MODLOG_DFLT(INFO, "subscribe event; cur_notify=%d\n value handle; "
-                      "val_handle=%d\n"
-                      "conn_handle=%d attr_handle=%d "
-                      "reason=%d prevn=%d curn=%d previ=%d curi=%d\n",
-                event->subscribe.conn_handle,
-                event->subscribe.attr_handle,
-                event->subscribe.reason,
-                event->subscribe.prev_notify,
-                event->subscribe.cur_notify,
-                event->subscribe.cur_notify, notification_handle, //!! Client Subscribed to notification_handle
-                event->subscribe.prev_indicate,
-                event->subscribe.cur_indicate);
-
-    if (event->subscribe.attr_handle == notification_handle)
-    {
-      printf("\nSubscribed with notification_handle =%d\n", event->subscribe.attr_handle);
-      notify_state = event->subscribe.cur_notify; //!! As the client is now subscribed to notifications, the value is set to 1
-      printf("notify_state=%d\n", notify_state);
-    }
-    // if (event->subscribe.attr_handle == notification_handle)
-    // {
-    //   printf("\nSubscribed with notification_handle =%d\n", event->subscribe.attr_handle);
-    //   notify_state1 = event->subscribe.cur_notify; //!! As the client is now subscribed to notifications, the value is set to 1
-    //   printf("notify_state=%d\n", notify_state1);
-    // }
-
     return 0;
 
   case BLE_GAP_EVENT_MTU:

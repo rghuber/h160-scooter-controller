@@ -1,0 +1,1169 @@
+ESP-ROM:�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xb (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x1718
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc08
+load:0x403cc700,len:0x2f08
+entry 0x403c990c
+[0;32mI (27) boot: ESP-IDF v5.2-dev-1449-gd2471b11e7 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 11 2023 17:12:33[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1f924h (129316) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0002f94c vaddr=3fc9af00 size=006cch (  1740) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=60a88h (395912) map[0m
+[0;32mI (201) esp_image: segment 3: paddr=00090ab0 vaddr=3fc9b5cc size=0388ch ( 14476) load[0m
+[0;32mI (204) esp_image: segment 4: paddr=00094344 vaddr=40374000 size=16e6ch ( 93804) load[0m
+[0;32mI (237) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (237) boot: Disabling RNG early entropy source...[0m
+[0;32mI (248) cpu_start: Multicore app[0m
+[0;32mI (249) cpu_start: Pro cpu up.[0m
+[0;32mI (249) cpu_start: Starting app cpu, entry point is 0x403755c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (267) cpu_start: Pro cpu start user code[0m
+[0;32mI (267) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (267) cpu_start: Application information:[0m
+[0;32mI (270) cpu_start: Project name:     h160-scooter-controller[0m
+[0;32mI (276) cpu_start: App version:      cb47b64-dirty[0m
+[0;32mI (282) cpu_start: Compile time:     Aug 29 2023 00:14:34[0m
+[0;32mI (288) cpu_start: ELF file SHA256:  fb6637d22...[0m
+[0;32mI (293) cpu_start: ESP-IDF:          v5.2-dev-1449-gd2471b11e7[0m
+[0;32mI (300) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (305) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (309) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (314) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (321) heap_init: At 3FCA1450 len 000482C0 (288 KiB): DRAM[0m
+[0;32mI (328) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (334) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (340) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (348) spi_flash: detected chip: generic[0m
+[0;32mI (351) spi_flash: flash io: dio[0m
+[0;33mW (355) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (368) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (378) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (385) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (392) coexist: coex firmware version: 5221224[0m
+[0;32mI (397) coexist: coexist rom version e7ae62f[0m
+[0;32mI (402) app_start: Starting scheduler on CPU0[0m
+[0;32mI (407) app_start: Starting scheduler on CPU1[0m
+[0;32mI (407) main_task: Started on CPU0[0m
+[0;32mI (417) main_task: Calling app_main()[0m
+[0;32mI (417) NVS: initializing nonvolatile storage...[0m
+[0;32mI (437) GPIO: initializing BLE...[0m
+
+ Staring BLE 
+[0;32mI (437) BLE_INIT: BT controller compile version [963cad4][0m
+[0;32mI (437) phy_init: phy_version 601,98f2a71,Jun 29 2023,09:58:12[0m
+[0;32mI (477) BLE_INIT: Bluetooth MAC: f4:12:fa:47:db:2e[0m
+[0;32mI (487) NimBLE: BLE Host Task Started[0m
+[0;32mI (487) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (487) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (497) NimBLE: Device Address: [0m
+[0;32mI (497) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (497) NimBLE: 
+[0m
+[0;32mI (507) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (507) NimBLE: disc_mode=2[0m
+[0;32mI (517) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (527) NimBLE: 
+[0m
+[0;32mI (527) GPIO: initializing GPIO pins...[0m
+[0;32mI (527) I2C: initializing i2c[0m
+i2c scan: 
+Found device at: 0x48
+Found device at: 0x68
+ADC REGISTER CONTENTS:
+ADS1115_CONF_R: 4283
+ADS1115_CONV_R: 1213
+ADS1115_LOTH_R: 8000
+ADS1115_HITH_R: 7fff
+ADC Channel 0: 0.579V
+ADC Channel 1: 0.577V
+ADC Channel 2: 0.182V
+ADC Channel 3: 1.643V
+
+2023-08-29T01:07:04+08:00
+UNIX EPOCH: 1693271224[0;32mI (757) MCPWM: initializing MCPWM...[0m
+[0;32mI (757) SPI: initializing SPI...[0m
+[0;32mI (767) SPI: initializing SPI IMU...[0m
+[0;32mI (767) SPI: starting SPI IMU...[0m
+IMU REGISTER CONTENTS:
+0x00 0000 0000 0000 0000 0000 0000 0000 006a
+0x10 4040 0400 0000 0000 e000 0000 0000 07c2
+0x20 c501 5b00 befe afff 3f02 a5ff 3540 0000
+0x30 0000 0000 0000 0000 0000 0010 0000 aaaa
+0x40 0000 0000 0000 0000 0000 0000 0000 0000
+0x50 0000 0000 8400 0000 0000 0000 0000 0000
+0x60 0000 0000 00aa 0000 0000 0000 0000 0000
+0x70 0000 0000 0000 0000 0000 0000 0000 00ff
+
+Temp:   453
+GyroX:  91
+GyroY:  -322
+GyroZ:  -81
+AccelX: 575
+AccelY: -91
+AccelZ: 16437
+[0;32mI (817) SPI: initializing SDMCC card...[0m
+[0;32mI (817) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (827) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (837) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (847) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (857) gpio: GPIO[41]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (867) gpio: GPIO[42]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (907) gpio: GPIO[42]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Name: EC1S5
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 61120MB
+CSD: ver=2, sector_size=512, capacity=125173760 read_bl_len=9
+SSR: bus_width=4
+[0;32mI (917) SDCARD: sdmmc status normal[0m
+[0;32mI (1427) main_task: Returned from app_main()[0m
+[0;32mI (13847) NimBLE: connection established; status=0 [0m
+[0;32mI (13847) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (13847) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (13847) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (13857) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (13857) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (13867) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (13867) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (13877) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (13877) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (13887) NimBLE: 
+[0m
+[0;32mI (14207) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (14497) NimBLE: disconnect; reason=531 [0m
+[0;32mI (14497) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (14497) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (14497) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (14507) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (14507) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (14517) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (14517) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (14527) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (14527) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (14537) NimBLE: 
+[0m
+[0;32mI (14547) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (14547) NimBLE: disc_mode=2[0m
+[0;32mI (14557) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (14567) NimBLE: 
+[0m
+[0;32mI (45997) NimBLE: connection established; status=0 [0m
+[0;32mI (45997) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (45997) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (46007) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (46007) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (46017) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (46017) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (46027) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (46027) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (46037) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (46047) NimBLE: 
+[0m
+[0;32mI (46367) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (46637) NimBLE: disconnect; reason=531 [0m
+[0;32mI (46637) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (46637) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (46647) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (46647) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (46657) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (46657) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (46667) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (46667) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (46677) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (46687) NimBLE: 
+[0m
+[0;32mI (46687) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (46697) NimBLE: disc_mode=2[0m
+[0;32mI (46697) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (46707) NimBLE: 
+[0m
+[0;32mI (71227) NimBLE: connection established; status=0 [0m
+[0;32mI (71227) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (71227) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (71227) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (71237) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (71237) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (71247) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (71247) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (71257) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (71257) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (71267) NimBLE: 
+[0m
+[0;32mI (71597) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (71927) NimBLE: disconnect; reason=531 [0m
+[0;32mI (71927) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (71927) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (71937) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (71937) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (71947) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (71947) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (71957) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (71957) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (71967) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (71977) NimBLE: 
+[0m
+[0;32mI (71977) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (71987) NimBLE: disc_mode=2[0m
+[0;32mI (71987) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (71997) NimBLE: 
+[0m
+[0;32mI (101647) NimBLE: connection established; status=0 [0m
+[0;32mI (101647) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (101647) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (101657) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (101657) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (101667) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (101667) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (101677) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (101677) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (101687) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (101697) NimBLE: 
+[0m
+[0;32mI (102017) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (102287) NimBLE: disconnect; reason=531 [0m
+[0;32mI (102287) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (102287) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (102297) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (102297) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (102307) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (102307) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (102317) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (102317) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (102327) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (102337) NimBLE: 
+[0m
+[0;32mI (102337) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (102347) NimBLE: disc_mode=2[0m
+[0;32mI (102347) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (102357) NimBLE: 
+[0m
+[0;32mI (118427) NimBLE: connection established; status=0 [0m
+[0;32mI (118427) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (118427) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (118427) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (118437) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (118437) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (118447) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (118447) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (118457) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (118457) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (118467) NimBLE: 
+[0m
+[0;32mI (118787) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (119117) NimBLE: disconnect; reason=531 [0m
+[0;32mI (119117) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (119117) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (119127) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (119127) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (119137) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (119137) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (119147) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (119147) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (119157) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (119167) NimBLE: 
+[0m
+[0;32mI (119167) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (119177) NimBLE: disc_mode=2[0m
+[0;32mI (119177) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (119187) NimBLE: 
+[0m
+[0;32mI (292507) NimBLE: connection established; status=0 [0m
+[0;32mI (292517) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (292517) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (292517) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (292527) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (292527) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (292537) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (292537) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (292547) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (292547) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (292557) NimBLE: 
+[0m
+[0;32mI (292877) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (293227) NimBLE: disconnect; reason=531 [0m
+[0;32mI (293227) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (293227) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (293227) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (293237) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (293237) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (293247) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (293247) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (293257) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (293257) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (293267) NimBLE: 
+[0m
+[0;32mI (293277) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (293277) NimBLE: disc_mode=2[0m
+[0;32mI (293287) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (293297) NimBLE: 
+[0m
+[0;32mI (322447) NimBLE: connection established; status=0 [0m
+[0;32mI (322447) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (322447) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (322447) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (322457) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (322457) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (322467) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (322467) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (322477) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (322477) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (322487) NimBLE: 
+[0m
+[0;32mI (322817) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (323147) NimBLE: disconnect; reason=531 [0m
+[0;32mI (323147) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (323147) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (323157) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (323157) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (323167) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (323167) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (323177) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (323177) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (323187) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (323197) NimBLE: 
+[0m
+[0;32mI (323197) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (323207) NimBLE: disc_mode=2[0m
+[0;32mI (323207) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (323217) NimBLE: 
+[0m
+[0;32mI (338677) NimBLE: connection established; status=0 [0m
+[0;32mI (338677) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (338677) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (338687) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (338687) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (338697) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (338697) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (338707) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (338707) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (338717) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (338727) NimBLE: 
+[0m
+[0;32mI (339047) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (339377) NimBLE: disconnect; reason=531 [0m
+[0;32mI (339377) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (339377) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (339387) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (339387) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (339397) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (339397) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (339407) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (339407) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (339417) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (339427) NimBLE: 
+[0m
+[0;32mI (339427) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (339437) NimBLE: disc_mode=2[0m
+[0;32mI (339437) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (339447) NimBLE: 
+[0m
+[0;32mI (349737) NimBLE: connection established; status=0 [0m
+[0;32mI (349737) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (349737) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (349737) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (349747) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (349747) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (349757) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (349757) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (349767) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (349767) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (349777) NimBLE: 
+[0m
+[0;32mI (350107) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (350447) NimBLE: disconnect; reason=531 [0m
+[0;32mI (350447) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (350447) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (350457) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (350457) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (350467) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (350467) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (350477) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (350477) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (350487) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (350497) NimBLE: 
+[0m
+[0;32mI (350497) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (350507) NimBLE: disc_mode=2[0m
+[0;32mI (350507) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (350517) NimBLE: 
+[0m
+[0;32mI (450247) NimBLE: connection established; status=0 [0m
+[0;32mI (450247) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (450247) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (450257) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (450257) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (450267) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (450267) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (450277) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (450277) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (450287) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (450297) NimBLE: 
+[0m
+[0;32mI (450497) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+received l, listing directory
+[0;32mI (576197) NimBLE: disconnect; reason=531 [0m
+[0;32mI (576197) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (576197) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (576207) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (576207) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (576217) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (576217) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (576227) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (576227) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (576237) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (576247) NimBLE: 
+[0m
+[0;32mI (576247) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (576257) NimBLE: disc_mode=2[0m
+[0;32mI (576257) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (576267) NimBLE: 
+[0m
+[0;32mI (585697) NimBLE: connection established; status=0 [0m
+[0;32mI (585697) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (585697) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (585697) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (585707) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (585707) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (585717) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (585717) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (585727) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (585727) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (585737) NimBLE: 
+[0m
+[0;32mI (585947) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (586217) NimBLE: disconnect; reason=531 [0m
+[0;32mI (586217) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (586217) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (586227) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (586227) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (586237) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (586237) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (586247) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (586247) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (586257) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (586267) NimBLE: 
+[0m
+[0;32mI (586267) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (586277) NimBLE: disc_mode=2[0m
+[0;32mI (586277) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (586287) NimBLE: 
+[0m
+[0;32mI (630007) NimBLE: connection established; status=0 [0m
+[0;32mI (630007) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (630007) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (630017) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (630017) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (630027) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (630027) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (630037) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (630037) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (630047) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (630057) NimBLE: 
+[0m
+[0;32mI (630257) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (630587) NimBLE: disconnect; reason=531 [0m
+[0;32mI (630587) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (630587) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (630597) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (630597) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (630607) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (630607) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (630617) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (630617) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (630627) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (630637) NimBLE: 
+[0m
+[0;32mI (630637) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (630647) NimBLE: disc_mode=2[0m
+[0;32mI (630647) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (630657) NimBLE: 
+[0m
+[0;32mI (662757) NimBLE: connection established; status=0 [0m
+[0;32mI (662767) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (662767) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (662767) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (662777) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (662777) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (662787) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (662787) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (662797) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (662797) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (662807) NimBLE: 
+[0m
+[0;32mI (663017) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (663347) NimBLE: disconnect; reason=531 [0m
+[0;32mI (663347) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (663347) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (663357) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (663357) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (663367) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (663367) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (663377) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (663377) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (663387) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (663397) NimBLE: 
+[0m
+[0;32mI (663397) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (663407) NimBLE: disc_mode=2[0m
+[0;32mI (663407) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (663417) NimBLE: 
+[0m
+[0;32mI (710607) NimBLE: connection established; status=0 [0m
+[0;32mI (710607) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (710607) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (710607) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (710617) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (710617) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (710627) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (710627) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (710637) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (710637) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (710657) NimBLE: 
+[0m
+[0;32mI (710857) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+[0;32mI (711187) NimBLE: disconnect; reason=531 [0m
+[0;32mI (711187) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (711187) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (711187) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (711197) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (711197) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (711207) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (711207) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (711217) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (711217) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (711227) NimBLE: 
+[0m
+[0;32mI (711227) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (711237) NimBLE: disc_mode=2[0m
+[0;32mI (711237) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (711247) NimBLE: 
+[0m
+[0;32mI (772327) NimBLE: connection established; status=0 [0m
+[0;32mI (772327) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (772327) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (772327) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (772337) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (772337) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (772347) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (772347) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (772357) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (772357) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (772367) NimBLE: 
+[0m
+[0;32mI (772597) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+received l, listing directory
+received l, listing directory
+[0;32mI (825067) NimBLE: disconnect; reason=531 [0m
+[0;32mI (825067) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (825067) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (825067) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (825077) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (825077) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (825087) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (825087) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (825097) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (825097) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (825107) NimBLE: 
+[0m
+[0;32mI (825107) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (825117) NimBLE: disc_mode=2[0m
+[0;32mI (825117) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (825127) NimBLE: 
+[0m
+[0;32mI (827067) NimBLE: connection established; status=0 [0m
+[0;32mI (827067) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (827067) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (827067) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (827077) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (827077) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (827087) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (827087) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (827097) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (827097) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (827107) NimBLE: 
+[0m
+[0;32mI (827317) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+received l, listing directory
+[0;32mI (827677) NimBLE: disconnect; reason=531 [0m
+[0;32mI (827677) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (827677) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (827677) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (827687) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (827687) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (827697) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (827697) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (827707) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (827707) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (827717) NimBLE: 
+[0m
+[0;32mI (827717) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (827727) NimBLE: disc_mode=2[0m
+[0;32mI (827727) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (827737) NimBLE: 
+[0m
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4204b2c8  PS      : 0x00060830  A0      : 0x8204b364  A1      : 0x3fcbe710  
+A2      : 0x00000001  A3      : 0x0000000c  A4      : 0x0000000c  A5      : 0x00000001  
+A6      : 0x00000000  A7      : 0x3fcbe9d4  A8      : 0x8204b2c8  A9      : 0x3fcbe6f0  
+A10     : 0x00000000  A11     : 0x3fcbe724  A12     : 0x00000209  A13     : 0x000001b6  
+A14     : 0x3fcbe9d4  A15     : 0x3fcbc5b0  SAR     : 0x00000001  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000064  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4204b2c5:0x3fcbe710 0x4204b361:0x3fcbe750 0x42009524:0x3fcbe770 0x40384995:0x3fcbe810
+
+
+
+
+ELF file SHA256: fb6637d22
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375bb8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x1718
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc08
+load:0x403cc700,len:0x2f08
+entry 0x403c990c
+[0;32mI (31) boot: ESP-IDF v5.2-dev-1449-gd2471b11e7 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 11 2023 17:12:33[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1f924h (129316) map[0m
+[0;32mI (129) esp_image: segment 1: paddr=0002f94c vaddr=3fc9af00 size=006cch (  1740) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=60a88h (395912) map[0m
+[0;32mI (205) esp_image: segment 3: paddr=00090ab0 vaddr=3fc9b5cc size=0388ch ( 14476) load[0m
+[0;32mI (209) esp_image: segment 4: paddr=00094344 vaddr=40374000 size=16e6ch ( 93804) load[0m
+[0;32mI (241) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (241) boot: Disabling RNG early entropy source...[0m
+[0;32mI (253) cpu_start: Multicore app[0m
+[0;32mI (253) cpu_start: Pro cpu up.[0m
+[0;32mI (253) cpu_start: Starting app cpu, entry point is 0x403755c4[0m
+[0;32mI (232) cpu_start: App cpu up.[0m
+[0;32mI (272) cpu_start: Pro cpu start user code[0m
+[0;32mI (272) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (272) cpu_start: Application information:[0m
+[0;32mI (275) cpu_start: Project name:     h160-scooter-controller[0m
+[0;32mI (281) cpu_start: App version:      cb47b64-dirty[0m
+[0;32mI (286) cpu_start: Compile time:     Aug 29 2023 00:14:34[0m
+[0;32mI (293) cpu_start: ELF file SHA256:  fb6637d22...[0m
+[0;32mI (298) cpu_start: ESP-IDF:          v5.2-dev-1449-gd2471b11e7[0m
+[0;32mI (304) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (309) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (314) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (319) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (326) heap_init: At 3FCA1450 len 000482C0 (288 KiB): DRAM[0m
+[0;32mI (332) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (339) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (345) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (352) spi_flash: detected chip: generic[0m
+[0;32mI (356) spi_flash: flash io: dio[0m
+[0;33mW (360) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (373) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (382) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (389) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (396) coexist: coex firmware version: 5221224[0m
+[0;32mI (402) coexist: coexist rom version e7ae62f[0m
+[0;32mI (407) app_start: Starting scheduler on CPU0[0m
+[0;32mI (411) app_start: Starting scheduler on CPU1[0m
+[0;32mI (411) main_task: Started on CPU0[0m
+[0;32mI (421) main_task: Calling app_main()[0m
+[0;32mI (421) NVS: initializing nonvolatile storage...[0m
+[0;32mI (441) GPIO: initializing BLE...[0m
+
+ Staring BLE 
+[0;32mI (441) BLE_INIT: BT controller compile version [963cad4][0m
+[0;32mI (441) phy_init: phy_version 601,98f2a71,Jun 29 2023,09:58:12[0m
+[0;32mI (481) BLE_INIT: Bluetooth MAC: f4:12:fa:47:db:2e[0m
+[0;32mI (491) NimBLE: BLE Host Task Started[0m
+[0;32mI (491) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (491) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (501) NimBLE: Device Address: [0m
+[0;32mI (501) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (501) NimBLE: 
+[0m
+[0;32mI (511) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (511) NimBLE: disc_mode=2[0m
+[0;32mI (521) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (531) NimBLE: 
+[0m
+[0;32mI (531) GPIO: initializing GPIO pins...[0m
+[0;32mI (531) I2C: initializing i2c[0m
+i2c scan: 
+Found device at: 0x48
+Found device at: 0x68
+ADC REGISTER CONTENTS:
+ADS1115_CONF_R: 4283
+ADS1115_CONV_R: 3358
+ADS1115_LOTH_R: 8000
+ADS1115_HITH_R: 7fff
+ADC Channel 0: 0.578V
+ADC Channel 1: 0.577V
+ADC Channel 2: 0.179V
+ADC Channel 3: 1.643V
+
+2023-08-29T01:20:52+08:00
+UNIX EPOCH: 1693272052[0;32mI (761) MCPWM: initializing MCPWM...[0m
+[0;32mI (761) SPI: initializing SPI...[0m
+[0;32mI (771) SPI: initializing SPI IMU...[0m
+[0;32mI (771) SPI: starting SPI IMU...[0m
+IMU REGISTER CONTENTS:
+0x00 0000 0000 0000 0000 0000 0000 0000 006a
+0x10 4040 0400 0000 0000 e000 0000 0000 07c2
+0x20 d601 5c00 c1fe afff 0702 32ff 1340 0000
+0x30 0000 0000 0000 0000 0000 0010 0000 aaaa
+0x40 0000 0000 0000 0000 0000 0000 0000 0000
+0x50 0000 0000 8400 0000 0000 0000 0000 0000
+0x60 0000 0000 00aa 0000 0000 0000 0000 0000
+0x70 0000 0000 0000 0000 0000 0000 0000 00ff
+
+Temp:   470
+GyroX:  92
+GyroY:  -319
+GyroZ:  -81
+AccelX: 519
+AccelY: -206
+AccelZ: 16403
+[0;32mI (821) SPI: initializing SDMCC card...[0m
+[0;32mI (821) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (831) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (841) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (851) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (861) gpio: GPIO[41]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (871) gpio: GPIO[42]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (911) gpio: GPIO[42]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Name: EC1S5
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 61120MB
+CSD: ver=2, sector_size=512, capacity=125173760 read_bl_len=9
+SSR: bus_width=4
+[0;32mI (921) SDCARD: sdmmc status normal[0m
+[0;32mI (1431) main_task: Returned from app_main()[0m
+[0;32mI (20991) NimBLE: connection established; status=0 [0m
+[0;32mI (20991) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (21001) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (21001) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (21001) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (21011) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (21011) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (21021) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (21021) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (21031) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (21041) NimBLE: 
+[0m
+[0;32mI (21241) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+received l, listing directory
+[0;32mI (21611) NimBLE: disconnect; reason=531 [0m
+[0;32mI (21611) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (21611) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (21621) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (21621) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (21631) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (21631) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (21641) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (21641) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (21651) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (21661) NimBLE: 
+[0m
+[0;32mI (21661) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (21671) NimBLE: disc_mode=2[0m
+[0;32mI (21671) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (21681) NimBLE: 
+[0m
+[0;32mI (145481) NimBLE: connection established; status=0 [0m
+[0;32mI (145481) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (145481) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (145481) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (145491) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (145491) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (145501) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (145501) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (145511) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (145511) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (145521) NimBLE: 
+[0m
+[0;32mI (145721) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+received l, listing directory
+[0;32mI (146081) NimBLE: disconnect; reason=531 [0m
+[0;32mI (146081) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (146081) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (146091) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (146091) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (146101) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (146101) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (146111) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (146111) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (146121) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (146131) NimBLE: 
+[0m
+[0;32mI (146131) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (146141) NimBLE: disc_mode=2[0m
+[0;32mI (146141) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (146151) NimBLE: 
+[0m
+[0;32mI (171751) NimBLE: connection established; status=0 [0m
+[0;32mI (171751) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (171751) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (171751) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (171761) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (171761) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (171771) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (171771) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (171781) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (171781) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (171791) NimBLE: 
+[0m
+[0;32mI (172001) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+received l, listing directory
+[0;32mI (172891) NimBLE: disconnect; reason=531 [0m
+[0;32mI (172891) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (172891) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (172891) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (172901) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (172901) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (172911) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (172911) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (172921) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (172921) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (172931) NimBLE: 
+[0m
+[0;32mI (172941) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (172941) NimBLE: disc_mode=2[0m
+[0;32mI (172941) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (172951) NimBLE: 
+[0m
+[0;32mI (191711) NimBLE: connection established; status=0 [0m
+[0;32mI (191711) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (191711) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (191711) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (191721) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (191721) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (191731) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (191731) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (191741) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (191741) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (191751) NimBLE: 
+[0m
+[0;32mI (191951) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+received l, listing directory
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x4204b2c8  PS      : 0x00060a30  A0      : 0x8204b364  A1      : 0x3fcbe710  
+A2      : 0x00000001  A3      : 0x0000000c  A4      : 0x0000000c  A5      : 0x00000001  
+A6      : 0x00000000  A7      : 0x3fcbe9d4  A8      : 0x8204b2c8  A9      : 0x3fcbe6f0  
+A10     : 0x00000000  A11     : 0x3fcbe724  A12     : 0x00000209  A13     : 0x000001b6  
+A14     : 0x3fcbe9d4  A15     : 0x3fcbc5b0  SAR     : 0x00000007  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000064  LBEG    : 0x400570e8  LEND    : 0x400570f3  LCOUNT  : 0x00000000  
+
+
+Backtrace: 0x4204b2c5:0x3fcbe710 0x4204b361:0x3fcbe750 0x42009524:0x3fcbe770 0x40384995:0x3fcbe810
+
+
+
+
+ELF file SHA256: fb6637d22
+
+Rebooting...
+���ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375bb8
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x1718
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc08
+load:0x403cc700,len:0x2f08
+entry 0x403c990c
+[0;32mI (31) boot: ESP-IDF v5.2-dev-1449-gd2471b11e7 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 11 2023 17:12:33[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v0.1[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1f924h (129316) map[0m
+[0;32mI (129) esp_image: segment 1: paddr=0002f94c vaddr=3fc9af00 size=006cch (  1740) load[0m
+[0;32mI (129) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=60a88h (395912) map[0m
+[0;32mI (205) esp_image: segment 3: paddr=00090ab0 vaddr=3fc9b5cc size=0388ch ( 14476) load[0m
+[0;32mI (209) esp_image: segment 4: paddr=00094344 vaddr=40374000 size=16e6ch ( 93804) load[0m
+[0;32mI (241) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (241) boot: Disabling RNG early entropy source...[0m
+[0;32mI (253) cpu_start: Multicore app[0m
+[0;32mI (253) cpu_start: Pro cpu up.[0m
+[0;32mI (253) cpu_start: Starting app cpu, entry point is 0x403755c4[0m
+[0;32mI (232) cpu_start: App cpu up.[0m
+[0;32mI (272) cpu_start: Pro cpu start user code[0m
+[0;32mI (272) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (272) cpu_start: Application information:[0m
+[0;32mI (275) cpu_start: Project name:     h160-scooter-controller[0m
+[0;32mI (281) cpu_start: App version:      cb47b64-dirty[0m
+[0;32mI (286) cpu_start: Compile time:     Aug 29 2023 00:14:34[0m
+[0;32mI (293) cpu_start: ELF file SHA256:  fb6637d22...[0m
+[0;32mI (298) cpu_start: ESP-IDF:          v5.2-dev-1449-gd2471b11e7[0m
+[0;32mI (304) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (309) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (314) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (319) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (326) heap_init: At 3FCA1450 len 000482C0 (288 KiB): DRAM[0m
+[0;32mI (332) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (339) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (345) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (352) spi_flash: detected chip: generic[0m
+[0;32mI (356) spi_flash: flash io: dio[0m
+[0;33mW (360) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (373) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (382) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (389) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (396) coexist: coex firmware version: 5221224[0m
+[0;32mI (402) coexist: coexist rom version e7ae62f[0m
+[0;32mI (407) app_start: Starting scheduler on CPU0[0m
+[0;32mI (411) app_start: Starting scheduler on CPU1[0m
+[0;32mI (411) main_task: Started on CPU0[0m
+[0;32mI (421) main_task: Calling app_main()[0m
+[0;32mI (421) NVS: initializing nonvolatile storage...[0m
+[0;32mI (441) GPIO: initializing BLE...[0m
+
+ Staring BLE 
+[0;32mI (441) BLE_INIT: BT controller compile version [963cad4][0m
+[0;32mI (441) phy_init: phy_version 601,98f2a71,Jun 29 2023,09:58:12[0m
+[0;32mI (481) BLE_INIT: Bluetooth MAC: f4:12:fa:47:db:2e[0m
+[0;32mI (491) NimBLE: BLE Host Task Started[0m
+[0;32mI (491) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (491) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (501) NimBLE: Device Address: [0m
+[0;32mI (501) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (501) NimBLE: 
+[0m
+[0;32mI (511) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (511) NimBLE: disc_mode=2[0m
+[0;32mI (521) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (531) NimBLE: 
+[0m
+[0;32mI (531) GPIO: initializing GPIO pins...[0m
+[0;32mI (531) I2C: initializing i2c[0m
+i2c scan: 
+Found device at: 0x48
+Found device at: 0x68
+ADC REGISTER CONTENTS:
+ADS1115_CONF_R: 4283
+ADS1115_CONV_R: 3359
+ADS1115_LOTH_R: 8000
+ADS1115_HITH_R: 7fff
+ADC Channel 0: 0.578V
+ADC Channel 1: 0.577V
+ADC Channel 2: 0.179V
+ADC Channel 3: 1.643V
+
+2023-08-29T01:24:04+08:00
+UNIX EPOCH: 1693272244[0;32mI (761) MCPWM: initializing MCPWM...[0m
+[0;32mI (761) SPI: initializing SPI...[0m
+[0;32mI (771) SPI: initializing SPI IMU...[0m
+[0;32mI (771) SPI: starting SPI IMU...[0m
+IMU REGISTER CONTENTS:
+0x00 0000 0000 0000 0000 0000 0000 0000 006a
+0x10 4040 0400 0000 0000 e000 0000 0000 07c2
+0x20 b401 5c00 c1fe b1ff e101 1bff 2e40 0000
+0x30 0000 0000 0000 0000 0000 0010 0000 aaaa
+0x40 0000 0000 0000 0000 0000 0000 0000 0000
+0x50 0000 0000 8400 0000 0000 0000 0000 0000
+0x60 0000 0000 00aa 0000 0000 0000 0000 0000
+0x70 0000 0000 0000 0000 0000 0000 0000 00ff
+
+Temp:   436
+GyroX:  92
+GyroY:  -319
+GyroZ:  -79
+AccelX: 481
+AccelY: -229
+AccelZ: 16430
+[0;32mI (821) SPI: initializing SDMCC card...[0m
+[0;32mI (821) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (831) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (841) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (851) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (861) gpio: GPIO[41]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (871) gpio: GPIO[42]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (911) gpio: GPIO[42]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+Name: EC1S5
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 61120MB
+CSD: ver=2, sector_size=512, capacity=125173760 read_bl_len=9
+SSR: bus_width=4
+[0;32mI (921) SDCARD: sdmmc status normal[0m
+[0;32mI (1431) main_task: Returned from app_main()[0m
+[0;32mI (66531) NimBLE: connection established; status=0 [0m
+[0;32mI (66531) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (66531) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (66541) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (66541) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (66551) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (66551) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (66561) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (66561) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (66561) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (66581) NimBLE: 
+[0m
+[0;32mI (66911) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+received l, listing directory
+[0;32mI (67811) NimBLE: disconnect; reason=531 [0m
+[0;32mI (67811) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (67811) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (67811) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (67821) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (67821) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (67831) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (67831) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (67841) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (67841) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (67851) NimBLE: 
+[0m
+[0;32mI (67851) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (67861) NimBLE: disc_mode=2[0m
+[0;32mI (67861) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (67871) NimBLE: 
+[0m
+[0;32mI (95821) NimBLE: connection established; status=0 [0m
+[0;32mI (95821) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (95821) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (95821) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (95831) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (95831) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (95841) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (95841) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (95851) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (95851) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (95861) NimBLE: 
+[0m
+[0;32mI (96191) NimBLE: mtu update event; conn_handle=1 cid=4 mtu=256
+[0m
+received l, listing directory
+[0;32mI (97121) NimBLE: disconnect; reason=531 [0m
+[0;32mI (97121) NimBLE: handle=1 our_ota_addr_type=0 our_ota_addr=[0m
+[0;32mI (97121) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (97121) NimBLE:  our_id_addr_type=0 our_id_addr=[0m
+[0;32mI (97131) NimBLE: f4:12:fa:47:db:2e[0m
+[0;32mI (97131) NimBLE:  peer_ota_addr_type=0 peer_ota_addr=[0m
+[0;32mI (97141) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (97141) NimBLE:  peer_id_addr_type=0 peer_id_addr=[0m
+[0;32mI (97151) NimBLE: 5c:e9:1e:a1:28:f6[0m
+[0;32mI (97151) NimBLE:  conn_itvl=12 conn_latency=0 supervision_timeout=36 encrypted=0 authenticated=0 bonded=0
+[0m
+[0;32mI (97161) NimBLE: 
+[0m
+[0;32mI (97161) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (97171) NimBLE: disc_mode=2[0m
+[0;32mI (97171) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (97181) NimBLE: 
+[0m

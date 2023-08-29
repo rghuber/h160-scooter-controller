@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "h160-scooter-controller",
-    "project_version":    "f616dfe-dirty",
+    "project_version":    "cb47b64-dirty",
     "project_path":       "/Users/rghuber/Downloads/Firmware/h160-scooter-controller",
     "idf_path":           "/Users/rghuber/esp/esp-idf",
     "build_dir":          "/Users/rghuber/Downloads/Firmware/h160-scooter-controller/build",

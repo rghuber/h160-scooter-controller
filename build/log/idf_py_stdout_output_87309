@@ -1,0 +1,358 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0xa (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x1718
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xc08
+load:0x403cc700,len:0x2f08
+entry 0x403c990c
+[0;32mI (27) boot: ESP-IDF v5.2-dev-1449-gd2471b11e7 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jul 11 2023 17:12:33[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.1[0m
+[0;32mI (35) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (40) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (45) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (50) boot: Enabling RNG early entropy source...[0m
+[0;32mI (55) boot: Partition Table:[0m
+[0;32mI (59) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (66) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (73) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (81) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (88) boot: End of partition table[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3c070020 size=1f9b4h (129460) map[0m
+[0;32mI (124) esp_image: segment 1: paddr=0002f9dc vaddr=3fc9af00 size=0063ch (  1596) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=60d5ch (396636) map[0m
+[0;32mI (201) esp_image: segment 3: paddr=00090d84 vaddr=3fc9b53c size=0391ch ( 14620) load[0m
+[0;32mI (205) esp_image: segment 4: paddr=000946a8 vaddr=40374000 size=16e6ch ( 93804) load[0m
+[0;32mI (237) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (237) boot: Disabling RNG early entropy source...[0m
+[0;32mI (249) cpu_start: Multicore app[0m
+[0;32mI (249) cpu_start: Pro cpu up.[0m
+[0;32mI (249) cpu_start: Starting app cpu, entry point is 0x403755c4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (267) cpu_start: Pro cpu start user code[0m
+[0;32mI (267) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (267) cpu_start: Application information:[0m
+[0;32mI (270) cpu_start: Project name:     h160-scooter-controller[0m
+[0;32mI (277) cpu_start: App version:      cb47b64-dirty[0m
+[0;32mI (282) cpu_start: Compile time:     Aug 29 2023 00:14:34[0m
+[0;32mI (288) cpu_start: ELF file SHA256:  29b7fbb8f...[0m
+[0;32mI (294) cpu_start: ESP-IDF:          v5.2-dev-1449-gd2471b11e7[0m
+[0;32mI (300) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (305) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (310) cpu_start: Chip rev:         v0.1[0m
+[0;32mI (314) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (322) heap_init: At 3FCA1450 len 000482C0 (288 KiB): DRAM[0m
+[0;32mI (328) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (334) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (341) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (348) spi_flash: detected chip: generic[0m
+[0;32mI (352) spi_flash: flash io: dio[0m
+[0;33mW (355) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (369) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (378) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (385) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (392) coexist: coex firmware version: 5221224[0m
+[0;32mI (397) coexist: coexist rom version e7ae62f[0m
+[0;32mI (402) app_start: Starting scheduler on CPU0[0m
+[0;32mI (407) app_start: Starting scheduler on CPU1[0m
+[0;32mI (407) main_task: Started on CPU0[0m
+[0;32mI (417) main_task: Calling app_main()[0m
+[0;32mI (417) NVS: initializing nonvolatile storage...[0m
+[0;32mI (437) GPIO: initializing BLE...[0m
+
+ Staring BLE 
+[0;32mI (437) BLE_INIT: BT controller compile version [963cad4][0m
+[0;32mI (437) phy_init: phy_version 601,98f2a71,Jun 29 2023,09:58:12[0m
+[0;32mI (487) BLE_INIT: Bluetooth MAC: f4:12:fa:48:fc:e2[0m
+[0;32mI (487) NimBLE: BLE Host Task Started[0m
+[0;32mI (487) NimBLE: GAP procedure initiated: stop advertising.
+[0m
+[0;32mI (487) NimBLE: Failed to restore IRKs from store; status=8
+[0m
+[0;32mI (497) NimBLE: Device Address: [0m
+[0;32mI (497) NimBLE: f4:12:fa:48:fc:e2[0m
+[0;32mI (507) NimBLE: 
+[0m
+[0;32mI (507) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (517) NimBLE: disc_mode=2[0m
+[0;32mI (517) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (527) NimBLE: 
+[0m
+[0;32mI (527) GPIO: initializing GPIO pins...[0m
+[0;32mI (537) I2C: initializing i2c[0m
+i2c scan: 
+Found device at: 0x48
+Found device at: 0x68
+ADC REGISTER CONTENTS:
+ADS1115_CONF_R: 4283
+ADS1115_CONV_R: 3353
+ADS1115_LOTH_R: 8000
+ADS1115_HITH_R: 7fff
+ADC Channel 0: 0.583V
+ADC Channel 1: 0.581V
+ADC Channel 2: 0.181V
+ADC Channel 3: 1.643V
+
+2023-08-29T12:39:50+08:00
+UNIX EPOCH: 1693312790[0;32mI (757) MCPWM: initializing MCPWM...[0m
+[0;32mI (757) SPI: initializing SPI...[0m
+[0;32mI (767) SPI: initializing SPI IMU...[0m
+[0;32mI (767) SPI: starting SPI IMU...[0m
+IMU REGISTER CONTENTS:
+0x00 0000 0000 0000 0000 0000 0000 0000 006a
+0x10 4040 0400 0000 0000 e000 0000 0000 07c2
+0x20 8a00 4000 70ff f7ff 6b08 b009 c240 0000
+0x30 0000 0000 0000 0000 0000 0010 0000 ffff
+0x40 0000 0000 0000 0000 0000 0000 0000 0000
+0x50 0000 0000 8400 0000 0000 0000 0000 0000
+0x60 0000 0000 00ff 0000 0000 0000 0000 0000
+0x70 0000 0000 0000 0000 0000 0000 0000 00ff
+
+Temp:   138
+GyroX:  64
+GyroY:  -144
+GyroZ:  -9
+AccelX: 2155
+AccelY: 2480
+AccelZ: 16578
+[0;32mI (817) SPI: initializing SDMCC card...[0m
+[0;32mI (817) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (827) gpio: GPIO[1]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (837) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (847) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (857) gpio: GPIO[41]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (867) gpio: GPIO[42]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (907) gpio: GPIO[42]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (907) SDCARD: sdmmc status normal[0m
+Name: EC1S5
+Type: SDHC/SDXC
+Speed: 20.00 MHz (limit: 20.00 MHz)
+Size: 61120MB
+CSD: ver=2, sector_size=512, capacity=125173760 read_bl_len=9
+SSR: bus_width=4
+[0;32mI (1427) main_task: Returned from app_main()[0m
+start: 1693312790.681339
+imu_read: 1693312790.681703
+adc_read: 1693312790.681703
+file_write: 1693312790.878135
+
+start: 1693312790.927703
+imu_read: 1693312790.927905
+adc_read: 1693312790.927905
+file_write: 1693312791.128084
+
+start: 1693312791.177701
+imu_read: 1693312791.177904
+adc_read: 1693312791.177904
+file_write: 1693312791.378081
+
+start: 1693312791.427701
+imu_read: 1693312791.427903
+adc_read: 1693312791.427903
+file_write: 1693312791.628081
+
+start: 1693312791.677701
+imu_read: 1693312791.677946
+adc_read: 1693312791.677946
+file_write: 1693312791.878110
+
+start: 1693312791.927703
+imu_read: 1693312791.927908
+adc_read: 1693312791.927908
+file_write: 1693312792.128081
+
+start: 1693312792.177701
+imu_read: 1693312792.177901
+adc_read: 1693312792.177901
+file_write: 1693312792.378081
+
+start: 1693312792.427701
+imu_read: 1693312792.427901
+adc_read: 1693312792.427901
+file_write: 1693312792.628081
+
+start: 1693312792.677701
+imu_read: 1693312792.677901
+adc_read: 1693312792.677901
+file_write: 1693312792.878093
+
+start: 1693312792.927701
+imu_read: 1693312792.927901
+adc_read: 1693312792.927901
+file_write: 1693312793.128084
+
+start: 1693312793.177701
+imu_read: 1693312793.177902
+adc_read: 1693312793.177902
+file_write: 1693312793.378082
+
+start: 1693312793.427701
+imu_read: 1693312793.427901
+adc_read: 1693312793.427901
+file_write: 1693312793.628081
+
+start: 1693312793.677701
+imu_read: 1693312793.677901
+adc_read: 1693312793.677901
+file_write: 1693312793.878093
+
+start: 1693312793.927701
+imu_read: 1693312793.927904
+adc_read: 1693312793.927904
+file_write: 1693312794.128081
+
+start: 1693312794.177701
+imu_read: 1693312794.177901
+adc_read: 1693312794.177901
+file_write: 1693312794.378081
+
+start: 1693312794.427701
+imu_read: 1693312794.427901
+adc_read: 1693312794.427901
+file_write: 1693312794.628081
+
+start: 1693312794.677701
+imu_read: 1693312794.677901
+adc_read: 1693312794.677901
+file_write: 1693312794.878093
+
+start: 1693312794.927701
+imu_read: 1693312794.927904
+adc_read: 1693312794.927904
+file_write: 1693312795.128082
+
+start: 1693312795.177701
+imu_read: 1693312795.177901
+adc_read: 1693312795.177901
+file_write: 1693312795.378126
+
+start: 1693312795.427701
+imu_read: 1693312795.427901
+adc_read: 1693312795.427901
+file_write: 1693312795.628081
+
+file_sync: 1693312795.646729
+
+start: 1693312795.687710
+imu_read: 1693312795.687948
+adc_read: 1693312795.687948
+file_write: 1693312795.888100
+
+start: 1693312795.937703
+imu_read: 1693312795.937921
+adc_read: 1693312795.937921
+file_write: 1693312796.138078
+
+start: 1693312796.187701
+imu_read: 1693312796.187904
+adc_read: 1693312796.187904
+file_write: 1693312796.388078
+
+start: 1693312796.437701
+imu_read: 1693312796.437901
+adc_read: 1693312796.437901
+file_write: 1693312796.638078
+
+start: 1693312796.687701
+imu_read: 1693312796.687904
+adc_read: 1693312796.687904
+file_write: 1693312796.888082
+
+start: 1693312796.937701
+imu_read: 1693312796.937909
+adc_read: 1693312796.937909
+file_write: 1693312797.138079
+
+start: 1693312797.187701
+imu_read: 1693312797.187900
+adc_read: 1693312797.187900
+file_write: 1693312797.388080
+
+start: 1693312797.437701
+imu_read: 1693312797.437902
+adc_read: 1693312797.437902
+file_write: 1693312797.638078
+
+start: 1693312797.687701
+imu_read: 1693312797.687901
+adc_read: 1693312797.687901
+file_write: 1693312797.888084
+
+start: 1693312797.937701
+imu_read: 1693312797.937902
+adc_read: 1693312797.937902
+file_write: 1693312798.138084
+
+start: 1693312798.187701
+imu_read: 1693312798.187900
+adc_read: 1693312798.187900
+file_write: 1693312798.388080
+
+start: 1693312798.437701
+imu_read: 1693312798.437902
+adc_read: 1693312798.437902
+file_write: 1693312798.638078
+
+start: 1693312798.687701
+imu_read: 1693312798.687901
+adc_read: 1693312798.687901
+file_write: 1693312798.888085
+
+start: 1693312798.937701
+imu_read: 1693312798.937901
+adc_read: 1693312798.937901
+file_write: 1693312799.138084
+
+start: 1693312799.187701
+imu_read: 1693312799.187904
+adc_read: 1693312799.187904
+file_write: 1693312799.388078
+
+start: 1693312799.437701
+imu_read: 1693312799.437902
+adc_read: 1693312799.437902
+file_write: 1693312799.638078
+
+start: 1693312799.687702
+imu_read: 1693312799.687922
+adc_read: 1693312799.687922
+file_write: 1693312799.888101
+
+start: 1693312799.937701
+imu_read: 1693312799.937902
+adc_read: 1693312799.937902
+file_write: 1693312800.138084
+
+start: 1693312800.187701
+imu_read: 1693312800.187904
+adc_read: 1693312800.187904
+file_write: 1693312800.388078
+
+start: 1693312800.437701
+imu_read: 1693312800.437901
+adc_read: 1693312800.437901
+file_write: 1693312800.638078
+
+file_sync: 1693312800.643777
+
+start: 1693312800.687707
+imu_read: 1693312800.687942
+adc_read: 1693312800.687942
+file_write: 1693312800.888084
+
+start: 1693312800.937705
+imu_read: 1693312800.937909
+adc_read: 1693312800.937909
+file_write: 1693312801.138082
+
+start: 1693312801.187703
+imu_read: 1693312801.187907
+adc_read: 1693312801.187907
+file_write: 1693312801.388076
+
+start: 1693312801.437703
+imu_read: 1693312801.437903

@@ -3,7 +3,10 @@
 #include "esp_log.h"
 #include "driver/sdmmc_host.h"
 #include "sdmmc_cmd.h"
+#include "h160-sdcard.h"
 #include "h160-defines.h"
+
+bool sdcard_ready;
 
 esp_err_t DEVICE_sdcard_init(){
 
@@ -38,15 +41,19 @@ esp_err_t DEVICE_sdcard_init(){
             ESP_LOGE(TAG_SDCARD, "Failed to initialize the card (%s). "
                 "Make sure SD card lines have pull-up resistors in place.", esp_err_to_name(ret));
         }
+        return ret;
     };
     
-    sdmmc_card_print_info(stdout, card);
+    sdcard_ready=true;
 
     ret = sdmmc_get_status(card);
     if (ret != ESP_OK){
        ESP_LOGE(TAG_SDCARD, "sdmmc status abnormal"); 
+       sdcard_ready=false;
+       return ret;
     } else {
        ESP_LOGI(TAG_SDCARD, "sdmmc status normal"); 
+        sdmmc_card_print_info(stdout, card);
     }
 
     return ret;
